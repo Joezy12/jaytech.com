@@ -66,10 +66,10 @@ display: inline-block;
 padding:.8rem 3rem;
 font-size: 1.7rem;
 border-radius: .5rem;
-border: .2rem solid var(--black);
-color: var(--black);
+border: none;
+color: #fff;
 cursor: pointer;
-background: none;
+background: lightblue;
 }
 
 
@@ -109,7 +109,7 @@ color: var(--black);
 }
 
 .header .navbar a:hover {
-color: yellow;
+color: blue;
 }
 
 
@@ -317,7 +317,7 @@ text-decoration: underline;
 display: flex;
 align-items: center;
 justify-content: center;
-background: url(pexels-karolina-grabowska-5398928.jpg) no-repeat;
+background: url(fireboy.jpg) no-repeat;
 background-position: center;
 background-size: cover;
 padding-top: 17rem;
@@ -557,7 +557,7 @@ line-height: 1.8;
 }
 
 .blogs .box-container .box .content .icons a i{
-    color:var(--orange);
+    color:lightblue;
     padding-right: .5rem;
 }
 
@@ -610,10 +610,11 @@ width: 100%;
 }
 
 .open .box .content .icons a i{
-    color:var(--orange);
+    color:lightblue;
     padding-right: .5rem;
 }
 
+@media screen and (min-width: 800px) {
 .open .box .content h3{
     line-height: 1.4;
     color:var(--black);
@@ -621,6 +622,7 @@ width: 100%;
     padding:.5rem 0;
 font-family: Eras ITC Light;
 font-weight: 1;
+}
 }
 
 .open .box .content p{
@@ -790,17 +792,18 @@ border-bottom: 3px solid yellow;
 
 .h1{
 text-align: center;
-margin-top: %;
-color: var(--light-color);
-font-family: Eras ITC;
+color: var(--black);
 background: #fff;
-font-size: 210%;
-margin-top: 2%;
-padding-bottom: 2%;
+font-size: 370%;
+margin-top: 3%;
+padding-bottom: 7%;
+margin-bottom: -7%;
+padding-top: 2%;
 }
 
 .h1 span{
-border-bottom: 6px solid yellow;
+border-bottom: 4px solid yellow;
+padding-bottom: 1.5%;
 }
 
 .footer{
@@ -1263,6 +1266,28 @@ background: #eee;
 color: var(--black);
 }
 
+
+
+.header .logo {
+margin-left:-8%;
+}
+.h1{
+text-align: center;
+color: var(--black);
+background: #fff;
+font-size: 270%;
+margin-top: 3%;
+padding-bottom: 9%;
+margin-bottom: -7%;
+padding-top: 4%;
+}
+
+.open .box .content h3{
+line-height: 1.4;
+    color:var(--black);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+}
 
 }
 
