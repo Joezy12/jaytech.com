@@ -1,0 +1,946 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jaytech.ng/ homepage</title>
+<!-- font awesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+body {
+display: flex;
+flex-direction: column;
+background: white ;
+width: 99%;
+}
+
+.navbar {
+display: flex;
+flex-direction: column;
+padding: 0% 2%;
+width: 96%;
+overflow: hidden;
+}
+
+.port{
+display: flex;
+gap: 12rem;
+}
+
+.topnav {
+display: flex;
+font-family: Eras ITC;
+background: white;
+position: fixed;
+width: 100%;
+height: 60px;
+padding-top: 5%;
+margin-top: -5%;
+margin-left: -2.5%;
+padding-left: 3%;
+border-bottom: 1px solid lightgrey;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+
+.navlinks ul{
+display: flex;
+gap: 1.5rem;
+list-style-type: none;
+font-size: 95%;
+font-family: lucida sans;
+}
+
+.navlinks ul li:hover{
+border-bottom: 6px solid orange;
+padding-bottom: 4%;
+color: orange;
+}
+
+.sidenavlinks ul li button{ 
+background: #00acee;
+border: none;
+color: white;
+font-size: 90%;
+width: 120%;
+height: 160%;
+border-radius: 7px;
+margin-top: -10px;
+}
+
+
+.sidenavlinks ul {
+display: flex;
+list-style-type: none;
+gap: 1.5rem;
+}
+
+
+.sidenav2 i{
+font-size: 160%;
+font-weight: 650;
+}
+
+
+.sidenav2{
+margin-top: 0.8%;
+}
+
+
+.sidenav2 i:hover{
+cursor: pointer;
+}
+
+.logo{
+font-size: 160%;
+margin-top: 0.8%;
+margin-left: 1.3%;
+font-family: algerian;
+}
+
+.navbody {
+display: flex;
+margin-top: 7%;
+}
+
+
+
+.heading {
+font-size: 40px;
+font-weight: 1;
+font-family: Proxima Nova,Arial,sans-serif;
+line-height: 130%;
+color:  #262d3d;
+}
+
+.write {
+width: 50%;
+font-size: 105%;
+color:  grey;
+margin-top: 1%;
+line-height: 200%;
+font-family: sans-serif;
+}
+
+.btn button{
+border: none;
+background: #00acee;
+font-size: 130%;
+color: white;
+font-family: lucida Sans;
+border-radius: 6px;
+width:30%; 
+height: 43px;
+margin-top: 1%;
+transition: all 0.3s;
+}
+
+
+.btn button:hover{
+opacity: 0.5;
+}
+
+.bodyimages{
+width: 100%;
+height: 350px;
+background-image: url(i13.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sponsors{
+background: black;
+width: 101%;
+height: 45px;
+margin-left: -8px;
+}
+
+.sponsors img{
+width: 5%;
+height: 45px;
+}
+
+.school img{
+width: 101.35%;
+margin-left: -1%;
+}
+
+.product {
+display: flex;
+flex-direction: column;
+padding: 4%;
+background: rgb(247,247,247);
+width: 92%;
+}
+
+.topproduct{
+font-family: Helvetica;
+font-size: 150%;
+color: black;
+font-weight: 600;
+padding: 0.5%;
+border-radius: 6px;
+opacity: 0.8;
+}
+
+.line1 {
+background: white;
+display: flex;
+gap: 2rem;
+padding: 1%;
+border-radius: 6px;
+box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+}
+
+.line2 {
+background: white;
+display: flex;
+gap: 2rem;
+padding: 1%;
+border-radius: 6px;
+box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+margin-top: 4%;
+}
+
+.product1 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(iphone13.png);
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center ;
+overflow: hidden;
+}
+
+
+.product1{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.product1:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product2{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.product2:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product2 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(vr.png);
+background-repeat: no-repeat;
+background-size: 125%;
+background-position: center ;
+overflow: hidden;
+}
+
+.productwrite {
+overflow: hidden;
+font-family: lucida sans;
+font-size: 90%;
+} 
+
+.product3{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.product3:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product3 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(macbook.png);
+background-repeat: no-repeat;
+background-size: 110%;
+background-position: center ;
+overflow: hidden;
+}
+
+.product4{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.product4:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+
+.product4 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(hisense.png);
+background-repeat: no-repeat;
+background-size: 150%;
+background-position: center ;
+overflow: hidden;
+}
+
+.product5{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.product5:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+
+.product5 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(jblgirl.png);
+background-repeat: no-repeat;
+background-size: 180%;
+background-position: center ;
+overflow: hidden;
+border-radius: 10px;
+}
+
+
+
+.product6{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+.product6:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product6 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(car.png);
+background-repeat: no-repeat;
+background-size: 130%;
+background-position: center ;
+overflow: hidden;
+border-radius: 10px;
+}
+
+.product7{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+.product7:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product7 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(fold.png);
+background-repeat: no-repeat;
+background-size: 70%;
+background-position: center ;
+overflow: hidden;
+border-radius: 10px;
+}
+
+
+.product8{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+.product8:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product8 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(xiomi.png);
+background-repeat: no-repeat;
+background-size: 150%;
+background-position: center ;
+overflow: hidden;
+border-radius: 10px;
+}
+
+
+.product9{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+.product9:hover{
+border-radius: 5px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+background: rgb(247,247,247);
+}
+
+.product9 .productimg{
+width: 100%;
+height: 200px;
+background-image: url(tecnocamon18.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center ;
+overflow: hidden;
+border-radius: 500px;
+}
+
+
+.productwrite {
+overflow: hidden;
+font-family: lucida sans;
+font-size: 90%;
+} 
+
+.one {
+font-family: sans-serif;
+font-weight: 600;
+font-size: 90%;
+color: white;
+background: tomato;
+width: 25%;
+text-align: center;
+padding: 1px;
+border-radius: 3px;
+margin-left: 70%;
+margin-top: 15%;
+opacity: 0.8;
+}
+
+.price {
+font-weight: 600;
+margin-top: 3%;
+}
+
+.formerprice{
+font-size: 70%;
+font-family: Eras ITC ;
+color: grey;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width:1125px){
+body {
+z-idex: 1;
+}
+
+.navlinks ul{
+display: flex;
+gap: 1.3rem;
+list-style-type: none;
+font-size: 90%;
+font-family: lucida sans;
+}
+
+.topnav {
+height: 50px;
+padding-top: 4.5%;
+z-index: 1;
+}
+
+.navlinks ul li:hover{
+padding-bottom: 2.8%;
+cursor: pointer;
+}
+
+.write {
+width: 68%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+<div class="topnav">
+<div class="sidenav2">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div>
+</div>
+
+<div class="logo">
+Jay Tech
+</div>
+
+<div class="port">
+<div class="navlinks">
+<ul>
+<li>Product <Span><i class="fa fa-caret-down"></i></span></li>
+<li> <div class="dropdown">
+ Categories<span><i class="fa fa-caret-down"></i></span>
+  <div class="dropdown-content">
+    <a href="#"><i class="fa fa-laptop"></i>Mobile phones</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> </li>
+<li> Blog </li>
+<li>Refund </li>
+<li> About Us</li>
+<li> customer Care</li>
+</ul>
+</div>
+
+<div class="sidenavlinks">
+<ul>
+<li> <i class="fa fa-shopping-cart"></i></li>
+<li> <i class="fa fa-user"></i></li>
+<li> <button type="button">Log in </button></li>
+<li> sell item</li>
+<li> <i class="fa fa-search"></i></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div class="navbody">
+
+<div class="left">
+<div class="heading">
+ Get 15% off of every product <br /> you choose
+</div>
+<div class="write">
+Apple Iphone 13, experience the phantom of photography at it's peak, giving you an uptimum display, flashy view and many more
+</div>
+
+<div class="btn">
+<button type="button">Order now</button> 
+</div>
+</div>
+
+
+<div class="bodyimages">
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="sponsors">
+<img src="inifinix.png">
+<img src="jbl2.png">
+<img src="huawei.png"><img src="apple.png">
+<img src="lg.png">
+<img src="oppo.png">
+<img src="inifinix.png">
+<img src="inifinix.png">
+<img src="inifinix.png">
+</div>
+
+<div class="school">
+<img src="school.gif">
+</div>
+
+<div class="product">
+
+<div class="topproduct">
+Top Products
+</div>
+<div class="line1">
+
+<div class="product1">
+<div class="productimg">
+<div class="one">
+-15%
+</div>
+</div>
+<div class="productwrite">
+iphone 13 pro with to..
+<div class="price">
+N 455,000
+<div class="formerprice">
+<del>N 455,000</del>
+</div>
+</div>
+</div>
+</div>
+
+<div class="product2">
+<div class="productimg">
+<div class="one">
+-20%
+</div>
+</div>
+<div class="productwrite">
+Unitech vr headset for..
+<div class="price">
+N 66,500
+<div class="formerprice">
+<del>N 74,300</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product3">
+<div class="productimg">
+<div class="one">
+-10%
+</div>
+</div>
+<div class="productwrite">
+Apple macbook pro (..
+<div class="price">
+N 915,000
+<div class="formerprice">
+<del>N 1,007,000</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product4">
+<div class="productimg">
+<div class="one">
+-33%
+</div>
+</div>
+<div class="productwrite">
+Hisense 60 inch LCD c..
+<div class="price">
+N 214,000
+<div class="formerprice">
+<del>N 257,450</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product5">
+<div class="productimg">
+<div class="one">
+-23%
+</div>
+</div
+</div>
+<div class="productwrite">
+JBL headset miniset
+<div class="price">
+N 3,500
+<div class="formerprice">
+<del>N 5,200</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product6">
+<div class="productimg">
+<div class="one">
+-33%
+</div>
+</div
+</div>
+<div class="productwrite">
+Audi phantom 655..
+<div class="price">
+N 16,000,000
+<div class="formerprice">
+<del>N 21,000,000</del>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="line2">
+
+<div class="product7">
+<div class="productimg">
+<div class="one">
+-15%
+</div>
+</div>
+<div class="productwrite">
+iphone 13 pro with to..
+<div class="price">
+N 455,000
+<div class="formerprice">
+<del>N 455,000</del>
+</div>
+</div>
+</div>
+</div>
+
+<div class="product8">
+<div class="productimg">
+<div class="one">
+-20%
+</div>
+</div>
+<div class="productwrite">
+Unitech vr headset for..
+<div class="price">
+N 66,500
+<div class="formerprice">
+<del>N 74,300</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product9">
+<div class="productimg">
+<div class="one">
+-10%
+</div>
+</div>
+<div class="productwrite">
+Apple macbook pro (..
+<div class="price">
+N 455,000
+<div class="formerprice">
+<del>N 455,000</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product4">
+<div class="productimg">
+<div class="one">
+-33%
+</div>
+</div>
+<div class="productwrite">
+Hisense 60 inch LCD c..
+<div class="price">
+N 455,000
+<div class="formerprice">
+<del>N 455,000</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product5">
+<div class="productimg">
+<div class="one">
+-23%
+</div>
+</div
+</div>
+<div class="productwrite">
+iphone 13 pro
+<div class="price">
+N 455,000
+<div class="formerprice">
+<del>N 455,000</del>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="product6">
+<div class="productimg">
+<div class="one">
+-33%
+</div>
+</div
+</div>
+<div class="productwrite">
+iphone 13 pro
+<div class="price">
+N 455,000
+<div class="formerprice">
+<del>N 455,000</del>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<script>/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+
+</body>
+
+
+
+</html>
