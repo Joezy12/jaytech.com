@@ -1444,6 +1444,15 @@ padding: 1.5%;
 width: 30px;
 }
 
+.header .logo {
+margin-left: 10%;
+}
+
+.header i{
+color: white;
+font-size: 180%;
+}
+
 }
 
 @media (max-width:450px){
