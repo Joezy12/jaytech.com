@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>youtube learn</title>
+<title>mystory</title>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,10 +10,934 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+<style>
+.header{
+animation: none;
+background-size: cover;
+background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(love.jpg);
+}
+
+.profile{
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+margin-left: -70px;
+margin-top: 20px;
+}
+
+.profilepic{
+background-image: url(frosh2.jpg);
+background-size: 80px;
+background-position: top left;
+width: 80px;
+height: 80px;
+border-radius: 200px;
+}
+
+.name{
+font-weight: 800;
+color: red;
+font-family: sans-serif;
+font-size: 20px;
+}
+
+.content {
+background: white;
+}
+
+.text-box  p{
+font-size: 19px;
+line-height: 25px;
+}
+
+.house h2 {
+color: black;
+font-size: 20px;
+margin-bottom: 10px;
+font-family: product-sans;
+}
+
+.house h1 {
+color : rgba(4, 9, 30, 0.7);
+}
+
+.house a{
+text-decoration: none;
+}
+
+div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 2rem;
+padding: 10px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 0px 70px;
+  text-decoration: none;
+  width: 80px;
+  height: 14vh;
+ box-shadow: 1px 1px 4px 3px rgba(0,0,0, 0.4);
+}
+
+div.scrollmenu .novel1 {
+  background-image: url(novel1.png);
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  
+}
+
+div.scrollmenu .novel2 {
+  background-image: url(novel2.png);
+  background-size: 135px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  
+}
+
+div.scrollmenu .novel3 {
+  background-image: url(novel3.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+ 
+}
+
+div.scrollmenu .novel4 {
+  background-image: url(novel4.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  
+}
+
+div.scrollmenu .novel5 {
+  background-image: url(novel5.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  
+}
+
+.cover {
+padding: 2% 12%;;
+}
+
+.firstnav {
+position: fixed;
+width: 90%;
+z-index: 5;
+}
+
+.opener i {
+display: none;
+}
+
+.plot {
+display: flex;
+flex-directon: row;
+gap: 10rem;
+margin-top: 25px;
+}
+
+.plot .plotwrite {
+line-height: 25px;
+}
+
+.plot .chapters ul{
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+}
+
+.plot .chapters ul li{
+list-style-type: none;
+}
+
+
+.reference {
+display: flex;
+}
+
+.reference .referencepic {
+width: 50px;
+height:50px;
+border-radius: 100px;
+background-image: url(pic-2.png);
+background-size: cover;
+}
+
+.reference .referencewrite{
+padding: 11px;
+}
+
+.chapter1 {
+text-align: left;
+padding: 10px 20px;
+margin-top: 20px;
+}
+
+.chapter1 h1{
+font-size: 23px;
+text-align: center;
+}
+
+
+.chapter1 p{
+line-height: 28px;
+margin-top: 20px;
+}
+
+.chapter1 p span{
+font-size: 30px;
+color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+
+.profile{
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+margin-left: -70px;
+margin-top: 4px;
+}
+
+
+.text-box  p{
+font-size: 10px;
+}
+
+.name{
+font-weight: 800;
+color: red;
+font-family: sans-serif;
+font-size: 12px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 0px 55px;
+  text-decoration: none;
+  width: 80px;
+  height: 14vh;
+ box-shadow: 1px 1px 4px 3px rgba(0,0,0, 0.4);
+ 
+}
+
+div.scrollmenu {
+border-left: 10px solid grey;
+border-right: 10px solid grey;
+}
+
+div.scrollmenu .novel1 {
+  background-image: url(novel1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.cover {
+padding: 2% 6%;;
+}
+
+.house {
+gap: 0.3rem;
+}
+
+.house h2{
+color:  black;
+}
+
+
+.text-box h1 {
+font-size: 57px;
+}
+
+.text-box p {
+font-size: 19px;
+line-height: 35px;
+}
+
+br {
+display: block;
+}
+
+.name {
+font-size: 19px;
+}
+
+.profile {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+margin-top: 30px;
+margin-left: 0;
+}
+
+.firstnav {
+position: fixed;
+width: 100%;
+z-index: 5;
+}
+
+.opener i {
+display: block;
+}
+
+.plot {
+display: flex;
+flex-direction: column;
+gap: 3rem;
+}
+
+.plot br{
+display: none;
+}
+
+
+.reference {
+display: flex;
+gap: 0.1rem;
+margin-top: 15px;
+}
+
+
+.plot .chapters ul{
+gap: 0.5rem;
+margin-top: 10px;
+}
+
+.plot .chapters ul li a{
+color: grey;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 610px){
+
+.profile{
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+margin-left: -70px;
+margin-top: 4px;
+}
+
+
+.text-box  p{
+font-size: 10px;
+}
+
+.name{
+font-weight: 800;
+color: red;
+font-family: sans-serif;
+font-size: 17px;
+}
+
+
+
+.cover {
+padding: 2% 6%;;
+}
+
+.house {
+gap: 0.3rem;
+}
+
+.house h2{
+color:  black;
+margin-top: 10px;
+}
+
+
+.text-box h1 {
+font-size: 45px;
+}
+
+.text-box p {
+font-size: 21px;
+line-height: 38px;
+}
+
+
+.profile {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+margin-top: 30px;
+margin-left: 0;
+}
+
+.header {
+background-size: 1000px 700px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px){
+
+.profile{
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+margin-left: -70px;
+margin-top: 4px;
+}
+
+
+
+.name{
+font-weight: 800;
+color: red;
+font-family: sans-serif;
+font-size: 12px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 0px 55px;
+  text-decoration: none;
+  width: 80px;
+  height: 14vh;
+ box-shadow: 1px 1px 4px 3px rgba(0,0,0, 0.4);
+ 
+}
+
+div.scrollmenu {
+border-left: 10px solid grey;
+border-right: 10px solid grey;
+}
+
+
+div.scrollmenu .novel1 {
+  background-image: url(novel1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.cover {
+padding: 2% 6%;;
+}
+
+.house {
+gap: 0.3rem;
+}
+
+.house h2{
+color:  black;
+font-size: 18px;
+}
+
+
+.text-box h1 {
+font-size: 35px;
+margin-top: 15px;
+}
+
+.profilepic {
+width: 60px;
+height: 60px;
+}
+
+.text-box p {
+font-size: 12px;
+line-height: 23px;
+}
+
+br {
+display: block;
+}
+
+.name {
+font-size: 12px;
+}
+
+.profile {
+display: flex;
+flex-direction: column;
+gap: 0.1rem;
+margin-top: 30px;
+margin-left: 0;
+}
+
+.header {
+background-size: 700px 500px;
+}
+
+.firstnav img{
+width: 50px;
+border-radius: 10px;
+}
+
+.chapter1 {
+text-align: left;
+padding: 10px 10px;
+margin-top: 20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+
+
+
+.name{
+font-weight: 800;
+color: red;
+font-family: sans-serif;
+font-size: 12px;
+}
+
+
+
+.cover {
+padding: 2% 6%;;
+}
+
+.house {
+gap: 0.3rem;
+}
+
+.house h2{
+color:  black;
+}
+
+
+.text-box h1 {
+font-size: 32px;
+}
+
+.text-box p {
+font-size: 20px;
+line-height: 35px;
+}
+
+br {
+display: block;
+}
+
+.name {
+font-size: 19px;
+}
+
+
+
+.header {
+background-size: 700px 600px;
+}
+
+.firstnav img{
+width: 60px;
+border-radius: 10px;
+padding: 10px;
+}
+
+}
+
+
+
+
+
+@media (max-width: 412px){
+
+.text-box h1 {
+font-size: 30px;
+}
+
+.firstnav img{
+width: 60px;
+border-radius: 10px;
+padding: 2px;
+}
+
+.header {
+min-height: 65vh;
+}
+
+.text-box p {
+font-size: 18px;
+line-height: 35px;
+}
+
+.name {
+font-size: 16px;
+}
+
+.profilepic {
+width: 50px;
+height: 50px;
+background-size: cover;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 394px){
+
+.text-box h1 {
+font-size: 33px;
+margin-top: 30px;
+}
+
+.firstnav img{
+width: 60px;
+border-radius: 10px;
+padding: 2px;
+}
+
+.header {
+min-height: 65vh;
+}
+
+.text-box p {
+font-size: 16px;
+line-height: 22px;
+}
+
+.name {
+font-size: 16px;
+}
+
+.profilepic {
+width: 45px;
+height: 45spx;
+background-size: cover;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 385px){
+
+.text-box h1 {
+font-size: 28px;
+margin-top: 37px;
+}
+
+.firstnav img{
+width: 45px;
+border-radius: 10px;
+padding: 2px;
+}
+
+.header {
+min-height: 72vh;
+}
+
+.text-box p {
+font-size: 16px;
+line-height: 23px;
+}
+
+.name {
+font-size: 16px;
+}
+
+.profilepic {
+width: 45px;
+height: 45px;
+background-size: cover;
+}
+
+.profile {
+display: flex;
+flex-direction: column;
+gap: 0.1rem;
+margin-top: 20px;
+margin-left: 0;
+}
+
+.house h2{
+color:  black;
+font-size: 14px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 325px){
+
+.text-box h1 {
+font-size: 22px;
+margin-top: 37px;
+}
+
+.firstnav img{
+width: 50px;
+border-radius: 10px;
+padding: 4px;
+}
+
+.header {
+min-height: 72vh;
+}
+
+.text-box p {
+font-size: 14px;
+line-height: 35px;
+}
+
+.name {
+font-size: 14px;
+}
+
+.profilepic {
+width: 41px;
+height: 41px;
+background-size: cover;
+}
+
+.profile {
+display: flex;
+flex-direction: column;
+gap: 0.1rem;
+margin-top: 20px;
+margin-left: 0;
+}
+
+
+.house h2{
+color:  black;
+font-size: 15px;
+}
+
+.header {
+background-size: 400px 500px;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 290px){
+
+.chapter1 {
+text-align: left;
+padding: 10px 9px;
+margin-top: 20px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-height: 500px){
+
+.text-box h1 {
+font-size: 22px;
+margin-top: 37px;
+}
+
+.firstnav img{
+width: 30px;
+border-radius: 10px;
+padding: 4px;
+}
+
+.header {
+min-height: 72vh;
+}
+
+.text-box p {
+font-size: 12px;
+line-height: 22px;
+}
+
+.text-box h1 {
+font-size: 20px;
+}
+
+.name {
+font-size: 12px;
+}
+
+.profilepic {
+width: 41px;
+height: 41px;
+background-size: cover;
+}
+
+.profile {
+display: flex;
+flex-direction: column;
+gap: 0.1rem;
+margin-top: 20px;
+margin-left: 0;
+}
+
+
+.house h2{
+color:  black;
+font-size: 13px;
+}
+
+.header {
+background-size: 400px 500px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+</style>
 </head>
 <body>
 <section class="header">
-    <nav>
+    <nav class="firstnav" id = "logo-scroll">
   <a href="#"><img src="logo6.png"></a>
 
 
@@ -24,10 +948,13 @@
   <a href="#">Services</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
+<a href="#">Clients</a>
+  <a href="#">Contact</a>
+ 
 </div>
 
 <!-- Use any element to open the sidenav -->
-<span class="opener" onclick="openNav()"><i class="fa fa-bars"></i></span>
+<span class="opener" onclick="openNav()"><i class="fa fa-bars" id ="bars">me</i></span>
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
@@ -38,97 +965,110 @@
 
 <div class="nav-links">
   <i class="fa fa-times"></i>
-  <ul>
-     <li> <a href="#">Home</a></li>
-     <li> <a href="#">About</a></li>
-     <li> <a href="#">Blog</a></li>
-     <li> <a href="#">Contact</a></li>
-     <li> <a href="#">Trend</a></li>
+  <ul >
+     <li > <a href="#" id= "ul1" >Home</a></li>
+     <li> <a href="#" id= "ul2">About</a></li>
+     <li> <a href="#" id= "ul3">Blog</a></li>
+     <li> <a href="#" id= "ul4">Contact</a></li>
+     <li> <a href="#"><button>Sign up</button></a></li>
    </ul>
 </div>
       </nav>
 <div class="text-box">
-  <h1>World's Biggest Tech company</h1>
+  <h1>Watch My Heart Burn</h1>
+<div class="profile">
+<span class="profilepic">
+</span>
      <p>
-   making website is one of the easiest thing in the world, you just need to know <br />html, javascript and css
+   by <span class="name">Joseph Oyebode</span>, author of sacred truth and a broken<br> people's playlist
      </p>
- <a href="#" class="hero-btn"> Visit Us To Know more</a>
+</div>
+ <a href="#" class="hero-btn"> More From This Author</a>
 </div>
 </section>
 <section class="content">
 <nav class= "cover">
-<h2> Hire top talent </h2>
-                <div class= "house">
-<div class="first">
-    <div class="first-pic">
- <ul>
-    <li class="head">Soft Ware Engineer</li>
-    <li> skills : angular, flutter</li>
-    <li> experience : 5 years</li>
-    <li><img src="pulse.gif"></li>
-    <li><button class="hire">Hire</button></li>
-       </div>
+
+                         <div class= "house">
+<h2>  Explore more stories ></h2>
+        <div class="line1">
+
+<div class="scrollmenu">
+  <a class="novel1" href="#home">  </a>
+  <a class="novel2" href="#news"></a>
+  <a class="novel3" href="#contact"></a>
+  <a class="novel4" href="#about"></a>
+  <a class="novel5" href="#home"></a>
+  <a class="novel2" href="#news"></a>
+  <a class="novel3" href="#contact"></a>
+
 </div>
 
-<div class="second">
-    <div class="second-pic">
-    <ul>
-    <li class="head">Data Scientist</li>
-    <li> skills : python core, nodejs</li>
-    <li> experience : 5 years</li>
-    <li> position: freelancer</li>
-    <li><img src="pulse.gif"></li>
-     <li><button class="hire">Hire</button></li>
-     </ul>
-       </div>
+
+
+              
+ </div>
+
+
+
+
+    <div class="plot">
+
+
+<div class="plotwrite">
+<h3>Storyline : </h3>
+<p> Kate petson is in delinma, as she found her self in middle of greenwhich city
+<br> where she had met justin hales, a manianic doctor, she has to strugle off her
+<br>good times to find her good line, will she be able to see her place in the world?
+</p>
 </div>
 
-<div class="third">
-    <div class="third-pic">
- <ul>
-    <li class="head">Web Developer</li>
-    <li> skills : python core, nodejs</li>
-    <li> experience : 5 years</li>
-    <li><img src="pulse.gif"></li>
-    <li><button class="hire">Hire</button></li>
-     </ul>
-      </div>
-</div>   
-                  </div>
-  </nav>
-</section>
+
+<div class="chapters">
+<h3> Chapters </h3>
+<ul>
+<li><a href="#header">Chapter 1 > Leaving home</a></li>
+<li><a href="#">Chapter 2 >  Burning feelings</a></li>
+<li><a href="#">Chapter 3 > God's Grace</a></li>
+<li><a href="#">Chapter 4 > Spare me that</a></li>
+<li><a href="#">Chapter 5 > Sorry cant save me now</a></li>
+</div>
+                           
+    </div> 
+
+
+
+
+   <div class="reference">
+
+<div class="referencepic">
+</div>
+
+<div class="referencewrite">
+<h4> From the<i> Billie Eilish's Sound track "burn" </i>
+</div>
+
+   </div>
+
+
+   <div class="chapter1">
+
+<h1> Chapter 1 (Leaving Home) </h1>   
+<p> &nbsp;&nbsp;&nbsp;<span> K</span>ate stared intensively out of the window of the fast moving bus which strode through the rough roads of woodworth villa. She felt a sharp pain strike through her heart as she watched the orange tatched-roofed houses fade, she knew she was going to miss woodsworth and all it's magnificent features,<br>
+"besides, just a  year away wouldnt hurt and it would look like I never left" &nbsp;she remminded herself gracefully while shutting her beautiful sea blue eyes to take a nap, but seemed impossible as the thought of a new life in greenwhich with Mrs. Mabel kept hunting her with great excitement mixed with severe anxiousness.<br>
+&nbsp;&nbsp;&nbsp;It was her first real job ever since she resigned as a bar attendant at the prestigious 'de luna' hotel some years back. And now, she will be a care giver to Old Mabel, who was on a vacation in the north province of Greenwhich city.<br>
+She had repeated tried to imagine how green which would turn out to be, could it be as peaceful and serene as woodsworth or just one of those noisy cities with crowded areas and a polluted atmosphere which she just couldnt bare. "it should be at least, conducive enough to get a good afternoon sleep"-- she wished knowing how much she loved sleeping into the afternoons. <br></br>
+&nbsp;&nbsp;&nbsp;"I think this dropped from you" a deep voice echoed gently from beside her, slashing through her wavy thoughts. "Jeez"-- she was startled, she hadn't quite noticed the figure sitted next to her. He was dark-skinned in faded levis and open-necked check shirt, sleeves rolled up to the elbows, sunlight glinting on the dark chest-hair and strong, tanned arms, holding out to her, what looks a fragile clothing material. she was uncertain about what it  actually was, not until she learnt forward to take a closer look. <br>
+"Holy shit"-- it came out unconciously as she reached out with what seemed faster than the speed of light to grab the material while forcefully squeezing it into one of the bags she had carefully placed on her thighs. she could see the look he had on his face and it sure wasn't helping matters. only if the earth could open up and swallow her right now, it would save her from the feeling of the gravious embarrassment running through her body. <br>
+She swore she could have cried if she was still the 15 year old that she was 12 years ago.<br>
+ 
+
+   </div>
+ 
+                     </div>
   
-
-<section class="code-learn">
-    <nav class="box">
-
-<h2> Take a course with Experts </h2> 
-<p> join millions of others on our flexible programming courses with trained experts and over 15+ programming <br />language to choose from </p>
-                    <div class="box-content1">
-     <div class="page1">
-     </div>
-
-     <div class= "page2">
-     </div>
-
-     <div class= "page3">
-     </div>
-   
-
-                       </div>
-                     
-                        <div class="box-content2">
-                        
-
-                          </div>
-      </nav>
+</nav>
 </section>
-
-
-
-
-  
-
  
 
 <script>
@@ -141,6 +1081,30 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+
+var win = window,
+    docEl = document.documentElement,
+    $logo = document.getElementById('logo-scroll');
+    $bars = document.getElementById('bars');
+    $ul1 = document.getElementById('ul1');
+    $ul2 = document.getElementById('ul2');
+    $ul3 = document.getElementById('ul3');
+    $ul4 = document.getElementById('ul4');
+
+
+win.onscroll = function(){
+   var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+   $logo.style.background =  sTop > 10 ? "white":"transparent" ;
+   $bars.style.color =  sTop > 10 ? "black":"white" ;
+   $logo.style.boxShadow =  sTop > 10 ? "6px 6px 6px 6px rgba(0,0,0, 0.4)":"none" ;
+   $ul1.style.color =  sTop > 10 ? "black":"white" ;
+   $ul2.style.color =  sTop > 10 ? "black":"white" ;
+   $ul3.style.color =  sTop > 10 ? "black":"white" ;
+   $ul4.style.color =  sTop > 10 ? "black":"white" ;
+};
+
+
 </script>
 </body>
 </html>
