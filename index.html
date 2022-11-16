@@ -548,7 +548,7 @@ font-size: 17px
 }
 
 #diff {
-color: red;
+color: black;
 }
 
 .wholikes {
@@ -642,6 +642,53 @@ width: 255px;
 height: 180px;
 padding: 10px 8px;
 }
+
+
+
+@media (min-width: 1200px){
+
+
+
+  .right {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px 20px 15px;
+width: 68%;
+margin-left: 400px;
+margin-top: 60px;
+    }
+
+ .left {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      border: 1px solid #eee;
+      box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
+      gap: 1rem;
+      border-radius: 4px;
+      z-index: 5;
+      position: fixed;
+margin-top: 50px;
+width: 28%;
+height: 300vh;
+    }
+
+.story1 {
+      width: 181px;
+height: 260px;
+}
+
+.nav1 {
+      height: 63px;
+    }
+
+
+
+}
+
+
+
 
   </style>
 </head>
@@ -808,7 +855,7 @@ Joseph Oyebode
 <div class="likes">
 <div class="likes1">
 <ul>
-<li><button id="diff"><i class="bi-heart-fill"></i></button></li>
+<li><button id="diff"><i class="bi-heart"></i></button></li>
 <li><button><i class="bi-chat"></i></button></li>
 <li><button><i class="bi-share"></i></button></li>
 </ul>
@@ -873,7 +920,7 @@ Joseph Oyebode
 <div class="likes">
 <div class="likes1">
 <ul>
-<li><button id="diff"><i class="bi-heart-fill"></i></button></li>
+<li><button id="diff" onclick="document.getElementById('diff').innerHTML= 'liked'"><i class="bi-heart" id="love"></i></button></li>
 <li><button><i class="bi-chat"></i></button></li>
 <li><button><i class="bi-share"></i></button></li>
 </ul>
