@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<title>CSS fuul course </title>
+
+<style>
+
+body{
+background: black;
+background-size: cover;
+}
+
+.starter {
+width: 100%;
+}
+
+.navigation-bar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0px 40px;
+height: 70px;;
+background: black;
+
+}
+
+.logo h2 {
+color: white;
+}
+
+.logo h2 span {
+color: red;
+}
+
+.navigation-links ul{
+display: flex;
+gap: 2.5rem;
+align-items: center;
+}
+
+.navigation-links ul li{
+list-style-type: none;
+}
+
+.navigation-links ul li a{
+text-decoration: none;
+color: white;
+
+}
+
+form {
+border-radius: 5px;
+display: flex;
+flex-direction: row;
+gap: 1rem;
+align-items: center;
+}
+
+input {
+all: unset;
+font: 16px system ui;
+color: #fff;
+height: 100%;
+width:250px;
+padding: 6px 10px;
+border: 1px solid grey;
+border-radius: 20px;
+}
+
+::placeholder {
+color: #fff;
+font-family: sans-serif;
+}
+
+button {
+width: 40px;
+height: 40px
+border-radius: 50%;
+background: black;
+color: white;
+}
+
+.profile i {
+color: white;
+font-size: 25px;
+}
+
+.profile {
+width: 40px;
+height:37px;
+border-radius: 50%;
+border: 1px solid red;
+justify-content: center;
+text-align: center;
+padding-top: 4px;
+
+}
+
+.body-content {
+padding: 25px 40px;
+}
+
+.welcome {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.welcome-write {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+color: white;
+}
+
+.welcome-write h1{
+font-size: 35px;
+text-transform: capitalize;
+color: white;
+}
+
+.boxes {
+display: flex;
+flex-direction: row;
+gap: 1.5rem;
+}
+
+.box {
+background: white;
+width: 265px;
+height: 200px;
+background-image: linear-gradient(transparent,rgba(0,0,0,0.4),rgba(0,0,0,0.9)),url(moonlight.jpg);
+background-size: 320px;
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+align-items: center;
+border-radius: 10px;
+ box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.box p{
+font-weight: 600;
+text-align: left;
+padding: 5px 10px;
+margin-top: 110px;
+line-height: 23px;
+}
+
+.writer .writer-pic {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-image: url(frosh2.jpg);
+background-size: cover;
+}
+
+.writer {
+display: flex;
+gap: 0.7rem;
+align-items: center;
+padding: 2px 11px;
+}
+
+.writer-name {
+font-size: 12px;
+color: red;
+}
+
+.box2 {
+background-image: linear-gradient(transparent,rgba(0,0,0,0.4),rgba(0,0,0,0.9)), url(cadaver.png);
+background-size: cover;
+
+}
+
+.box2:hover {
+background-size: 250px;
+cursor: pointer;
+border: 1px solid tomato;
+}
+
+.box2:hover body{
+background: url(resident2.gif);
+}
+
+.box3:hover {
+background-size: 385px;
+cursor: pointer;
+}
+
+.box4:hover {
+background-size: 260px;
+cursor: pointer;
+}
+
+
+
+.writer .writer-pic2 {
+background-image: url(pic-2.png);
+}
+
+.box3 {
+background-image: linear-gradient(transparent,rgba(0,0,0,0.4),rgba(0,0,0,0.9)), url(croods.png);
+background-size: cover;
+}
+
+.writer .writer-pic3 {
+background-image: url(pic-3.png);
+}
+
+.box4 {
+background-image: linear-gradient(transparent,rgba(0,0,0,0.4),rgba(0,0,0,0.9)), url(save.png);
+background-size: cover;
+}
+
+.writer .writer-pic4 {
+background-image: url(pic-4.png);
+}
+
+.content-2 {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.split {
+display: flex;
+flex-direction: row;
+gap: 2rem;
+} 
+
+.slide {
+width: 400px;
+height: 200px;
+background-image: url(infinix.jpg);
+background-size: cover;
+clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.slide-right {
+width: 300px;
+}
+
+.slide-right p{
+font-size: 13px;
+}
+
+.slide-right h2{
+color: grey;
+}
+
+.advert {
+width: 100%;
+height: 350px;
+display: flex;
+}
+
+.shade {
+display: flex;
+justify-content: space-between;
+}
+
+.check {
+width: 100%;
+height: 350px;
+background-image:  url(moonlight.jpg);
+background-size: cover;
+background-repeat:  no-repeat;
+background-position: center;
+filter: blur(29px);
+opacity: 0.5;
+}
+
+.nocheck {
+width: 100%;
+height: 350px;
+background: transparent;
+position: absolute;
+display: flex;
+gap: 2rem;
+align-items: top;
+justify-content: center;
+padding-top: 30px;
+}
+
+.nocheck p{
+color: white;
+}
+
+.nocheck-head p{
+color: white;
+font-weight: 800;
+font-size: 45px;
+}
+
+.nocheck-content {
+display: flex;
+flex-direction: column;
+gap: 0.7rem;
+width: 35%;
+}
+
+.nocheck-writeup p{
+font-size: 12px;
+line-height: 18px;
+font-weight: 600;
+}
+
+.rating {
+}
+
+.rating ul{
+display: flex;
+gap: 1.5rem;
+}
+
+.rating ul li{
+list-style-type: none;
+}
+
+.rating ul li a{
+color: yellow;
+font-size: 20px;
+}
+
+.download {
+}
+
+.download ul{
+list-style-type: none;
+display: flex;
+gap: 2rem;
+}
+
+.download li a{
+text-decoration: none;
+}
+
+.watch {
+background-image: linear-gradient(white,tomato,tomato,tomato,red);
+width: 100%;
+font-size: 10px;
+font-weight: 800;
+padding: 8px 15px;
+}
+
+.down {
+background-image: linear-gradient(white,lightblue,lightblue,lightblue,blue);
+width: 100%;
+font-size: 10px;
+font-weight: 800;
+padding: 8px 15px;
+}
+</style>
+</head>
+<body>
+<section class="starter">
+<nav class="navigation-bar">
+<div class="logo">
+<h2>Exco<span>tech<span></h2>
+</div>
+
+<form id="form" role="search">
+<input type="search" id="query" name="q" placeholder="Search "
+arial-label="search through our site content">
+<button><i class="bi-search"></i></button>
+
+</form>
+<div class="navigation-links">
+<ul>
+<li> <a href="#">Home</a></li>
+<li> <a href="#">contact</a> </li>
+<li> <a href="#">Help <i class="bi-chevron-down"></i></a></li>
+<li> <a href="#">pages <i class="bi-chevron-down"></i></a></li>
+</ul>
+</div>
+
+<div class="profile">
+<i class="bi-person"></i>
+</div>
+
+</nav>
+</section>
+
+<section class="advert">
+<div class="check" id="check">
+</div>
+
+
+<div class="nocheck">
+
+<div class="nocheck-content">
+<div class="nocheck-head">
+<p id="para">Moonlight</p>
+</div>
+<div class="nocheck-writeup"> 
+<p>Jamal Keem, brought up in the city of newyork faces crisis as he sees the beginning of a new life out there it is me and<br> in a new world of guns and amour and every other things <i class="bi-star"></i>, I know<br> I am talking shit, dont mind me</p>
+</div>
+<div class="rating">
+<ul>
+<li> <a href="#"><i class="bi-star-fill"></i></a></li>
+<li> <a href="#"><i class="bi-star-fill"></i></a></li>
+<li> <a href="#"><i class="bi-star-fill"></i></a></li>
+<li> <a href="#"><i class="bi-star-fill"></i></a></li>
+<li> <a href="#"><i class="bi-star"></i></a></li>
+</ul>
+</div>
+
+<div class="download">
+<ul>
+<li> <a href="#"><button class="watch">Watch now</button></a></li>
+<li> <a href="#"><button class="down">Download</button></a></li>
+</ul>
+</div>
+</div>
+
+<div class="nocheck-image">
+<img src="moonlight.jpg" id="image">
+</div>
+</div>
+
+
+</section>
+
+<section class="body-content">
+<div class="welcome">
+
+<div class="shade">
+<div class="welcome-write">
+<h3>Trending <i class="bi-fire"></i></h3>
+</div>
+<div class="welcome-write">
+<h3>See all</h3>
+</div>
+</div>
+
+<div class="boxes">
+
+<div class="box">
+<p>Regina daniels found in the<br> mist of unwanted</p>
+<div class="writer">
+<div class="writer-pic">
+</div>
+<div class="writer-name">
+Joseph oyebode
+</div>
+</div>
+</div>
+
+
+<div class="box box2" onclick="document.getElementById('check').style = 'background-image: url(cadaver.png); background-size:1200px 1200px; filter: blur(20px); background-position: center;';
+document.getElementById('image').src= 'cadaver.png';
+document.getElementById('image').style= 'width: 185px; height: 270px;';
+document.getElementById('para').innerHTML= 'Cadaver'">
+<p>Jbl headsets set to perform <br> Briston weeks</p>
+<div class="writer">
+<div class="writer-pic writer-pic2">
+</div>
+<div class="writer-name">
+Fadilat samily
+</div>
+</div>
+</div>
+
+<div class="box box3" onclick="document.getElementById('check').style = 'background-image: url(croods.png); background-size:1200px 1200px; filter: blur(20px); background-position: center;';
+document.getElementById('image').src= 'croods.png';
+document.getElementById('image').style= 'width: 185px; height: 270px;';
+document.getElementById('para').innerHTML= 'The croods'">
+<p>Ariana grande releases 4th<br> studio albulm this year</p>
+<div class="writer">
+<div class="writer-pic writer-pic3">
+</div>
+<div class="writer-name">
+emmanuel testimony
+</div>
+</div>
+</div>
+
+<div class="box box4" onclick="document.getElementById('check').style = 'background-image: url(save.png); background-size:1200px 1200px; filter: blur(20px); background-position: center;';
+document.getElementById('image').src= 'save.png';
+document.getElementById('image').style= 'width: 185px; height: 270px;';
+document.getElementById('para').innerHTML= 'Day Shift'">
+<p>Regina daniels found in the<br> mist of unwanted</p>
+<div class="writer">
+<div class="writer-pic writer-pic4">
+</div>
+<div class="writer-name">
+Joseph oyebode
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="content-2">
+
+<div class="welcome-write">
+<h3>Hot this week <i class="bi-clock"></i></h3>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<script>
+const f = 
+document.getElementById('form');
+
+const q = 
+document.getElementById('query');
+
+const google = 
+'https:// 
+www.google.com/
+search?q=site%3A+';
+const site = 
+'google.com' ;
+
+function
+submitted(event) {
+
+  event.preventDefault();
+
+  const url = google 
+  + site + '+' + 
+  q.value;
+
+  const win = 
+  window.open(url,
+  '_blank');
+  win.focus();
+}
+
+
+f.addEventListener('submit' ,
+submitted);
+
+</script>
+
+</body>
+</html>

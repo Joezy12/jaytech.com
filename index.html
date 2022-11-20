@@ -157,7 +157,7 @@ align-items: center;
       display: flex;
       background: white;
       justify-content: space-between;
-      height: 50px;
+      height: 60px;
       align-items: center;
 box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 position: fixed;
@@ -278,6 +278,9 @@ background-attachment: fixed;
       padding-top: 10px;
     }
 
+.navlinks ul li:hover a{
+color: lightgreen;
+}
 
     .navlinks ul li a {
       color: black;
@@ -335,7 +338,6 @@ margin-top: 60px;
 
 .stories div:hover {
 opacity: 1;
-background-image: url(billie.gif);
 }
 
 .story1:hover p {
@@ -548,7 +550,7 @@ font-size: 17px
 }
 
 #diff {
-color: black;
+color: red;
 }
 
 .wholikes {
@@ -643,7 +645,27 @@ height: 180px;
 padding: 10px 8px;
 }
 
+.next {
+position: absolute;
+transform: translate(720px, 80px);
+}
 
+.nextbtn:hover{
+background: #eee;
+}
+
+.nextbtn {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: none;
+background-color: white;
+box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nextbtn i{
+font-size: 25px;
+}
 
 @media (min-width: 1200px){
 
@@ -710,7 +732,7 @@ height: 260px;
         <i class="bi-arrow-down-left-square-fill"> </i> Popular <span> <i class="bi-chevron-down"></i></span>
       </div>
       <div class="search">
-        <input type="search" placeholder="search" s/>
+        <input type="search" placeholder="search" />
       </div>
       <div class="navlinks">
         <ul>
@@ -733,13 +755,13 @@ height: 260px;
         <div class="pages">
           <span class="head">PAGES</span>
           <ul>
-            <li> <a href="#">
+            <li> <a href="csscourse.html">
                 <div class="pagespic1"></div>
                 <div class="write"> Laugh out loud</div>
               </a>
               <div class="btn"><button> <i class="bi-hand-thumbs-up-fill"></i></button></div>
             </li>
-            <li> <a href="#">
+            <li> <a href="csscourse.html">
                 <div class="pagespic1 pic2"></div>
                 <div class="write"> Billie eilish fans</div>
               </a>
@@ -803,6 +825,11 @@ height: 260px;
               <div class="profile profile4"></div>
               <p>World biggest city crashes</p>
             </div>
+
+           <div class="next">
+              <button class="nextbtn"><i class="bi-chevron-right"></i></button>
+            </div>
+
 
           </div>
 
