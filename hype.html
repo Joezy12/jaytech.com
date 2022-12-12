@@ -17,7 +17,13 @@ setTimeout("popout()",  "10000");
 <style>
 
 
-
+.login {
+background: linear-gradient(to  right,orange,tomato);
+width: 250px;
+height: 40px;
+border-radius: 20px;
+margin-left: 200px;
+}
 
 
 
@@ -36,6 +42,7 @@ input[type=email], input[type=password] {
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 0.4);
 }
 
  label {
@@ -88,15 +95,18 @@ span.psw {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
+  
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background: url(background.png);
+ background-size: contain;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 0.4);
 }
 
 /* The Close Button (x) */
@@ -194,6 +204,7 @@ background: white;
 box-shadow: 0 3px 7px rgb(0 0 0 / 0.1);
 border-bottom: 2px solid rgba(0,0,0, 0.1);
 z-index: 7;
+
 }
 
 .navi-1 {
@@ -264,7 +275,6 @@ height: 45px;
 background: #eef;
 border-radius: 5px 0px 0px 5px;
 padding: 2px 19px;
-box-shadow: 0 3px 20px rgb(0 0 0 / 0.3);
 }
 
 .search button{
@@ -273,7 +283,7 @@ height: 45px;
 border-radius: 0px 5px 5px 0px ;
 background: #eef;
 color: black;
-box-shadow: 0 3px 20px rgb(0 0 0 / 0.3);
+
 }
 
 .favourite button{
@@ -451,6 +461,9 @@ min-height: 45vh;
 align-items: center;
 justify-content: center;
 padding-top: 95px;
+overflow: hidden;
+background: url(pop.gif);
+background-size: cover;
 }
 
 .fresh p{
@@ -459,18 +472,66 @@ font-size: 16px;
 font-weight: 800;
 }
 
+@keyframes slide-in {
+0% { transform: translate(-200px, 0px); opacity: 0;}
+40% { transform: translate(-40px, 0px); opacity: 0.5;}
+70% {  transform: translate(-20px, 0px); opacity: 0.8;}
+100% {  transform: translate(0px, 0px); opacity: 1;}
+}
+
+@keyframes slide-down {
+0% { opacity: 0;}
+20% { opacity: 0.2;}
+40% {  opacity: 0.4;}
+60% {  opacity: 0.6;}
+80% {  opacity: 0.8;}
+100% {  transform: translate(0px, 0px); opacity: 1;}
+}
+
+@keyframes pop-out{
+0% { transform: scale(0.2);}
+20% { transform: scale(0.4);}
+40% {  transform: scale(0.6);}
+60% {  transform: scale(0.8);}
+100% {  transform: scale(1);}
+}
+
+
+@keyframes pop-up {
+0% { transform: translate(0, 100px); opacity: 1;}
+50% { transform: translate(0, 50px); opacity: 1;}
+100% {  transform: translate(0px, 0px); opacity: 1;}
+}
+
+
+@keyframes fade-out {
+0% { opacity: 0;}
+10% {  opacity: 0.1;}
+20% {  opacity: 0.2;}
+30% {  opacity: 0.3;}
+40% {  opacity: 0.4;}
+50% {  opacity: 0.5;}
+60% {  opacity: 0.6;}
+70% {  opacity: 0.7;}
+80% {  opacity: 0.8;}
+90% {  opacity: 0.9;}
+100% {  opacity: 1;}
+}
+
 .flourmill p {
 font-family: ;
 font-size: 33px;
 font-weight: 800;
 line-height: 43px;
 margin: 9px 0px;
+animation: slide-in 1.5s linear;
 }
 
 .off {
 font-family: ;
 font-size: 13px;
 font-weight: 800;
+animation: slide-down 5s linear;
 }
 
 
@@ -483,6 +544,7 @@ width: 100px;
 font-weight: 800;
 border-radius: 3px;
 background:  rgba(66,92,108, 1);
+animation: pop-up 1s linear;
 }
 
 .discovery-pic {
@@ -492,6 +554,7 @@ background: url(foodstuff2.png);
 background-repeat: no-repeat;
 background-size: 700px;
 background-position: top;
+animation: pop-out 1s linear;
 }
 
 .percent-container {
@@ -507,6 +570,7 @@ padding: 20px;
 display: flex;
 border-radius: 10px;
 transition: transform .2s;
+animation: fade-out 5s linear;
 }
 
 .percent-off:hover {
@@ -1607,7 +1671,7 @@ See all
   <form class="modal-content animate" action="/new.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="pic-1.png" alt="Avatar" class="avatar">
+      <img src="user.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -1617,7 +1681,7 @@ See all
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required><br>
         
-      <button type="submit">Login</button>
+      <button type="submit" class="login">Login</button><br>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
