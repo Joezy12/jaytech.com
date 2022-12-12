@@ -11,7 +11,24 @@ function popout() {
  document.getElementById('id01').style.display='block';
 }
 
+function change() {
+ document.getElementById('anime').style.animation='rotate 1s linear';
+ document.getElementById('anime2').style.animation='rotate 1s linear';
+ document.getElementById('anime3').style.animation='rotate 1s linear';
+ setTimeout("change()",  "4000");
+}
+
+function changeback() {
+ document.getElementById('anime').style.animation='none';
+ document.getElementById('anime2').style.animation='none';
+ document.getElementById('anime3').style.animation='none';
+ setTimeout("changeback()",  "7000");
+}
+
 setTimeout("popout()",  "10000");
+
+setTimeout("change()",  "6000");
+setTimeout("changeback()",  "9000");
 </script>
 
 <style>
@@ -503,6 +520,17 @@ font-weight: 800;
 100% {  transform: translate(0px, 0px); opacity: 1;}
 }
 
+@keyframes rotate {
+20%{ transform: scale(0.6); border-radius: 30%;}
+40%{ transform: scale(0.2); border-radius: 50%;}
+50%{ transform: scale(0); border-radius: 60%;}
+70%{ transform: scale(0.2); border-radius: 50%;}
+80%{ transform: scale(0.6); border-radius: 30%;}
+90%{ transform: scale(0.8); border-radius: 10%;}
+100%{ transform: scale(1); border-radius: 0px;}
+}
+}
+
 
 @keyframes fade-out {
 0% { opacity: 0;}
@@ -570,7 +598,7 @@ padding: 20px;
 display: flex;
 border-radius: 10px;
 transition: transform .2s;
-animation: fade-out 5s linear;
+animation: none;
 }
 
 .percent-off:hover {
@@ -938,6 +966,98 @@ font-size: 25px;
 text-align: center;
 }
 
+.check-this {
+margin-top: 500px;
+padding: 0px 70px;
+margin-bottom: 20px;
+}
+
+
+.selling {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+background: rgba(38,58,150,1);
+width: 100%;
+height: 180px;
+}
+
+.begin-selling {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+padding: 0px 150px;
+}
+
+.start-selling p {
+font-size: 23px;
+color: white;
+font-weight: 800;
+line-height: 24px;
+}
+
+.start-selling p span{
+font-size: 11px;
+opacity: 0.6;
+color: white;
+font-weight: 800;
+}
+
+.email-us {
+display: flex;
+gap: 2rem;
+}
+
+
+
+.email-us input{
+width: 200px;
+height: 35px;
+padding: 0px 15px;
+border-radius: 7px;
+}
+
+.email-us button{
+width: 80px;
+height: 35px;
+padding: 0px 15px;
+border-radius: 7px;
+}
+
+
+.chuck1 {
+width: 8%;
+height: 60px;
+background: url(chuck1.png);
+background-repeat: no-repeat;
+background-size: contain;
+margin-left: -900px;
+}
+
+
+.chuck2 {
+width: 8%;
+height: 60px;
+background: url(chuck2.png);
+background-repeat: no-repeat;
+background-size: contain;
+margin-left: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1140,7 +1260,7 @@ new
 </section>
 
 <section class="percent-container">
-<div class="percent-off">
+<div class="percent-off" id="anime">
 <div class="percent-left">
 <div class="discount-price">
 <p>10% OFF</p>
@@ -1149,7 +1269,7 @@ new
 <p>knorr chicken</p>
 </div>
 <div class="shop-small">
-<button>Shop Now </button>
+<button onclick"change()">Shop Now </button>
 </div>
 </div>
 <div class="percent-right">
@@ -1157,7 +1277,7 @@ new
 </div>
 
 
-<div class="percent-off percent-off2">
+<div class="percent-off percent-off2" id="anime2">
 <div class="percent-left">
 <div class="discount-price discount-price2">
 <p>30% OFF</p>
@@ -1174,7 +1294,7 @@ new
 </div>
 
 
-<div class="percent-off percent-off3">
+<div class="percent-off percent-off3" id="anime3">
 <div class="percent-left">
 <div class="discount-price">
 <p>5% OFF</p>
@@ -1244,6 +1364,8 @@ See all
 </div>
 
 </section>
+
+<img src="school.gif" style="margin-left: 60px; margin-top: 40px; width: 90%; border-radius: 5px;">
 
 
 <section class="top-product">
@@ -1639,7 +1761,27 @@ See all
 </section>
 
 
+<section class="check-this">
+<div class="selling">
 
+<div class="chuck1">
+</div>
+<div class="begin-selling">
+<div class="start-selling">
+<p>Advertise with us online for free<br> <span> we will help you make the most of your restaurant online</p>
+</div>
+<div class= "email-us">
+<input type="text" placeholder="Email us"> <button>Suscribe</button>
+</div>
+</div>
+
+<div class="chuck2">
+</div>
+
+
+</div>
+
+</section>
 
 
 
