@@ -1,1064 +1,1707 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>learn css</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <style>
-
-body {
-background: rgba(123,187,251, 0.2);
+<meta charset="UTF-8" name="viewport">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<title>CSS fuul course </title>
+<script>
+function popout() {
+ document.getElementById('id01').style.display='block';
 }
 
-    .house {
-      display: flex;
-      gap: 2rem;
-    }
+setTimeout("popout()",  "10000");
+</script>
 
-    .left {
-      background: white;
-      display: flex;
-      flex-direction: column;
-      width: 35%;
-      border: 1px solid #eee;
-      box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
-      gap: 1rem;
-      border-radius: 4px;
-      z-index: 5;
-      position: fixed;
-margin-top: 50px;
-width: 25%;
-height: 300vh;
-    }
+<style>
 
-    .pages {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      padding: 20px 15px
-    }
+
+.login {
+background: linear-gradient(to  right,orange,tomato);
+width: 250px;
+height: 40px;
+border-radius: 20px;
+margin-left: 200px;
+}
 
 
 
-    .pages .head {
-      opacity: 1;
-      font-size: 17px;
-      font-weight: 800;
-    }
-
-    .pages ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .pages ul li {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .pages ul li:hover {
-      background: lightgrey;
-      border-radius: 10px;
-    }
-
-
-    .pages ul li button {
-      padding: 0px 0px;
-      border-radius: 50px;
-      border: none;
-      background: #eee;
-      color: rgb(92,243, 1);
-      font-weight: 600;
-width: 35px;
-height: 35px;
-text-align: center;
-align-items: center;
-    }
-
-    .pages ul li button i {
-      font-size: 20px;
-    }
-
-    .pages ul li a {
-      display: flex;
-      gap: 1rem;
-      text-decoration: none;
-      color: black;
-      align-items: center;
-    }
-
-    .pages .pagespic1 {
-      width: 30px;
-      height: 30px;
-      background-image: url(love.jpg);
-      background-size: cover;
-      border-radius: 50%;
-    }
-
-    .pages .pic2 {
-      background-image: url(pic-4.png);
-    }
-
-    .pages .pic3 {
-      background-image: url(robotics.jpg);
-    }
-
-    .pages .pic4 {
-      background-image: url(robothouse.jpg);
-    }
-
-    .pages .write {
-      font-size: 14px;
-    }
-
-    .request {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-      padding: 1px 15px 15px 15px;
-    }
-
-    .popular {
-      font-size: 15px;
-    }
-
-    .popular span {
-      margin-left: 30px;
-    }
-
-    .popular:hover {
-      border: 1px solid grey;
-      border-radius: 10px;
-    }
-
-    .search input {
-      width: 300px;
-      height: 35px;
-      padding: 0px 10px;
-      border-radius: 20px;
-      border: 0.5px solid lightgrey;
-      background: #eef;
-    }
-
-    .search input:hover {
-      background: white;
-      border: 0.5px solid lightgreen;
-      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    }
 
 
 
-    .nav1 {
-      display: flex;
-      background: white;
-      justify-content: space-between;
-      height: 60px;
-      align-items: center;
-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-position: fixed;
+
+
+/* Full-width input fields */
+input[type=email], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0px 0px 80px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 0.4);
+}
+
+ label {
+ text-align: center;
+ margin-left: 30px;
+}
+
+/* Set a style for all buttons */
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background: url(background.png);
+ background-size: contain;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgb(0 0 0 / 0.4);
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+background: white;
+background-size: cover;
+color: rgba(66,92,108, 1);
+}
+
+.starter {
 width: 100%;
-z-index: 9;
-    }
-
-    .nav {
-      width: 99.99%;
-      height: 200vh;
-      background-size: cover;
-      background: transparent;
-      background-repeat: no-repeat;
-      background-origin: border-box;
-      background-position: center;
-      position: relative;
-background-attachment: fixed;
-    }
-
-    .navlinks ul li button {
-      color: lightgreen;
-      font-size: 15px;
-      background: white;
-      text-align: center;
-      padding: 5px 5px;
-      border: 2px solid lightgreen;
-      border-radius: 20px;
-      justify-content: center;
-      width: 100px;
-      transform: none;
-      font-family: inherit;
-      margin-top: -10px;
-      transition: all 0.2s;
-    }
-
-    .navlinks ul li button:hover {
-      background: lightgreen;
-      color: white;
-    }
-
-    .navlinks ul li span {
-      color: red;
-      font-size: 10px;
-      font-weight: 700;
-      z-index: 3;
-      margin-left: -10px;
-      margin-top: -20px;
-      background: white;
-    }
-
-    .navlinks ul li i {
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    .nav2 {
-      width: 99.99%;
-      height: 10vh;
-      background: white;
-      display: flex;
-      gap: 4rem;
-      align-items: center;
-      color: white;
-    }
-
-    .nav h1 {
-      color: white;
-      font-size: 40px;
-      text-align: center;
-      padding: 70px 70px 10px 70px;
-      ;
-    }
-
-    .nav p {
-      color: white;
-      line-height: 25px;
-      text-align: center;
-      padding: 10px 10px;
-    }
-
-
-
-    .logo {
-      display: flex;
-      padding: 3px 0px 3px 14px;
-    }
-
-    .logo .logotext {
-      color: lightgreen;
-      font-size: 22px;
-      font-weight: 600;
-      margin-left: 10px;
-    }
-
-    .logo .logoimg {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      overflow: hidden;
-      background-image: url(frosh.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    .navlinks {
-      padding: 10px 20px;
-    }
-
-    .navlinks ul {
-      display: flex;
-      gap: 3rem;
-    }
-
-    .navlinks ul li {
-      color: black;
-      list-style-type: none;
-      background: #fff;
-      padding-top: 10px;
-    }
-
-.navlinks ul li:hover a{
-color: lightgreen;
 }
 
-    .navlinks ul li a {
-      color: black;
-      text-decoration: none;
-    }
+.navigation-bar {
+display: flex;
+flex-direction: column;
+padding: 20px 40px;
+padding-top: 30px;
+gap: 2.3rem;
+background: white;
+box-shadow: 0 3px 7px rgb(0 0 0 / 0.1);
+border-bottom: 2px solid rgba(0,0,0, 0.1);
+z-index: 7;
 
-    .loadcontainer {
-      width: 99.5%;
-      height: 3px;
-      display: none;
-      overflow: hidden;
-    }
+}
 
-    .loader {
-      width: 99.5%;
-      height: 10px;
-      background: lightgreen;
-      animation: none;
-      border-radius: 1px;
-    }
+.navi-1 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px 15px;
+}
 
-    @keyframes load {
-      0% {
-        width: 0;
-      }
+.navi-2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px 15px 5px 26px;
+}
 
-      70% {
-        width: 60%;
-      }
+.logo {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+margin-right: 10px;
+}
 
-      100% {
-        width: 100%;
-      }
-    }
+.logo p{
+color: orange;
+font-weight: 800;
+font-size: 15px;
+}
 
-    .right {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 40px 20px 15px;
-width: 68%;
-margin-left: 298px;
-margin-top: 60px;
-    }
+.logo p span{
+color: rgba(66,92,108, 1);
+font-family: roboto ;
+font-size: 16px;
+opacity: 0.7;
+}
 
-    .home {
-      display: flex;
-      flex-direction: column;
-    }
+.logo img{
+width: 45px;
+}
+.location {
+width: 252px;
+}
 
-    .stories {
-      display: flex;
-      gap: 2rem;
-      
-    }
+.location input {
+border: none;
+}
 
-.stories div:hover {
+::placeholder{
+color: black;
+font-weight: 600;
+color: grey;
+}
+
+.location p {
+font-family: ;
+font-size: 14px;
+font-weight: 600;
 opacity: 1;
 }
 
-.story1:hover p {
-transform: translate(0px, 120px);
+.search {
+width: 400px;
 }
 
-    .story1 {
-      width: 160px;
-      height: 240px;
-      background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(dave.jpg);
-      background-size: cover;
-      background-position: center;
-      border-radius: 15px;
-     transition: 0.5s;
-    }
-
-    .story1 p {
-      transform: translate(0px, 100px);
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 17px;
-    }
-
-    .story2 {
-      background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url(pic-2.png);
-    }
-
-    .story3 {
-      background-image: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(robotics.png);
-    }
-
-    .story1 .profile {
-      width: 30px;
-      height: 30px;
-      background-image: url(frosh2.jpg);
-      background-size: cover;
-      border-radius: 50%;
-      border: 5px solid lightgreen;
-      overflow: hidden;
-      margin: 10px 15px;
-    }
-
-    .story1 .profile2 {
-      background-image: url(pic-3.png);
-    }
-
-    .story1 .profile3 {
-      background-image: url(pic-4.png);
-    }
-
-    .story1 .profile4 {
-      background-image: url(pic-1.png);
-    }
-
-.categories {
-background: white;
-padding: 15px 25px;
-border-radius: 20px;
-box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
-margin-top: 30px;
-border: 0.2px solid lightgrey;
-display: flex;
-flex-direction: column;
-gap: 0.7rem;
-}
-
-.cathead {
-color: black;
-opacity: 0.6;
-}
-
-.maincat {
-display: flex;
-justify-content: space-between;
-}
-
-.maincat ul {
-display: flex;
-gap: 1rem;
-}
-
-.maincat ul li{
-list-style-type: none;
+.search input{
+width: 350px;
+height: 45px;
 background: #eef;
-padding: 7px 15px;
-border-radius: 20px;
+border-radius: 5px 0px 0px 5px;
+padding: 2px 19px;
 }
 
-.maincat ul li a {
-color: lightgreen;
-text-decoration: none;
-font-size: 13px;
-font-weight: 600;
-} 
+.search button{
+width: 40px;
+height: 45px;
+border-radius: 0px 5px 5px 0px ;
+background: #eef;
+color: black;
 
-.maincat ul li a i{
+}
+
+.favourite button{
+background: white;
+color: black;
 font-size: 20px;
 }
 
-#nobackground {
-background: white;
+.sales {
+display: flex;
+gap: 1rem;
+align-items: center;
 }
 
-.maincat ul li  .no {
-color: black;
+
+.sales .iconic{
+transform: translate(0px, -6px);
 }
 
-.see a {
-text-decoration: none;
-color: black;
+
+.sales .number{
+transform: translate(-14px,0px);
+z-index: 3;
+}
+
+.mycart i{
+font-size: 18px;
+}
+
+.mycart span {
+font-size: 8px;
+background: lightgreen;
+color: white;
+padding: 3px 8px;
+border-radius: 50%;
+transform: translate(100px,20px);
+}
+
+.amount p{
 font-size: 13px;
 font-weight: 600;
 }
 
-.see {
-padding-top: 10px;
+.amount p span{
+font-size: 10px;
+font-weight: 600;
+color: lightgreen;
 }
 
-.posts {
-background: white;
+.myprofile {
 display: flex;
 gap: 1rem;
-flex-direction: column;
-padding:20px 15px;
-margin-top: 25px;
-border-radius: 20px;
-box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
 }
 
-.postline1 {
-display: flex;
-justify-content: space-between;
-padding: 0px 14px;
-}
-
-.postline1 a{
-text-decoration: none;
-color: black;
-}
-
-.postcover {
-display: flex;
-gap: 1rem;
-align-items: center;
-}
-
-.profilepic {
-width: 45px;
-height: 45px;
-background-image: url(pic-4.png);
+.myprofile-pic {
+width: 20px;
+height: 20px;
+background: url(pic-3.png);
 background-size: cover;
 border-radius: 50%;
-border: 4px solid linear-gradient( red, blue, green);
 }
 
-.info {
+.left-side {
 display: flex;
-flex-direction: column;
-gap: 0.1rem;
-
+gap: 3rem;
+align-items: center;
+justify-content: space-between;
 }
 
-.name {
-font-size: 14px;
+.categories {
+display: flex;
+gap: 1rem;
+align-items: center;2
+width: 200px;
+}
+
+.cat-box i {
+font-size: 17px;
+}
+
+.cat-write p {
+font-size: 12px;
 font-weight: 600;
 }
 
-.location {
+.cat-dropdown {
+margin-left: 43px;
+}
+
+.cat-dropdown i{
 font-size: 11px;
+}
+
+.new-product p {
+font-size: 12px;
 font-weight: 600;
-opacity: 0.3;
 }
 
-.dotun i{
-font-size: 26px;
+
+.best-sales p {
+font-size: 12px;
+font-weight: 600;
+margin-top: -16px;
 }
 
-.dotun {
-margin-left: -20px;
+
+.promotion p {
+font-size: 12px;
+font-weight: 600;
 }
 
-.postpic {
-width: 720px;
-height: 400px;
-background-image: url(canyon.png);
-background-size: cover;
-border-radius: 20px;
-background-repeat: no-repeat;
+
+.offers p {
+font-size: 12px;
+font-weight: 600;
+margin-top: -16px;
 }
 
-.likes {
-display: flex;
-justify-content: space-between;
-padding: 1px 30px;
+.new {
+background: tomato;
+color: white;
+font-size: 10px;
+font-weight: 800;
+border-radius: 7px;
+width: 33px;
+text-align: center;
+transform: translate(50px, -15px);
 }
 
-.likes1 ul{
-display: flex;
-gap: 1.5rem;
+.hot {
+background: lightgreen;
+color: white;
+font-size: 10px;
+font-weight: 800;
+border-radius: 7px;
+width: 33px;
+text-align: center;
+transform: translate(33px, -15px);
 }
 
-.likes1 ul li{
-list-style-type: none;
-}
-
-.likes1 ul li button{
- border: none;
-background: transparent;
-font-size: 17px
-}
-
-#diff {
-color: red;
-}
-
-.wholikes {
-display: flex;
-padding: 0px 25px;
+.festival {
 align-items: center;
+padding: 9px 15px 9px 15px;
+background: rgb(255, 185, 55);
+border-radius: 5px;
 }
 
-.wholikespic ul{
-display: flex;
-gap: 0px;
+.festival p{
+font-size: 11px;
+font-weight: 800;
+opacity: 1;
 }
 
-.wholikespic ul li{
-list-style-type: none;
-width: 25px;
-height: 25px;
-border-radius: 50%;
+.festival p i{
+font-size: 13px;
+}
+
+button {
+width: 40px;
+height: 40px;
 background: black;
+color: white;
 }
 
-.wholikespic ul .whopic1 {
-background-image: url(pic-3.png);
-background-size: contain;
-border: 2px solid white;
-}
 
-.wholikespic ul .whopic2 {
-background-image: url(pic-2.png);
-transform: translate(-10px, 0px);
-z-index: 2;
-}
 
-.wholikespic ul .whopic3 {
-background-image: url(pic-4.png);
-transform: translate(-18px, 0px);
-z-index: 3;
-}
-
-.wholikeswrite {
-color: grey;
-font-size: 14px;
-font-family: Helvetica;
-opacity: 1;
-}
-
-.wholikeswrite span{
-color: black;
-font-weight: 600;
-opacity: 1;
-}
-
-.write3 { 
-padding: 0px 45px 0px 25px;
-}
-
-.profilepic2 {
-background-image: url(pic-1.png);
-}
-
-.postpic2 {
-background-image: url(regina.png);
-}
-
-.postpic3 {
-background-image: url(billie.gif);
-}
-
-.explore {
+.body-content {
+padding: 7px 55px;
 display: flex;
-flex-direction: column;
 }
 
-.explorehead {
-display: flex;
+.discovery {
+width: 40%;
+min-height: 45vh;
 align-items: center;
-justify-content: space-between;
-padding: 0px 19px;
+justify-content: center;
+padding-top: 95px;
+overflow: hidden;
+background: url(pop.gif);
+background-size: cover;
 }
 
-.explorehead h4{
-opacity: 0.3;
-}
-
-.explorehead h3{
+.fresh p{
+color: rgba(137, 211, 150, 1);
+font-size: 16px;
 font-weight: 800;
 }
 
-.explore img{
-width: 255px;
-height: 180px;
-padding: 10px 8px;
+@keyframes slide-in {
+0% { transform: translate(-200px, 0px); opacity: 0;}
+40% { transform: translate(-40px, 0px); opacity: 0.5;}
+70% {  transform: translate(-20px, 0px); opacity: 0.8;}
+100% {  transform: translate(0px, 0px); opacity: 1;}
 }
 
-.next {
-position: absolute;
-transform: translate(720px, 80px);
+@keyframes slide-down {
+0% { opacity: 0;}
+20% { opacity: 0.2;}
+40% {  opacity: 0.4;}
+60% {  opacity: 0.6;}
+80% {  opacity: 0.8;}
+100% {  transform: translate(0px, 0px); opacity: 1;}
 }
 
-.nextbtn:hover{
-background: #eee;
+@keyframes pop-out{
+0% { transform: scale(0.2);}
+20% { transform: scale(0.4);}
+40% {  transform: scale(0.6);}
+60% {  transform: scale(0.8);}
+100% {  transform: scale(1);}
 }
 
-.nextbtn {
-width: 50px;
-height: 50px;
+
+@keyframes pop-up {
+0% { transform: translate(0, 100px); opacity: 1;}
+50% { transform: translate(0, 50px); opacity: 1;}
+100% {  transform: translate(0px, 0px); opacity: 1;}
+}
+
+
+@keyframes fade-out {
+0% { opacity: 0;}
+10% {  opacity: 0.1;}
+20% {  opacity: 0.2;}
+30% {  opacity: 0.3;}
+40% {  opacity: 0.4;}
+50% {  opacity: 0.5;}
+60% {  opacity: 0.6;}
+70% {  opacity: 0.7;}
+80% {  opacity: 0.8;}
+90% {  opacity: 0.9;}
+100% {  opacity: 1;}
+}
+
+.flourmill p {
+font-family: ;
+font-size: 33px;
+font-weight: 800;
+line-height: 43px;
+margin: 9px 0px;
+animation: slide-in 1.5s linear;
+}
+
+.off {
+font-family: ;
+font-size: 13px;
+font-weight: 800;
+animation: slide-down 5s linear;
+}
+
+
+.shop-big {
+margin-top: 15px;
+}
+
+.shop-big button{
+width: 100px;
+font-weight: 800;
+border-radius: 3px;
+background:  rgba(66,92,108, 1);
+animation: pop-up 1s linear;
+}
+
+.discovery-pic {
+width: 60%;
+min-height: 45vh;
+background: url(foodstuff2.png);
+background-repeat: no-repeat;
+background-size: 700px;
+background-position: top;
+animation: pop-out 1s linear;
+}
+
+.percent-container {
+display: flex;
+gap: 3rem;
+padding: 20px 50px;
+}
+
+.percent-off {
+background: #ffe;
+width: 100%;
+padding: 20px;
+display: flex;
+border-radius: 10px;
+transition: transform .2s;
+animation: fade-out 5s linear;
+}
+
+.percent-off:hover {
+transform: scale(1.06);
+}
+
+.percent-off2 {
+background: rgba(247, 247, 247, 1);
+}
+
+.percent-off3 {
+background: rgba(242, 255, 244, 0.6);
+}
+
+.percent-left {
+min-height: 16vh;
+margin-top: 10px;
+}
+
+
+.discount-price p{
+font-size: 20px;
+font-weight: 600;
+color: rgba(34, 196, 90, 0.7);;
+margin: 4px 0px;
+}
+
+.discount-price2 p{
+color: tomato;
+}
+
+.discount-price3 p{
+color: tomato;
+}
+
+.discount-name p{
+font-size: 20px;
+font-weight: 600;
+}
+
+.shop-small button{
+width: 100px;
+height: 27px;
+font-size: 11px;
+font-weight: 1000;
+border-radius: 3px;
+background: rgb(255, 185, 55);
+margin-top: 20px;
+color: rgba(66,92,108, 1);
+}
+
+.shop-small2 button{
+background: rgba(66,92,108, 1);
+color: white;
+}
+
+.shop-small3 button{
+background: rgba(137, 211, 150, 1);
+color: white;
+}
+
+.percent-right {
+width: 180px;
+background: url(knorr.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.percent-right2 {
+background: url(superpack2.png);
+background-repeat: no-repeat;
+background-size: 240px;
+background-position: center;
+}
+
+
+
+.percent-right3 {
+background: url(flour1.png);
+background-repeat: no-repeat;
+background-size: 150px;
+background-position: center;
+}
+
+
+.browse {
+padding: 2px 65px;
+}
+
+.browse-heading {
+font-family: ;
+font-size: 33px;
+font-weight: 800;
+line-height: 43px;
+margin: 40px 0px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.right-head {
+font-size: 15px;
+color: orange;
+}
+
+
+.right-head2 {
+display: flex;
+gap: 2rem;
+}
+
+.butt-1 button{
+width: 30px;
+height: 30px;
+color: black;
+background: white;
 border-radius: 50%;
-border: none;
-background-color: white;
-box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, 0.5);
+box-shadow: 0 4px 25px rgb(0 0 0 / 0.4);
+text-align: center;
 }
 
-.nextbtn i{
+
+.butt-2 button{
+color: white;
+background: rgba(66,92,108, 1);;
+}
+
+.distributing-products {
+display: flex;
+gap: 3rem;
+margin-top: 30px;
+}
+
+.distributor {
+width: 100%;
+height: 17vh;
+background: rgba(255, 177, 43, 1);
+border-radius: 10px;
+box-shadow: 0 3px 20px rgb(0 0 0 / 0.7);
+}
+
+.distributor2 {
+background: rgba(2, 144, 70, 1);
+
+}
+
+.distributor3 {
+background: rgba(101, 93, 176, 1);
+}
+
+.distributor4 {
+background: rgba(47, 72, 88, 1);
+}
+
+.distri-top {
+padding: 5px 16px;
+position: absolute;
+}
+
+.distri-top p{
+color: white;
+font-weight: 800;
+font-size: 19px;
+}
+
+.distri-top p span{
+color: white;
+font-weight: 800;
+font-size: 13px;
+}
+
+.distri-bottom {
+border-radius: 10px;
+height: 17vh;
+background: url(indomiepics2.png);
+background-size: 200px;
+background-repeat: no-repeat;
+background-position: 110px 25px;
+}
+
+.distri-bottom2 {
+background: url(kaptain.jpg);
+background-size: 200px;
+background-repeat: no-repeat;
+background-position: 110px 50px;
+}
+
+
+.distri-bottom3 {
+background: url(spag.png);
+background-size: 200px;
+background-repeat: no-repeat;
+background-position: 110px 50px;
+}
+
+
+.distri-bottom4 {
+background: url(titus.png);
+background-size: 200px;
+background-repeat: no-repeat;
+background-position: 110px 50px;
+}
+
+.top-product {
+padding: 2px 65px;
+}
+
+.top-product2 {
+padding: 2px 65px;
+margin-top: 400px;
+}
+
+
+.the-product {
+display: flex;
+gap: 3rem;
+overflow: auto;
+width: 100%;
+position: absolute;
+
+}
+
+
+
+.products {
+min-width: 245px;
+height: 390px;
+border: 2px solid lightgrey;
+border-radius: 15px;
+padding: 15px 14px;
+}
+
+.the-like {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.off button {
+width: 65px; 
+height: 23px;
+padding: 0px 10px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: 600;
+background: tomato;
+}
+
+
+.love i {
+font-size: 20px;
+font-weight: 800;
+}
+
+.the-image {
+width: 100%;
+height: 150px;
+background: url(laziz.jpg);
+background-size: 170px;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.the-image2 {
+background: url(partyjollof.jpg);
+background-size: 180px;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.the-image3 {
+background: url(Semovita1.jpg);
+background-size: 200px;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.the-image4 {
+background: url(readystew3.jpg);
+background-size: 120px;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.the-image5 {
+background: url(geisha.png);
+background-size: 200px;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+
+.the-name span{
+font-size: 12px;
+font-weight: 800;
+opacity: 0.5;
+}
+
+.the-name p{
+font-size: 16px;
+font-weight: 1000;
+}
+
+
+
+.the-price {
+font-size: 20px;
+font-weight: 1000;
+color: black;
+margin-top: 15px;
+}
+
+
+
+.the-price span{
+font-size: 13px;
+color: grey;
+
+}
+
+.amount-cover {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+
+.the-amount {
+display: flex;
+align-items: center;
+}
+
+.the-amount button{
+background: white;
+width: 30px;
+height: 30px;
+color: black;
+border: 1px solid lightgrey;
+}
+
+.the-amount input{
+width: 50px;
+height: 30px;
+text-align: center;
+background: #eee;
+border: 1px solid lightgrey;
+}
+
+.amount-button {
+width: 40px;
+height: 40px;
+background: orange;
+border-radius: 50%;
+padding: 0px 0px 0px 8px;
+}
+
+.amount-button i{
+color: white;
 font-size: 25px;
-}
-
-@media (min-width: 1200px){
-
-
-
-  .right {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 40px 20px 15px;
-width: 68%;
-margin-left: 400px;
-margin-top: 60px;
-    }
-
- .left {
-      background: white;
-      display: flex;
-      flex-direction: column;
-      width: 35%;
-      border: 1px solid #eee;
-      box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
-      gap: 1rem;
-      border-radius: 4px;
-      z-index: 5;
-      position: fixed;
-margin-top: 50px;
-width: 28%;
-height: 300vh;
-    }
-
-.story1 {
-      width: 181px;
-height: 260px;
-}
-
-.nav1 {
-      height: 63px;
-    }
-
-
-
+text-align: center;
 }
 
 
 
 
-  </style>
+
+
+
+
+
+
+
+@media (max-height: 870px){
+.location {
+width: 252px;
+}
+
+.location input {
+}
+
+::placeholder{
+font-size: 12px;
+}
+
+.location p {
+font-size: 12px;
+}
+
+.search {
+width: 390px;
+}
+
+.search input{
+width: 320px;
+height: 42px;
+}
+
+.search button{
+height: 42px;
+}
+
+.discovery-pic {
+width: 60%;
+min-height: 48vh;
+background: url(foodstuff2.png);
+background-repeat: no-repeat;
+background-size: 600px;
+background-position: top;
+}
+
+.percent-container {
+margin-top: 25px;
+}
+
+.distributor {
+height: 20vh;
+}
+
+.distri-bottom {
+height: 20vh;
+}
+
+
+
+.body-content {
+padding: 7px 55px;
+display: flex;
+min-height: 50vh;
+}
+
+
+
+}
+
+
+
+
+
+
+</style>
 </head>
-<div class="loadcontainer" id="load">
-  <div class="loader" id="load2">
-  </div>
+<body >
+<section class="starter">
+<nav class="navigation-bar">
+
+<div class="navi-1">
+<div class="logo">
+<img src="Tlogo2.png" alt="logo"><p>T - MAMA <br> <span>Superstores</span></p>
 </div>
 
-<body>
-  <section class="nav">
-
-    <nav class="nav1">
-      <div class="logo">
-        <div class="logoimg"></div>
-        <div class="logotext">excotech</div>
-      </div>
-
-      <div class="popular">
-        <i class="bi-arrow-down-left-square-fill"> </i> Popular <span> <i class="bi-chevron-down"></i></span>
-      </div>
-      <div class="search">
-        <input type="search" placeholder="search" />
-      </div>
-      <div class="navlinks">
-        <ul>
-
-          <li> <a href="hype.html"><i class="bi-house"></i><span>1</span></a> </li>
-          <li> <a href="#"><i class="bi-bell"></i></a> </li>
-          <li> <a href="#"><i class="bi-play-btn"></i></a> </li>
-          <li> <a href="#"><i class="bi-messenger"></i></a> </li>
-          <li> <a href="#"><button
-                onclick="document.getElementById('load').style = 'display: block; animation: load 3s ease-out 2' ">Log
-                In</button></a> </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="house">
-
-      <div class="left">
-
-        <div class="pages">
-          <span class="head">PAGES</span>
-          <ul>
-            <li> <a href="csscourse.html">
-                <div class="pagespic1"></div>
-                <div class="write"> Laugh out loud</div>
-              </a>
-              <div class="btn"><button> <i class="bi-hand-thumbs-up-fill"></i></button></div>
-            </li>
-            <li> <a href="csscourse.html">
-                <div class="pagespic1 pic2"></div>
-                <div class="write"> Billie eilish fans</div>
-              </a>
-              <div class="btn"><button> <i class="bi-person-plus"></i></button></div>
-            </li>
-            <li> <a href="#">
-                <div class="pagespic1 pic3"></div>
-                <div class="write"> Tech gurus club</div>
-              </a>
-              <div class="btn"><button> <i class="bi-person-plus"></i></button></div>
-            </li>
-            <li> <a href="#">
-                <div class="pagespic1 pic4"></div>
-                <div class="write"> Comedians fest greet</div>
-              </a>
-              <div class="btn"><button> <i class="bi-person-plus"></i></button></div>
-            </li>
-            <li> <a href="#">
-                <div class="icon"><i class="bi-three-dots"></i></div>
-                <div class="write"> See More</div>
-              </a></li>
-          </ul>
-        </div>
-
-<div class="explore"> 
-
-<div class="explorehead">
-<h3>Explore</h3>
-<h4> See all</h4>
+<div class="location">
+<p> Delivery to <i class="bi-geo-alt"> </i> <input type="text" name="location" value=" 16 Iludun street, off t.." />
 </div>
 
-<img src="hands.png">
+<div class="search">
+<input type="search"  placeholder="what are you looking for?"><button><i class="bi-search"></i></button>
+</div>
+
+<div class="favourite">
+<button> <i class="bi-heart"></i></button>
+</div>
+
+<div class="sales">
+<div class="mycart">
+<div class="number">
+<span>1</span>
+</div>
+<div class="iconic">
+<i class="bi-cart"></i>
+</div>
+</div>
+<div class="amount">
+<p>My Cart <br> <span> $ 45,500 </span>
+</div>
+<div class="check-sales">
+<i class="bi-chevron-down"></i>
+</div>
+</div>
+
+<div class="myprofile">
+<div class="myprofile-pic">
+</div>
+<div class="myprofile-name">
+<p>Joseph 55 73 81</p>
+</div>
+</div>
+
 
 </div>
-        
 
-
-      </div>
-
-      <div class="right">
-        <div class="home">
-
-          <div class="stories">
-
-            <div class="story1">
-              <div class="profile"></div>
-              <p>tech is fun with Jbl, hop on now</p>
-            </div>
-
-            <div class="story1 story2">
-              <div class="profile profile2"></div>
-              <p>Beauty is in the eyes of the beholder</p>
-            </div>
-
-            <div class="story1 story3">
-              <div class="profile profile3"></div>
-              <p>World biggest city crashes</p>
-            </div>
-
-            <div class="story1 story4">
-              <div class="profile profile4"></div>
-              <p>World biggest city crashes</p>
-            </div>
-
-           <div class="next">
-              <button class="nextbtn"><i class="bi-chevron-right"></i></button>
-            </div>
-
-
-          </div>
+<div class="navi-2">
+<div class="left-side">
 
 <div class="categories">
-<div class="cathead">
-choose what you get to see
+<div class="cat-box">
+<i class="bi-grid"></i>
 </div>
-<div class="maincat">
-<ul>
-<li> <a href="#"><i class="bi-fire"></i> Trending </a> </li>
-<li> <a href="#"><i class="bi-emoji-laughing"></i> Entertainment </a> </li>
-<li> <a href="#"> <i class="bi-cone-striped"></i> Sport </a> </li>
-<li id="nobackground"> <a class="no" href="#"><i class="bi-chat"></i> &nbsp;&nbsp;Forum </a> </li>
-</ul>
-<div class="see">
-<a href="#">see more <i class="bi-chevron-down"></i></a>
+<div class="cat-write">
+<p>All Catergories</p>
+</div>
+<div class="cat-dropdown">
+<i class="bi-chevron-down"></i>
+</div>
 </div>
 
+<div class="new-product">
+<p>New Product</p>
 </div>
 
+<div class="best-sales">
+<div class="new">
+Hot
+</div>
+<p>Best Sales</p>
 </div>
 
 
-<div class="posts">
+<div class="promotion">
+<p>promotion</p>
+</div>
 
-<div class="postline1">
-<a href="#"><div class="postcover">
-<div class="profilepic">
-</div>
-<div class="info">
-<div class="name">
-Joseph Oyebode
-</div>
-<div class="location">
-<i class="bi-geo-alt-fill"></i> Lagos, Nigeria
-</div>
-</div>
-</div></a>
 
-<div class="dotun">
-<i class="bi-three-dots"></i>
+<div class="offers">
+<div class="hot">
+new
+</div>
+<p>Offers</p>
 </div>
 
 </div>
 
-
-<div class="postpic">
-</div>
-
-<div class="likes">
-<div class="likes1">
-<ul>
-<li><button id="diff"><i class="bi-heart"></i></button></li>
-<li><button><i class="bi-chat"></i></button></li>
-<li><button><i class="bi-share"></i></button></li>
-</ul>
-</div>
-<div class="likes1 likes2">
-<i class="bi-bookmark"></i>
+<div class="right-side">
+<div class="festival" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+<p><i class="bi-gift"></i>&nbsp; Festival Gift Overs</p>
 </div>
 </div>
 
-<div class="wholikes">
-<div class="wholikespic">
-<ul>
-<li class="whopic1"></li>
-<li class="whopic1 whopic2"></li>
-<li class="whopic1 whopic3"></li>
-</ul>
-</div>
-<div class="wholikeswrite">
-Liked by <span>Favour Sam</span> and <span>10,435 others</span>
-</div>
-</div>
-
-<div class="wholikeswrite write3">
-<span>Joseph Oyebode.</span> &nbsp; use flutter toolkit today and stand a chance to become a car ownwer, sign-up now with fluuter, at your service.
-</div>
 
 </div>
+</nav>
+</section>
 
-
-
-
-
-
-
-
-<div class="posts">
-
-<div class="postline1">
-<a href="#"><div class="postcover">
-<div class="profilepic profilepic2">
+<section class="body-content">
+<div class="discovery">
+<div class="fresh">
+<p>Chistmas Fresh season trivia</p>
 </div>
-<div class="info">
-<div class="name">
-Joseph Oyebode
+<div class="flourmill">
+<p>Discover new amazing <br> T-mama deals</p>
 </div>
-<div class="location">
-<i class="bi-geo-alt-fill"></i> Lagos, Nigeria
+<div class="off">
+<p>Get 20% off on every golden penny product purchased</p>
 </div>
-</div>
-</div></a>
-
-<div class="dotun">
-<i class="bi-three-dots"></i>
-</div>
-
-</div>
-
-
-<div class="postpic postpic2">
-</div>
-
-<div class="likes">
-<div class="likes1">
-<ul>
-<li><button id="diff" onclick="document.getElementById('diff').innerHTML= 'liked'"><i class="bi-heart" id="love"></i></button></li>
-<li><button><i class="bi-chat"></i></button></li>
-<li><button><i class="bi-share"></i></button></li>
-</ul>
-</div>
-<div class="likes1 likes2">
-<i class="bi-bookmark"></i>
+<div class="shop-big">
+<button>Shop Now</button>
 </div>
 </div>
 
-<div class="wholikes">
-<div class="wholikespic">
-<ul>
-<li class="whopic1"></li>
-<li class="whopic1 whopic2"></li>
-<li class="whopic1 whopic3"></li>
-</ul>
-</div>
-<div class="wholikeswrite">
-Liked by <span>Favour Sam</span> and <span>10,435 others</span>
-</div>
-</div>
-
-<div class="wholikeswrite write3">
-<span>Joseph Oyebode.</span> &nbsp; use flutter toolkit today and stand a chance to become a car ownwer, sign-up now with fluuter, at your service.
-</div>
+<div class="discovery-pic">
 
 </div>
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="posts">
-
-<div class="postline1">
-<a href="#"><div class="postcover">
-<div class="profilepic profilepic2">
+<section class="percent-container">
+<div class="percent-off">
+<div class="percent-left">
+<div class="discount-price">
+<p>10% OFF</p>
 </div>
-<div class="info">
-<div class="name">
-Joseph Oyebode
+<div class="discount-name">
+<p>knorr chicken</p>
 </div>
-<div class="location">
-<i class="bi-geo-alt-fill"></i> Lagos, Nigeria
+<div class="shop-small">
+<button>Shop Now </button>
 </div>
 </div>
-</div></a>
-
-<div class="dotun">
-<i class="bi-three-dots"></i>
-</div>
-
-</div>
-
-
-<div class="postpic postpic3">
-</div>
-
-<div class="likes">
-<div class="likes1">
-<ul>
-<li><button id="diff"><i class="bi-heart-fill"></i></button></li>
-<li><button><i class="bi-chat"></i></button></li>
-<li><button><i class="bi-share"></i></button></li>
-</ul>
-</div>
-<div class="likes1 likes2">
-<i class="bi-bookmark"></i>
+<div class="percent-right">
 </div>
 </div>
 
-<div class="wholikes">
-<div class="wholikespic">
-<ul>
-<li class="whopic1"></li>
-<li class="whopic1 whopic2"></li>
-<li class="whopic1 whopic3"></li>
-</ul>
+
+<div class="percent-off percent-off2">
+<div class="percent-left">
+<div class="discount-price discount-price2">
+<p>30% OFF</p>
 </div>
-<div class="wholikeswrite">
-Liked by <span>Favour Sam</span> and <span>10,435 others</span>
+<div class="discount-name">
+<p>Super pack &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+<div class="shop-small shop-small2">
+<button>Shop Now </button>
+</div>
+</div>
+<div class="percent-right percent-right2">
 </div>
 </div>
 
-<div class="wholikeswrite write3">
-<span>Joseph Oyebode.</span> &nbsp; use flutter toolkit today and stand a chance to become a car ownwer, sign-up now with fluuter, at your service.
+
+<div class="percent-off percent-off3">
+<div class="percent-left">
+<div class="discount-price">
+<p>5% OFF</p>
+</div>
+<div class="discount-name">
+<p>Backing flour</p>
+</div>
+<div class="shop-small shop-small3">
+<button>Shop Now </button>
+</div>
+</div>
+<div class="percent-right percent-right3">
+</div>
+</div>
+
+
+
+
+
+
+
+</section>
+
+<section class="browse">
+
+<div class="browse-heading">
+<p>Our Distributing products</p>
+<div class="right-head">
+See all 
+</div>
+</div>
+
+<div class="distributing-products">
+
+<div class="distributor distributor2">
+<div class="distri-top">
+<p><span>Best sales</span><br>Ready stews</p>
+</div>
+<div class="distri-bottom distri-bottom2">
+</div>
+</div>
+
+<div class="distributor ">
+<div class="distri-top">
+<p><span>Best sales</span><br>Indomietables</p>
+</div>
+<div class="distri-bottom ">
+</div>
+</div>
+
+<div class="distributor distributor3">
+<div class="distri-top">
+<p><span>Best sales</span><br>Sphaghetti</p>
+</div>
+<div class="distri-bottom distri-bottom3">
+</div>
+</div>
+
+<div class="distributor distributor4">
+<div class="distri-top">
+<p><span>Best sales</span><br>Sardines</p>
+</div>
+<div class="distri-bottom distri-bottom4">
+</div>
 </div>
 
 </div>
 
+</section>
+
+
+<section class="top-product">
+
+<div class="browse-heading">
+<p>Top Product</p>
+<div class="right-head right-head2">
+<div class="butt-1">
+<button> <i class="bi-arrow-left"></i></button>
+</div>
+<div class="butt-1 butt-2">
+<button><i class="bi-arrow-right"></i></button>
+</div>
+</div>
+</div>
+
+<div class="the-product">
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image2">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Gino party jollof<br> 60 grms</p>
+</div>
+<div class="the-price">
+&#8358; 4,500 <span> / carton </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image3">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Geisha canned fish<br> 400g</p>
+</div>
+<div class="the-price">
+&#8358; 380 <span> / can </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image4">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image5">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image6">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</section>
 
 
 
 
 
 
-        </div>
-      </div>
 
+
+
+
+
+
+
+<section class="top-product top-product2">
+
+<div class="browse-heading">
+<p>People Also Viewed</p>
+<div class="right-head right-head2">
+<div class="butt-1">
+<button> <i class="bi-arrow-left"></i></button>
+</div>
+<div class="butt-1 butt-2">
+<button><i class="bi-arrow-right"></i></button>
+</div>
+</div>
+</div>
+
+<div class="the-product">
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image2">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Gino party jollof<br> 60 grms</p>
+</div>
+<div class="the-price">
+&#8358; 4,500 <span> / carton </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image3">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Geisha canned fish<br> 400g</p>
+</div>
+<div class="the-price">
+&#8358; 380 <span> / can </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button onclick="popout()"> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image4">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image5">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+
+<div class="products">
+<div class="the-like">
+<div class="off">
+<button>25% off</button>
+</div>
+<div class="love">
+<i class="bi-heart"></i>
+</div>
+</div>
+<div class="the-image the-image6">
+</div>
+<div class="the-name">
+<p><span>oil</span><br>Laziz premium oil<br> 5 Ltrs</p>
+</div>
+<div class="the-price">
+&#8358; 7,600 <span> / bottle </span>
+</div>
+<div class="amount-cover">
+<div class="the-amount">
+<button> + </button> <input type="text" value="0"><button> - </button> 
+</div>
+<div class="amount-button">
+<i class="bi-shop"></i>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/new.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="user.png" alt="Avatar" class="avatar">
     </div>
-  </section>
-</body>
 
-</html>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="email" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit" class="login">Login</button><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
