@@ -1,0 +1,1573 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="picstyle.css">
+<style>
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 6;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+a {
+color: white;
+}
+
+a:hover {
+text-decoration: none;
+color: white;
+}
+
+
+* {
+scroll-behaviour: smooth;
+}
+
+.logo h1{
+color: white;
+font-size: 22px;
+}
+
+.logo h1 span {
+color: red;
+}
+
+.date {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 45px;
+background: rgb(26,26,26);
+color: white;
+font-size: 12px;
+}
+
+.contact {
+display: flex;
+gap: 2.3rem;
+}
+
+.main-date {
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+
+.icons ul{
+display: flex;
+gap: 1.5rem;
+}
+
+.icons ul li{
+list-style-type: none;
+}
+
+.sat {
+border-right: 1px solid grey;
+padding-right: 9px;
+}
+
+.links {
+text-align: center;
+font-weight: 800;
+font-size: 16px;
+font-family: calibri;
+}
+
+.links a{
+color: white;
+text-decoration: none;
+}
+
+.nav {
+margin-top: 20px;
+padding: 0px 50px;
+}
+
+.profile-pic {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: url(avatar1.png);
+background-size: cover;
+}
+
+.right-links {
+display: flex;
+align-items: center;
+justify-content: right;
+gap: 3.5rem;
+font-size: 17px;
+}
+
+.center {
+align-items: center;
+
+}
+
+.hottest-post {
+display: flex;
+flex-direction: column;
+gap: 1.8rem;
+}
+
+
+.hot1 {
+display: flex;
+flex-direction: column;
+gap: 0.9rem;
+}
+
+.hot-pic {
+width: 150px;
+height: 80px;
+background: url(blog20.jpg);
+background-size: cover;
+}
+
+.pic2 {
+background: url(blog18.jpg);
+background-size: cover;
+}
+
+.pic3 {
+background: url(blog19.jpg);
+background-size: cover;
+}
+
+.pic4 {
+background: url(blog21.jpg);
+background-size: cover;
+}
+
+.hot-write {
+width: 150px;
+font-size: 14px;
+text-align: left;
+color: white;
+
+font-family: calibri;
+}
+
+h4 {
+background: black;
+z-index: 5;
+width: 120px;
+font-weight: 800;
+}
+
+.the-hot {
+display: flex;
+align-items: center;
+justify-content: space-between;
+overflow: auto;
+border-top: 1px solid grey;
+padding-top: 50px;
+margin-top: -40px;
+}
+
+.main-content {
+padding: 0px 40px;
+margin-top: 40px;
+}
+
+.main-post {
+display: flex;
+flex-direction: column;
+gap: 3rem;
+margin-top: 30px;
+}
+
+.the-main-post {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.the-main-post2 {
+margin-top: 30px;
+}
+
+
+.post-pic {
+width: 100%;
+height: 360px;
+background: url(blog4.jpg);
+background-size: cover;
+}
+
+
+.pic6 {
+background: url(lady.jpg);
+background-size: cover;
+}
+
+.post-write {
+font-size: 35px;
+font-family: Eras ITC Light;
+font-weight: 800;
+}
+
+body {
+background: black;
+color: white;
+}
+
+.viral {
+margin-left: 30px;
+margin-top: 60px;
+display: flex;
+flex-direction: column;
+}
+
+.viral-posts {
+display: flex;
+flex-direction: column;
+gap: 3.5rem;
+margin-top: 30px;
+}
+
+
+
+.the-post-pic {
+height: 80px;
+background: url(viral.jpg);
+background-size: cover;
+}
+
+.the-post-write {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.time {
+color: grey;
+font-size: 12px;
+}
+
+
+
+
+
+
+
+
+.pic8 {
+background: url(blog6.jpg);
+background-size: cover;
+}
+
+
+.pic9 {
+background: url(blog5.jpg);
+background-size: cover;
+}
+
+.pic10 {
+background: url(blog10.jpg);
+background-size: cover;
+}
+
+.pic11 {
+background: url(blog7.jpg);
+background-size: cover;
+}
+
+
+.pic12 {
+background: url(blog12.jpg);
+background-size: cover;
+}
+
+.pic13 {
+background: url(blog15.jpg);
+background-size: cover;
+}
+
+/* pic12 */
+.celebrity-pic {
+width: 50px;
+height: 50px;
+background: url(ceb.jpeg);
+background-size: cover;
+border-radius: 50%;
+}
+
+.pic15 {
+background: url(blog10.jpg);
+background-size: contain;
+}
+
+.pic16 {
+background: url(blog11.jpg);
+background-size: cover;
+}
+
+.pic17 {
+background: url(blog12.jpg);
+background-size: cover;
+}
+
+/* pic18 */
+.sport-pic {
+width: 100%;
+height: 220px;
+background: url(phyna.jpg);
+background-size: cover;
+}
+
+.pic19 {
+background: url(blog14.jpg);
+background-size: cover;
+}
+
+
+.mobile-nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+align-items: center;
+display: none;
+text-align: center;
+}
+
+
+img {
+margin-left: 30px;
+ margin-top: 50px;
+}
+
+.writer {
+color: grey;
+}
+
+.writer span{
+color: grey;
+margin-left: 20px;
+}
+
+.plenty {
+margin-top: 50px;
+}
+
+.celebrity-container {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.celebrity-posts {
+display: flex;
+flex-direction: column;
+gap: 4rem;
+}
+
+.celebrity1 {
+display: flex;
+gap: 1.5rem;
+}
+
+.pic-cover {
+width: 20%;
+height: 50px;
+}
+
+
+
+.celebrity-write {
+width: 80%;
+font-weight: 800;
+font-family: sans-serif;
+}
+
+
+.sports {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+
+.sports h4{
+margin-left: 40px;
+}
+
+.sport-posts {
+display: flex;
+flex-direction: column;
+gap: 7rem;
+}
+
+.sport1 {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 0px 40px;
+}
+
+
+
+
+.sport-write {
+font-size: 33px;
+}
+
+.music-container {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.music-posts {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.music1 {
+display: flex;
+align-items: center;
+gap: 2rem;
+border-top: 1px solid grey;
+padding-top: 10px;
+}
+
+.music1 i{
+font-size: 18px;
+}
+
+.music-write {
+font-weight: 800;
+}
+
+.third {
+margin-top: 50px;
+}
+
+.change {
+font-family: intial;
+}
+
+
+.footer {
+background: rgb(26,26,26);
+margin-top: 120px;
+display: flex;
+flex-direction: column;
+padding: 40px 50px;
+}
+
+.contact-line {
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid rgba(255,255,255, 0.1);
+padding-bottom: 20px;
+}
+
+.left-line {
+display: flex;
+gap: 2rem;
+}
+
+.phone-number {
+color: grey;
+}
+
+.write-preview {
+font-size: 15px;
+color: rgba(255,255,255, 0.7)
+}
+
+.search-icon {
+margin-top: 13px;
+}
+
+.mobile-menu{
+margin-top: 13px;
+}
+
+.search-icon i {
+font-size: 18px;
+}
+
+.mobile-menu i {
+font-size: 25px;
+}
+
+.time2 {
+margin-top: 10px;
+}
+
+
+
+
+
+
+.blog5 {
+background: url(blog14.jpg);
+background-size: cover;
+}
+
+
+
+.blog6 {
+background: url(blog15.jpg);
+background-size: cover;
+}
+
+
+.blog7 {
+background: url(blog17.jpg);
+background-size: cover;
+}
+
+
+.blog8 {
+background: url(blog12.jpg);
+background-size: cover;
+}
+
+
+.blog9 {
+background: url(blog12.jpg);
+background-size: cover;
+}
+
+.sport-pic2 {
+background: url(blog14.jpg);
+background-size: cover;
+}
+
+.search {
+transition: all 2s linear;
+display: none;
+animation: none;
+position: absolute;
+}
+
+@keyframes drpdown {
+0% { transform: translate(0px, -40px); }
+100% { transform: translate(0px, 0px); }
+}
+
+.search input {
+width: 400px;
+background: transparent;
+border: 1px solid grey;
+height: 35px;
+border-radius: 40px;
+padding: 0px 30px;
+}
+
+
+.last-post {
+margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+.celebrity-write {
+font-size: 16px;
+}
+
+.contact-line {
+display: flex;
+flex-direction: column;
+gap: 2.3rem;
+}
+
+.left-line {
+font-size: 10px;
+}
+
+.main-content {
+padding: 0px 0px;
+margin-top: 40px;
+}
+
+.sat {
+display: none;
+}
+
+
+.post-pic {
+width: 100%;
+height: 200px;
+}
+
+.post-write {
+font-size: 25px;
+font-family: Eras ITC Light;
+font-weight: 1000;
+}
+
+.viral {
+margin-left: 0px;
+display: flex;
+flex-direction: column;
+padding: 0px 20px;
+}
+
+.nav {
+display: none;
+}
+
+.the-post {
+display: flex;
+}
+
+.mobile-nav {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 15px;
+padding: 0px 30px;
+align-items: center;
+}
+
+img {
+margin-left: 10px;
+}
+
+h1 {
+font-size: 28px;
+font-weight: 800;
+}
+
+.the-post-pic {
+width: 30%;
+height: 70px;
+background-size: cover;
+}
+
+
+.the-post-write {
+width: 70%;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.post-write {
+font-size: 21px;
+font-family: sans-serif;
+font-weight: 800;
+}
+
+.celebrity1 {
+display: flex;
+gap: 0rem;
+}
+
+.sport1 {
+padding: 0px 10px;
+}
+
+.sports h4{
+margin-left: 10px;
+}
+
+.sports {
+margin-top: 50px;
+}
+
+.music-container {
+margin-top: 40px;
+}
+
+.sport-write {
+font-size: 25px;
+}
+
+
+}
+
+
+
+@media (max-width: 320px){
+body {
+width: 110%;
+}
+
+}
+
+
+@media (max-width: 365px){
+
+.post-write {
+font-size: 17px;
+}
+
+
+}
+
+@media (max-width: 290px){
+body {
+width: 125%;
+}
+
+
+}
+
+@media (max-width: 250px){
+body {
+width: 145%;
+}
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="mycss.html">Music</a>
+  <a href="mycss.html">Viral News</a>
+  <a href="mycss.html">Nigerian</a>
+  <a href="mycss.html">Entertainment</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+
+
+
+<section class="date">
+<div class="contact">
+<div class="ad">
+Advertise
+</div>
+<div class="ad">
+Contact 
+</div>
+
+</div>
+
+<div class="main-date">
+<div class="sat">
+Saturday, February 4, 2023
+</div>
+<div class="icons">
+<ul>
+<li><a href="#"><i class="bi-facebook"></i></a></li> 
+<li><a href="#"><i class="bi-instagram"></i></a></li> 
+<li><a href="#"><i class="bi-twitter"></i></a></li> 
+<li><a href="#"><i class="bi-snapchat"></i></a></li> 
+</ul>
+</div>
+</div>
+
+</section>
+
+<div class="container-fluid nav">
+<div class="row center">
+<div class="col-sm-3 logo"><h1><span>OUR</span>BLOG</h1></div>
+<div class="col-sm-1 links"><a href="#">Home</a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Music</a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Viral news</a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Nigerian </a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Entertainment</a></div>
+<div class="col-sm-4 right-links">
+<div class="search-bar" onclick="search()">
+<i class="bi-search"></i>
+</div>
+<div class="profile-pic">
+</div>
+<div class="menu" onclick="openNav()" >
+<i class="bi-list"></i>
+</div>
+</div> 
+<div class="search" id="search">
+<input type="search" placeholder="Search post" />
+</div>
+
+</div>  
+</div>
+
+
+<div class=" mobile-nav">
+<div class="search-icon" >
+<i class="bi-search"></i>
+</div>
+<div class="logo2">
+<h1><span>I TWEETS</h1>
+</div>
+<div class="mobile-menu" onclick="openNav()">
+<i class="bi-list"></i>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid">
+<div class="row main-content">
+<div class="col-sm-8 left-content">
+<div class="hottest-post">
+<h4> HOT NOW </h4>
+<div class=" row the-hot">
+<div class=" col-sm-3 hot1">
+<div class="hot-pic pic1">
+</div>
+<div class="hot-write">
+“Reject old notes and face prosecution” – Lagos state gov, Babajide Sanwo-Olu, warns residents
+</div>
+</div>
+
+
+<div class=" col-sm-3 hot1">
+<div class="hot-pic pic2">
+</div>
+<div class="hot-write">
+Fraudster jailed for impersonating Nollywood actor, Bolanle Ninalowo
+</div>
+</div>
+
+
+<div class=" col-sm-3 hot1">
+<div class="hot-pic pic3">
+</div>
+<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
+</div>
+</div>
+
+<div class=" col-sm-3 hot1">
+<div class="hot-pic pic4">
+</div>
+<div class="hot-write">
+“Uncle Buhari, see what you’ve caused” — Singer, Portable laments after...
+</div>
+</div>
+</div>
+</div>
+
+<div class="main-post">
+<h4>LATEST&nbsp;POST </h4>
+
+
+<a href="page1.html"><div class="the-main-post" >
+<div class="post-pic ">
+</div>
+<div class="post-write">
+Drama as Nigerian lady embarrasses lover who proposed to her in public (Video)
+</div>
+<div class="write-preview">
+A young guy who came out to the limelight to pubicly show his affection to his girl have head
+a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
+....
+</div>
+<div class="writer">
+<i class="bi-person-fill"></i> By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+</div>
+<div class="show-more">
+<button> Read more </button>
+</div>
+</div></a>
+
+<div class="the-main-post the-main-post2 ">
+<div class="post-pic pic6">
+</div>
+<div class="post-write">
+Between a Bank Manager and angry customers who wanted to destroy properties over Scarce Naira Notes.
+</div>
+<div class="write-preview">
+A young guy who came out to the limelight to pubicly show his affection to his girl have head
+a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
+....
+</div>
+<div class="writer">
+<i class="bi-person-fill"></i> By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+</div>
+<div class="show-more">
+<button> Read more </button>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+<div class="col-sm-4 right-content">
+<img src="ad.gif">
+
+
+<div class="viral">
+<h4> VIRAL </h4>
+
+<div class="viral-posts">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic8">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+Actress Adesua dragged to shreds over Valentine’s Day message to husband, Banky W
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic9">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“CBN will not be used to frustrate 2023 polls” – Governor Godwin Emiefele tells INEC 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic10">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You are not the only one to give birth to a son in Nigeria or have a failed marriage” – Olakunle Churchill claps back at Tonto Di keh
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic11">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic12">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic13">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+
+<div class="container plenty">
+<div class="row">
+
+<div class="col-sm-3 celebrity-container">
+<h4>CELEBRITY&nbsp;NEWS</h4>
+<div class="celebrity-posts">
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic">
+</div>
+</div>
+<div class="celebrity-write">
+Pregnant lady finds out her boyfriend of two years died five years ago
+<div class="time time2">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic pic15">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time time2">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic pic16">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time time2">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic pic17 ">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time time2">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="col-sm-6 sports">
+<h4>BB' NAIJA</h4>
+
+<div class="sport-posts">
+<div class="sport1">
+<div class="sport-pic">
+</div>
+<div class="sport-write">
+BBNaija’s Phyna shares her experience dating a yahoo boy
+</div>
+</div>
+
+<div class="sport1">
+<div class="sport-pic pic19">
+</div>
+<div class="sport-write">
+"Alex Ekubor Let out on the M20 naira charge a day ago" - Shola ramon
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="col-sm-3 music-container">
+<h4>MUSIC</h4>
+<div class="music-posts">
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+<div class="row main-content">
+<div class="col-sm-8 left-content">
+
+
+<div class="main-post">
+<h4>LATEST&nbsp;POST </h4>
+
+
+<div class="the-main-post">
+<div class="post-pic">
+</div>
+<div class="post-write change">
+'Blood and water movie will soon be out by the end of the month when all things are  - Actress said while ranting
+</div>
+<div class="write-preview">
+A young guy who came out to the limelight to pubicly show his affection to his girl have head
+a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
+....
+</div>
+<div class="writer">
+<i class="bi-person-fill"></i> By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+</div>
+</div>
+
+<div class="the-main-post last-post">
+<div class="post-pic">
+</div>
+<div class="post-write change">
+'Blood and water movie will soon be out by the end of the month when all things are  - Actress said while ranting
+</div>
+<div class="write-preview">
+A young guy who came out to the limelight to pubicly show his affection to his girl have head
+a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
+....
+</div>
+<div class="writer">
+<i class="bi-person-fill"></i> By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+<div class="col-sm-4 third">
+<div class=" celebrity-container">
+<h4>CELEBRITY&nbsp;NEWS</h4>
+<div class="celebrity-posts">
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog5">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog6">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog7">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1 ">
+<div class="pic-cover">
+<div class="celebrity-pic blog8">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog9">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+
+<div class="celebrity1">
+<div class="pic-cover">
+<div class="celebrity-pic blog10">
+</div>
+</div>
+<div class="celebrity-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+<div class="container-fluid footer">
+
+<div class="contact-line">
+<div class="left-line">
+<div class="go-home">
+Go Home /
+</div>
+<div class="connect-facebook">
+Connect on facebook /
+</div>
+<div class="connect-twitter">
+Connect on twitter 
+</div>
+</div>
+<div class="right-line">
+<div class="phone-number">
+contact us on +2347048311985
+</div>
+</div>
+</div>
+<div class="row">
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function direct() {
+ window.reload("true");
+}
+
+function search() {
+ document.getElementById('search').style = 'display: block; animation: drpdown 1s 1;';
+ 
+} 
+
+</script>
+</body>
+</html>
