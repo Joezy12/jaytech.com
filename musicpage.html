@@ -8,13 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="picstyle.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-
-
-
+  <link rel="stylesheet" href="picstyleyle.css">
 
 
   
@@ -87,7 +81,6 @@ color: white;
 
 * {
 scroll-behaviour: smooth;
-
 }
 
 .logo h1{
@@ -170,6 +163,7 @@ font-size: 17px;
 
 .center {
 align-items: center;
+
 }
 
 .hottest-post {
@@ -218,9 +212,13 @@ font-family: calibri;
 
 h4 {
 background: black;
+font-size: 23px;
+font-family: Helvetica;
 z-index: 5;
 width: 120px;
 font-weight: 800;
+line-height: 37px;
+color: red;
 }
 
 .the-hot {
@@ -278,7 +276,6 @@ font-weight: 800;
 body {
 background: black;
 color: white;
-
 }
 
 .viral {
@@ -298,9 +295,10 @@ margin-top: 30px;
 
 
 .the-post-pic {
-height: 80px;
-background: url(viral.jpg);
+height: 65px;
+background: url(music1.jpg);
 background-size: cover;
+width: 80px;
 }
 
 .the-post-write {
@@ -491,6 +489,11 @@ color: grey;
 margin-left: 20px;
 }
 
+.write {
+font-weight: 800;
+font-family: sans-serif;
+}
+
 .plenty {
 margin-top: 50px;
 }
@@ -523,7 +526,7 @@ height: 50px;
 width: 80%;
 font-weight: 600;
 font-family: Libre Baskerville;
-font-size: 14px;
+font-size: 18px;
 }
 
 
@@ -574,18 +577,18 @@ gap: 2rem;
 display: flex;
 align-items: center;
 gap: 2rem;
-border-top: 1px solid grey;
-padding-top: 10px;
+border-top: 1px solid rgba(255,255,255,0.2);
+padding-top: 27px;
 }
 
 .music1 i{
-font-size: 18px;
+font-size: 11px;
 }
 
 .music-write {
 font-weight: 600;
 font-family: Libre Baskerville;
-font-size: 14px;
+font-size: 17px;
 }
 
 .third {
@@ -593,8 +596,8 @@ margin-top: 50px;
 }
 
 .change {
-font-family: Libre Baskerville;
-font-weight: 800;
+font-family: Helvetica;
+font-size: 30px;
 }
 
 
@@ -738,6 +741,69 @@ margin-right: 15px;
 }
 
 
+.main-content {
+padding: 0px 100px;
+}
+
+
+.music1 {
+display: flex;
+
+}
+
+.music-image {
+height: 20vh;
+background: url(music3.jpg),linear-gradient(white,white);
+background-size: cover;
+background-repeat: no-repeat;
+border-top: 12px solid grey;
+border-bottom: 12px solid grey;
+
+}
+
+.music-image2 {
+background: url(music4.jpg),linear-gradient(white,white);
+background-size: cover;
+}
+
+.music-image3 {
+background: url(music5.jpg),linear-gradient(white,white);
+background-size: cover;
+}
+
+.music-image4 {
+background: url(music6.jpg),linear-gradient(white,white);
+background-size: cover;
+}
+
+.music-image5 {
+background: url(music7.jpg),linear-gradient(white,white);
+background-size: cover;
+}
+
+
+.music-writeup {
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+}
+
+.music-name {
+font-size: 26px;
+}
+
+
+.music-adder {
+font-size: 12px;
+font-family: sans-serif;
+color: grey;
+}
+
+.music-details {
+color: rgba(255,255,255,0.9);
+}
+
+
 .center a:hover {
 color: red;
 }
@@ -750,6 +816,25 @@ transition: 0.2s linear;
 border-bottom: 4px solid red;
 padding-bottom: 7px;
 }
+
+
+.more {
+width: 100%;
+background: rgb(26,26,26);
+color: white;
+height: 50px;
+margin-top: 40px;
+}
+
+.viral2 {
+}
+
+
+
+
+
+
+
 
 
 
@@ -822,7 +907,20 @@ padding-bottom: 7px;
 
 @media (max-width: 768px){
 
+.music-image {
+width: 90%;
+height: 40vh;
+background-size: cover;
+background-repeat: no-repeat;
+border-top: 12px solid grey;
+border-bottom: 12px solid grey;
 
+}
+
+.music1 {
+display: flex;
+flex-direction: column;
+}
 
 .none {
 display: block;
@@ -999,7 +1097,7 @@ width: 145%;
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#"><i class="bi-house"></i> Home </a>
+  <a href="blogpage.html"><i class="bi-house"></i> Home </a>
   <a href="musicpage.html"><i class="bi-headset"></i> Music</a>
   <a href="mycss.html"> <i class="bi-instagram"></i> Viral News</a>
   <a href="mycss.html"><i class="bi-flag"></i> Nigerian</a>
@@ -1013,7 +1111,7 @@ width: 145%;
 
 
 
-<section class="date"> 
+<section class="date">
 <div class="contact">
 <div class="ad">
 Advertise
@@ -1043,8 +1141,8 @@ Saturday, February 4, 2023
 <div class="container-fluid nav">
 <div class="row center">
 <div class="col-sm-3 logo"><h1><span>INSTA </span>TWEETS</h1></div>
-<div class="col-sm-1 links home"><a href="#">Home</a></div>
-<div class="col-sm-1 links"><a href="musicpage.html">Music</a></div>
+<div class="col-sm-1 links"><a href="blogpage.html">Home</a></div>
+<div class="col-sm-1 links home"><a href="mycss.html">Music</a></div>
 <div class="col-sm-1 links"><a href="mycss.html">Viral news</a></div>
 <div class="col-sm-1 links"><a href="mycss.html">Nigerian </a></div>
 <div class="col-sm-1 links"><a href="mycss.html">Entertainment</a></div>
@@ -1085,149 +1183,98 @@ Saturday, February 4, 2023
 <div class="container-fluid">
 <div class="row main-content">
 <div class="col-sm-8 left-content">
-<div class="hottest-post">
-<h4> HOT NOW </h4>
-<div class=" row the-hot">
-
-<a href="page1.html">
-<div class=" col-sm-3 hot1">
-<div class="hot-pic pic1">
-</div>
-<div class="hot-write">
-“Reject old notes and face prosecution” – Lagos state gov, 
-</div>
-</div>
-</a>
-
-
-<a href="page2.html">
-<div class=" col-sm-3 hot1">
-<div class="hot-pic pic2">
-</div>
-<div class="hot-write">
-Fraudster jailed for impersonating Nollywood actor, Bolanle Ninalowo
-</div>
-</div>
-</a>
-
-
-<a href="page3.html">
-<div class=" col-sm-3 hot1">
-<div class="hot-pic pic3">
-</div>
-<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
-</div>
-</div>
-</a>
-
-
-<a href="page1.html">
-<div class=" col-sm-3 hot1 none">
-<div class="hot-pic pic3">
-</div>
-<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
-</div>
-</div>
-</a>
-
-
-<a href="page1.html">
-<div class=" col-sm-3 hot1 none">
-<div class="hot-pic pic3">
-</div>
-<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
-</div>
-</div>
-</a>
-
-
-<a href="page1.html">
-<div class=" col-sm-3 hot1 none">
-<div class="hot-pic pic3">
-</div>
-<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
-</div>
-</div>
-</a>
-
-
-<a href="page1.html">
-<div class=" col-sm-3 hot1 none">
-<div class="hot-pic pic3">
-</div>
-<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
-</div>
-</div>
-</a>
-
-
-<a href="page1.html">
-<div class=" col-sm-3 hot1 none">
-<div class="hot-pic pic3">
-</div>
-<div class="hot-write">BREAKING: Christian Atsu has been found dead in Turkey earthquake
-</div>
-</div>
-</a>
-
-
-
-<a href="page4.html">
-<div class=" col-sm-3 hot1">
-<div class="hot-pic pic4">
-</div>
-<div class="hot-write">
-“Uncle Buhari, see what you’ve caused” — Singer, Portable laments after...
-</div>
-</div>
-</div>
-</div>
-</a>
 
 <div class="main-post">
-<h4>LATEST&nbsp;POST </h4>
 
-
-<a href="page5.html"><div class="the-main-post" >
-<div class="post-pic ">
+<div class="row music1">
+<div class="col-sm-4 music-image">
 </div>
-<div class="post-write">
-Drama as Nigerian lady embarrasses lover who proposed to her in public (Video)
+<div class="col-sm-8 music-writeup">
+<div class="music-name">
+Nicki Minaj - Red Ruby Da Sleeze
 </div>
-<div class="write-preview">
-A young guy who came out to the limelight to pubicly show his affection to his girl have head
-a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
-....
+<div class="music-adder">
+<i class="bi-clock"></i>&nbsp;&nbsp; March 3 2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-person-fill"></i> &nbsp;&nbsp;Joseph Oyebode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-chat"></i> &nbsp;&nbsp;23
 </div>
-<div class="writer">
-<i class="bi-person-fill"></i> By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+<div class="music-details">
+Download “Blacknick Masterblack – La Mezcla (Remix)” Audio Mp3, MP4, Lyrics On Thinknews The Talented Musician, Blacknick Masterblack comes back with another studio singles titled […]
 </div>
-<div class="show-more">
-<button> Read more </button>
 </div>
-</div></a>
+</div>
 
 
 
-<a href="page6.html">
-<div class="the-main-post the-main-post2 ">
-<div class="post-pic pic6">
+<div class="row music1">
+<div class="col-sm-4 music-image music-image2">
 </div>
-<div class="post-write">
-Between a Bank Manager and angry customers who wanted to destroy properties over Scarce Naira Notes.
+<div class="col-sm-8 music-writeup">
+<div class="music-name">
+Spyro Ft. Tiwa Savage – Who is your Guy? Remix
 </div>
-<div class="write-preview">
-A young guy who came out to the limelight to pubicly show his affection to his girl have head
-a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
-....
+<div class="music-adder">
+<i class="bi-clock"></i>&nbsp;&nbsp; March 3 2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-person-fill"></i> &nbsp;&nbsp;Joseph Oyebode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-chat"></i> &nbsp;&nbsp;23
 </div>
-<div class="writer">
-<i class="bi-person-fill"></i> By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+<div class="music-details">
+D‘Who is your Guy? Remix’ MP3 Download (Audio), Music Video (Mp4) & Lyrics The Sensational & Talented Musician, Spyro dishes out new music project titled […]
 </div>
-<div class="show-more">
-<button> Read more </button>
 </div>
-</div></a>
+</div>
+
+
+<div class="row music1">
+<div class="col-sm-4 music-image music-image3">
+</div>
+<div class="col-sm-8 music-writeup">
+<div class="music-name">
+Spyro Ft. Tiwa Savage – Who is your Guy? Remix
+</div>
+<div class="music-adder">
+<i class="bi-clock"></i>&nbsp;&nbsp; March 3 2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-person-fill"></i> &nbsp;&nbsp;Joseph Oyebode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-chat"></i> &nbsp;&nbsp;23
+</div>
+<div class="music-details">
+D‘Who is your Guy? Remix’ MP3 Download (Audio), Music Video (Mp4) & Lyrics The Sensational & Talented Musician, Spyro dishes out new music project titled […]
+</div>
+</div>
+</div>
+
+
+
+<div class="row music1">
+<div class="col-sm-4 music-image music-image4">
+</div>
+<div class="col-sm-8 music-writeup">
+<div class="music-name">
+Spyro Ft. Tiwa Savage – Who is your Guy? Remix
+</div>
+<div class="music-adder">
+<i class="bi-clock"></i>&nbsp;&nbsp; March 3 2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-person-fill"></i> &nbsp;&nbsp;Joseph Oyebode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-chat"></i> &nbsp;&nbsp;23
+</div>
+<div class="music-details">
+D‘Who is your Guy? Remix’ MP3 Download (Audio), Music Video (Mp4) & Lyrics The Sensational & Talented Musician, Spyro dishes out new music project titled […]
+</div>
+</div>
+</div>
+
+
+<div class="row music1">
+<div class="col-sm-4 music-image music-image5">
+</div>
+<div class="col-sm-8 music-writeup">
+<div class="music-name">
+Spyro Ft. Tiwa Savage – Who is your Guy? Remix
+</div>
+<div class="music-adder">
+<i class="bi-clock"></i>&nbsp;&nbsp; March 3 2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-person-fill"></i> &nbsp;&nbsp;Joseph Oyebode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi-chat"></i> &nbsp;&nbsp;23
+</div>
+<div class="music-details">
+D‘Who is your Guy? Remix’ MP3 Download (Audio), Music Video (Mp4) & Lyrics The Sensational & Talented Musician, Spyro dishes out new music project titled […]
+</div>
+</div>
+</div>
+
+
+
+
 
 
 </div>
@@ -1239,130 +1286,133 @@ a taste of what we call a massive breakdown as his so called lover alegidly emba
 </div>
 
 <div class="col-sm-4 right-content">
-<img src="bit.gif">
+
 
 
 <div class="viral">
-<h4> VIRAL </h4>
+<h4>LATEST&nbsp;NIGERIAN<br>MUSIC </h4>
 
 <div class="viral-posts">
-
-
-<a href="page7.html">
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+Overdose - mavins ft Don Jazzy 
 </div>
 <div class="time">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
+Download
 </div>
 </div>
 </div>
-</a>
 
-
-
-<a href="page8.html">
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic pic8">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-Actress Adesua dragged to shreds over Valentine’s Day message to husband, Banky W
+Asiwaju by Ruger
 </div>
 <div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
 
-<a href="page9.html">
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic pic9">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-“CBN will not be used to frustrate 2023 polls” – Governor Godwin Emiefele tells INEC 
+Sabi girl by Ayra Starr (sped up version)
 </div>
 <div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
 
-<a href="page10.html">
+
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic pic10">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-“You are not the only one to give birth to a son in Nigeria or have a failed marriage” – Olakunle Churchill claps back at Tonto Di keh
+Timmie - soso X people Cover
 </div>
 <div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
-
-<a href="page11.html">
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic pic11">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+E dey pain dem - Timaya Ft Sakordie
 </div>
 <div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
-<a href="page12.html">
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic pic12">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+Lovely - Billie Eilish
 </div>
 <div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
-<a href="page13.html">
 <div class="row the-post">
 <div class=" col-sm-4 the-post-pic pic13">
 </div>
 <div class="col-sm-8 the-post-write">
 <div class="write">
-“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+Read all about it - Gareth john 
 </div>
 <div class="time">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
+<i class="bi-clock"></i> FEBRUAR FEBRUARY 9, 2023
 </div>
 </div>
 </div>
+<button class="more">See More </button>
 </div>
-</a>
+
+
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
 
 
 </div>
@@ -1370,234 +1420,7 @@ Actress Adesua dragged to shreds over Valentine’s Day message to husband, Bank
 
 
 
-</div>
 
-
-</div>
-</div>
-
-<div class="container plenty">
-<div class="row">
-
-<div class="col-sm-3 celebrity-container">
-<h4>CELEBRITY&nbsp;NEWS</h4>
-<div class="celebrity-posts">
-
-
-<a href="page14.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic">
-</div>
-</div>
-<div class="celebrity-write">
-Pregnant lady finds out her boyfriend of two years died five years ago
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-<a href="page15.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic15">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-<a href="page16.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic16">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-<a href="page17.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic17 ">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-</div>
-</div>
-
-
-<div class="col-sm-6 sports">
-<h4>BB' TITANS</h4>
-
-<div class="sport-posts">
-
-
-<a href="page18.html">
-<div class="sport1">
-<div class="sport-pic">
-</div>
-<div class="sport-write">
-BBNaija’s Phyna shares her experience dating a yahoo boy
-</div>
-<div class="write-preview">
-A young guy who came out to the limelight to pubicly show his affection to his girl have head
-a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
-....
-</div>
-</div>
-</a>
-
-
-<a href="page19.html">
-<div class="sport1">
-<div class="sport-pic pic19">
-</div>
-<div class="sport-write">
-"Alex Ekubor Let out on the M20 naira charge a day ago" - Shola ramon
-</div>
-<div class="write-preview">
-A young guy who came out to the limelight to pubicly show his affection to his girl have head
-a taste of what we call a massive breakdown as his so called lover alegidly embarass him by not
-....
-</div>
-</div>
-</a>
-
-
-</div>
-</div>
-
-
-<div class="col-sm-3 music-container">
-<h4>MUSIC</h4>
-<div class="music-posts">
-
-
-<a href="page20.html">
-<div class="music1">
-<div class="music-cover">
-<div class="music-pic">
-<i class="bi-caret-right"></i>
-</div>
-</div>
-<div class="music-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-</div>
-</div>
-</a>
-
-
-<a href="page21.html">
-<div class="music1">
-<div class="music-cover">
-<div class="music-pic">
-<i class="bi-caret-right"></i>
-</div>
-</div>
-<div class="music-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-</div>
-</div>
-</a>
-
-
-<a href="page22.html">
-<div class="music1">
-<div class="music-cover">
-<div class="music-pic">
-<i class="bi-caret-right"></i>
-</div>
-</div>
-<div class="music-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-</div>
-</div>
-</a>
-
-
-
-<a href="page23.html">
-<div class="music1">
-<div class="music-cover">
-<div class="music-pic">
-<i class="bi-caret-right"></i>
-</div>
-</div>
-<div class="music-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-</div>
-</div>
-</a>
-
-
-<a href="page24.html">
-<div class="music1">
-<div class="music-cover">
-<div class="music-pic">
-<i class="bi-caret-right"></i>
-</div>
-</div>
-<div class="music-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-</div>
-</div>
-</a>
-
-
-
-<a href="page25.html">
-<div class="music1">
-<div class="music-cover">
-<div class="music-pic">
-<i class="bi-caret-right"></i>
-</div>
-</div>
-<div class="music-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-</div>
-</div>
-</a>
-
-
-<a href="page1.html">
-<img src="ad.gif">
-</a>
-
-</div>
-</div>
-
-
-</div>
-</div>
 
 
 
@@ -1616,7 +1439,7 @@ We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State 
 
 
 <div class="main-post">
-<h4>LATEST&nbsp;POST </h4>
+<h4>MUSIC&nbsp;NEWS</h4>
 
 
 
@@ -1669,225 +1492,121 @@ a taste of what we call a massive breakdown as his so called lover alegidly emba
 </div>
 
 <div class="col-sm-4 third">
-<div class=" celebrity-container">
-<h4>CELEBRITY&nbsp;NEWS</h4>
-<div class="celebrity-posts">
 
+<div class="viral viral2">
+<h4> LYRICS</h4>
 
-<a href="page28.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic22">
+<div class="viral-posts">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+Overdose - mavins ft Don Jazzy 
+</div>
+<div class="time">
+Download
 </div>
 </div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
+</div>
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic8">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+Asiwaju by Ruger
+</div>
+<div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
 
-<a href="page29.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic23">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic9">
 </div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+Sabi girl by Ayra Starr (sped up version)
 </div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
+<div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
 
-<a href="page30.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic24">
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic10">
 </div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+Timmie - soso X people Cover
 </div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
+<div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
-
-
-<a href="page31.html">
-<div class="celebrity1 ">
-<div class="pic-cover">
-<div class="celebrity-pic pic25">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic11">
 </div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+E dey pain dem - Timaya Ft Sakordie
 </div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
+<div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
-<a href="page32.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic26">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic12">
 </div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
 </div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
+<div class="time">
 <i class="bi-clock"></i> FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
 
 
-
-<a href="page33.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic27">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic13">
 </div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
 </div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-
-<a href="page34.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic28">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
+<div class="time">
+<i class="bi-clock"></i> FEBRUAR FEBRUARY 9, 2023
 </div>
 </div>
 </div>
-</a>
-
-
-
-
-<a href="page35.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic29">
+<button class="more">See More </button>
 </div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-<a href="page36.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic30">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-<a href="page37.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic31">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-
-<a href="page38.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic32">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
-
-
-
-<a href="page39.html">
-<div class="celebrity1">
-<div class="pic-cover">
-<div class="celebrity-pic pic33">
-</div>
-</div>
-<div class="celebrity-write">
-We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
-<div class="time time2">
-<i class="bi-clock"></i> FEBRUARY 9, 2023
-</div>
-</div>
-</div>
-</a>
 
 
 
 </div>
-</div>
+
+
 
 </div>
 
 
-</div>
 </div>
 
 
@@ -1925,8 +1644,6 @@ contact us on +2347048311985
 
 
 </div>
-
-
 
 
 <script>
