@@ -1,0 +1,1443 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Seun Kuti claims Lagos State belongs to the Portuguese</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="picstyle.css">
+<style>
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 6;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+   font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+* {
+scroll-behaviour: smooth;
+}
+
+.logo h1{
+color: white;
+font-size: 18px;
+font-weight: 800;
+}
+
+.logo h1 span {
+color: red;
+}
+.date {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 45px;
+background: rgb(26,26,26);
+color: white;
+font-size: 12px;
+}
+
+.contact {
+display: flex;
+gap: 2.3rem;
+}
+
+.main-date {
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+
+.icons ul{
+display: flex;
+gap: 1.5rem;
+}
+
+.icons ul li{
+list-style-type: none;
+}
+
+.sat {
+border-right: 1px solid grey;
+padding-right: 9px;
+}
+
+.links {
+text-align: center;
+font-weight: 800;
+font-size: 16px;
+font-family: calibri;
+}
+
+.links a{
+color: white;
+text-decoration: none;
+}
+
+.nav {
+margin-top: 20px;
+padding: 0px 50px;
+}
+
+.profile-pic {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: url(avatar1.png);
+background-size: cover;
+}
+
+.right-links {
+display: flex;
+align-items: center;
+justify-content: right;
+gap: 3.5rem;
+font-size: 17px;
+}
+
+.center {
+align-items: center;
+
+}
+
+.hottest-post {
+display: flex;
+flex-direction: column;
+gap: 1.8rem;
+}
+
+
+.hot1 {
+display: flex;
+flex-direction: column;
+gap: 0.9rem;
+}
+
+.hot-pic {
+width: 150px;
+height: 80px;
+background: url(regina.png);
+background-size: cover;
+}
+
+.hot-pic2 {
+background: url(ariana.png);
+background-size: cover;
+}
+
+.hot-pic3 {
+background: url(sabinus2.png);
+background-size: cover;
+}
+
+.hot-pic4 {
+background: url(blood.png);
+background-size: cover;
+}
+
+.hot-write {
+width: 150px;
+font-size: 14px;
+text-align: left;
+color: white;
+
+font-family: calibri;
+}
+
+h4 {
+background: rgb(13,13,13);
+z-index: 5;
+width: 120px;
+font-weight: 800;
+}
+
+.the-hot {
+display: flex;
+align-items: center;
+justify-content: space-between;
+overflow: auto;
+border-top: 1px solid grey;
+padding-top: 50px;
+margin-top: -40px;
+}
+
+.main-content {
+padding: 0px 40px;
+margin-top: 40px;
+}
+
+.main-post {
+display: flex;
+flex-direction: column;
+gap: 3rem;
+margin-top: 30px;
+}
+
+.the-main-post {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.the-main-post2 {
+margin-top: 30px;
+}
+
+
+.post-pic {
+width: 100%;
+height: 360px;
+background: url(pic1.png);
+background-size: cover;
+}
+
+
+.post-pic2 {
+background: url(lady.jpg);
+background-size: cover;
+}
+
+.post-write {
+font-size: 40px;
+font-family: New Times Romans;
+font-weight: 800;
+}
+
+body {
+background: rgba(0,0,0,0.95);
+color: white;
+}
+
+.viral {
+margin-left: 30px;
+margin-top: 60px;
+display: flex;
+flex-direction: column;
+}
+
+.viral-posts {
+display: flex;
+flex-direction: column;
+gap: 3.5rem;
+margin-top: 30px;
+}
+
+
+
+.the-post-pic {
+height: 80px;
+background: url(viral.jpg);
+background-size: cover;
+}
+
+.the-post-write {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.time {
+color: grey;
+font-size: 12px;
+}
+
+ .pic2 {
+background: url(blog6.jpg);
+background-size: cover;
+}
+
+
+.pic3 {
+background: url(blog7.jpg);
+background-size: cover;
+}
+
+.pic4 {
+background: url(blog1.png);
+background-size: cover;
+}
+
+.pic5 {
+background: url(blog2.jpeg);
+background-size: cover;
+}
+
+
+.pic6 {
+background: url(blog3.jpg);
+background-size: cover;
+}
+
+
+.pic7 {
+background: url(blog4.jpg);
+background-size: cover;
+}
+
+
+
+.mobile-nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+align-items: center;
+display: none;
+text-align: center;
+}
+
+
+img {
+
+}
+
+.writer {
+color: grey;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.writer span{
+color: grey;
+margin-left: 20px;
+}
+
+.plenty {
+margin-top: 50px;
+}
+
+.celebrity-container {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.celebrity-posts {
+display: flex;
+flex-direction: column;
+gap: 4rem;
+}
+
+.celebrity1 {
+display: flex;
+gap: 1.5rem;
+}
+
+.pic-cover {
+width: 20%;
+height: 50px;
+}
+
+.celebrity-pic {
+width: 50px;
+height: 50px;
+background: url(ceb.jpeg);
+background-size: cover;
+border-radius: 50%;
+}
+
+.celebrity-write {
+width: 80%;
+font-weight: 800;
+font-family: New Times Romans;
+}
+
+
+.sports {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+
+.sports h4{
+margin-left: 40px;
+}
+
+.sport-posts {
+display: flex;
+flex-direction: column;
+gap: 7rem;
+}
+
+.sport1 {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+padding: 0px 40px;
+}
+
+.sport-pic {
+width: 100%;
+height: 220px;
+background: url(phyna.jpg);
+background-size: cover;
+}
+
+
+.sport-write {
+font-size: 33px;
+}
+
+.music-container {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.music-posts {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.music1 {
+display: flex;
+align-items: center;
+gap: 2rem;
+border-top: 1px solid grey;
+padding-top: 10px;
+}
+
+.music1 i{
+font-size: 18px;
+}
+
+.third {
+margin-top: 50px;
+}
+
+.change {
+font-family: intial;
+}
+
+
+.footer {
+background: rgb(26,26,26);
+margin-top: 120px;
+display: flex;
+flex-direction: column;
+padding: 40px 50px;
+}
+
+.contact-line {
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid rgba(255,255,255, 0.1);
+padding-bottom: 20px;
+}
+
+.left-line {
+display: flex;
+gap: 2rem;
+}
+
+.phone-number {
+color: grey;
+}
+
+.write-preview {
+font-size: 15px;
+color: rgba(255,255,255, 0.7)
+}
+
+.search-icon {
+margin-top: 13px;
+}
+
+.mobile-menu{
+margin-top: 13px;
+}
+
+.search-icon i {
+font-size: 18px;
+}
+
+.mobile-menu i {
+font-size: 25px;
+}
+
+
+.writer-pic {
+background: url(frosh2.jpg);
+background-size: cover;
+border: none;
+width: 25px;
+height: 25px;
+}
+
+.para {
+margin-top: 20px;
+}
+
+.write-preview {
+font-size: 19px;
+margin-top: 25px;
+line-height: 30px;
+}
+
+.inside-pic {
+margin-top: 90px;
+height: 500px;
+background: url(kuti2.jpg);
+background-size: cover;
+}
+
+.related-post {
+padding: 30px 60px;
+margin-top: 100px;
+}
+
+
+.sidenav i {
+margin-right: 15px;
+}
+
+
+.logo2 {
+color: #00acee;
+}
+
+
+img {
+width: 100%;
+}
+
+.reply-box input {
+width: 700px;
+height: 85px;
+background: #eee;
+color: black;
+padding: 0px 20px;
+
+} 
+
+.reply-box {
+margin-top: 80px;
+border-top: 3px solid rgba(255,255,255,0.2);
+}
+
+
+.reply-box input::placeholder {
+font-size: 15px;
+}
+
+.reply-box button{
+background: rgb(26,26,26);
+color: white;
+height: 40px;
+width: 100px;
+font-family: arial;
+font-weight: 600;
+margin-top: 20px;
+}
+
+
+.center a:hover {
+color: red;
+}
+
+.center a{
+transition: 0.2s linear;
+}
+
+.home a{
+border-bottom: 4px solid red;
+padding-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+.reply-box input {
+width: 350px;
+height: 70px;
+background: #eee;
+color: black;
+padding: 0px 20px;
+
+} 
+
+
+.related-post {
+padding: 0px 30px;
+margin-top: 100px;
+}
+
+.contact-line {
+display: flex;
+flex-direction: column;
+gap: 2.3rem;
+}
+
+.left-line {
+font-size: 10px;
+}
+
+
+.main-content {
+padding: 0px 0px;
+margin-top: 40px;
+}
+
+.sat {
+display: none;
+}
+
+
+.post-pic {
+width: 100%;
+height: 200px;
+}
+
+.post-write {
+font-size: 25px;
+font-family: Eras ITC Light;
+font-weight: 1000;
+}
+
+.viral {
+margin-left: 0px;
+display: flex;
+flex-direction: column;
+padding: 0px 20px;
+}
+
+.nav {
+display: none;
+}
+
+.the-post {
+display: flex;
+}
+
+.mobile-nav {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 15px;
+padding: 0px 30px;
+align-items: center;
+}
+
+img {
+margin-left: 10px;
+}
+
+h1 {
+font-size: 28px;
+font-weight: 800;
+}
+
+.the-post-pic {
+width: 30%;
+height: 70px;
+background-size: cover;
+}
+
+
+.the-post-write {
+width: 70%;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+justify-content: space-between;
+}
+
+.post-write {
+font-size: 25px;
+font-family: New Times Romans;
+font-weight: 800;
+}
+
+.celebrity1 {
+display: flex;
+gap: 0rem;
+}
+
+.sport1 {
+padding: 0px 10px;
+}
+
+.sports h4{
+margin-left: 10px;
+}
+
+.sports {
+margin-top: 50px;
+}
+
+.music-container {
+margin-top: 40px;
+}
+
+.sport-write {
+font-size: 25px;
+}
+
+
+}
+
+
+
+@media (max-width: 320px){
+body {
+width: 110%;
+}
+
+}
+
+
+@media (max-width: 365px){
+
+.post-write {
+font-size: 17px;
+}
+
+
+}
+
+@media (max-width: 290px){
+body {
+width: 125%;
+}
+
+
+}
+
+@media (max-width: 250px){
+body {
+width: 145%;
+}
+
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="blogpage.html"><i class="bi-house"></i> Home </a>
+  <a href="mycss.html"><i class="bi-headset"></i> Music</a>
+  <a href="mycss.html"> <i class="bi-instagram"></i> Viral News</a>
+  <a href="mycss.html"><i class="bi-flag"></i> Nigerian</a>
+  <a href="mycss.html"> <i class="bi-facebook"></i>Entertainment</a>
+  <a href="mycss.html"><i class="bi-person"></i> Profile</a>
+  <a href="mycss.html"><i class="bi-tools"></i>Settings</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+
+
+
+<section class="date">
+<div class="contact">
+<div class="ad">
+Advertise
+</div>
+<div class="ad">
+Contact 
+</div>
+
+</div>
+
+<div class="main-date">
+<div class="sat">
+Saturday, February 4, 2023
+</div>
+<div class="icons">
+<ul>
+<li><a href="#"><i class="bi-facebook"></i></a></li> 
+<li><a href="#"><i class="bi-instagram"></i></a></li> 
+<li><a href="#"><i class="bi-twitter"></i></a></li> 
+<li><a href="#"><i class="bi-snapchat"></i></a></li> 
+</ul>
+</div>
+</div>
+
+</section>
+
+<div class="container-fluid nav">
+<div class="row center">
+<div class="col-sm-3 logo"><h1><span>Insta</span> Tweets</h1></div>
+<div class="col-sm-1 links home"><a href="blogpage.html">Home</a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Music</a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Viral news</a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Nigerian </a></div>
+<div class="col-sm-1 links"><a href="mycss.html">Entertainment</a></div>
+<div class="col-sm-4 right-links">
+<div class="search-bar">
+<i class="bi-search"></i>
+</div>
+<div class="profile-pic">
+</div>
+<div class="menu" onclick="openNav()">
+<i class="bi-list"></i>
+</div>
+</div>
+
+</div>  
+</div>
+
+
+<div class=" mobile-nav">
+<div class="search-icon">
+<i class="bi-search"></i>
+</div>
+<div class="logo2">
+<h1><span>I </span>TWEETS</h1>
+</div>
+<div class="mobile-menu" onclick="openNav()">
+<i class="bi-list"></i>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid">
+<div class="row main-content">
+<div class="col-sm-8 left-content">
+
+
+<div class="main-post">
+<h4> </h4>
+
+
+<div class="the-main-post">
+
+<div class="post-write">
+Seun Kuti claims Lagos State belongs to the Portuguese(pics)
+</div>
+
+<div class="writer">
+<div class="profile-pic writer-pic"></div>By Oyebode Joseph <span> 2 FEBUARY 2023</span>
+</div>
+<div class="post-pic">
+</div>
+
+<div class="write-preview">
+Seun Kuti, the Nigerian Afrobeat singer and son of legendary musician Fela Kuti, has sparked controversy with his recent claims that Lagos State belongs to the Portuguese.
+
+<p class="para">However, Kuti's assertion that the Portuguese are the rightful owners of Lagos has drawn significant attention.
+
+In a recent series of Instagram postings, Kuti claimed that Lagos belongs to the Portuguese because they were the first Europeans to arrive in the area. He argued that the Portuguese had a legitimate claim to the land because they had established a trading post there before other Europeans arrived. </p>
+
+
+<div class="post-pic inside-pic">
+</div>
+
+<p class="para">The singer draws his claim from the simple fact that Lagos was named by the Portuguese. According to him, anyone who names a person or thing owns it.<br>
+ </p>
+
+<p>  <i>“Lagos is no man’s land – wrong. Lagos is yoruba land – wrong again. Lagos is a European satellite slave port – correct!! you don’t know Lagos!! Hey, ode look here, Lagos is a Portuguese word. It is called the slave coast. Learn your history, you no go gree. Everyone moved to Lagos to slave!! All prominent Lagos elites are slavers. Defend your masters all you want!! Why Ibadan no get Portuguese name? Wetin be the french name of Oshogbo? He who names it owns it,"</i> he opined.
+</p>
+
+<p> Kuti's claims have sparked a wide range of reactions, with many Nigerians expressing disbelief and outrage. Some have accused Kuti of being ignorant of history and of promoting colonialism. Others have argued that Kuti's claims have some merit and that the Nigerian government should do more to acknowledge the city's complex history.
+
+</p>
+
+<p> 
+The question of who owns Lagos State remains a contentious issue, and Seun Kuti's recent claims have added fuel to the debate. While Kuti's assertion that the Portuguese are the rightful owners of Lagos may be controversial, it has brought attention to the complex history of the region and prompted discussions about how best to acknowledge and honour that history.
+
+<div class="post-pic">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+<div class="reply-box">
+<h2>Leave a Reply</h2>
+
+<input class="reply" type="text" placeholder="Enter your comment here"><br>
+
+<button>comment</button>
+</div>
+
+
+
+
+</div>
+
+<div class="col-sm-4 right-content">
+
+
+<div class="viral">
+<h4> READ ALSO</h4>
+
+<div class="viral-posts">
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic2">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+Actress Adesua dragged to shreds over Valentine’s Day message to husband, Banky W
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic3">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“CBN will not be used to frustrate 2023 polls” – Governor Godwin Emiefele tells INEC 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic4">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic5">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic6">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+
+<div class="row the-post">
+<div class=" col-sm-4 the-post-pic pic7">
+</div>
+<div class="col-sm-8 the-post-write">
+<div class="write">
+“You struggled to get a good car but your enemies killed you and took it away” – Brother mourns Bolt 
+</div>
+<div class="time">
+<i class="bi-clock"></i> FEBRUARY 9, 2023
+</div>
+</div>
+</div>
+
+<img src="ad.gif">
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<div class="container-fluid related-post">
+<h4>RELATED&nbsp;POST</h4>
+<div class="row">
+<div class="col-sm-4">
+<div class="music-posts">
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="col-sm-4">
+<div class="music-posts">
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time time2">
+By Joseph Oyebode 
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="col-sm-4">
+<div class="music-posts">
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+<div class="music1">
+<div class="music-cover">
+<div class="music-pic">
+<i class="bi-caret-right"></i>
+</div>
+</div>
+<div class="music-write">
+We’ve arrested nine persons over banks, cars set abl@ze in Warri, Delta State — Police
+<div class="time related">
+By Oyebode Joseph
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<div class="container-fluid footer">
+
+<div class="contact-line">
+<div class="left-line">
+<a href="#">
+<div class="go-home">
+Go Home /
+</div>
+</a>
+<div class="connect-facebook">
+Connect on facebook /
+</div>
+<div class="connect-twitter">
+Connect on twitter 
+</div>
+</div>
+<div class="right-line">
+<div class="phone-number">
+contact us on +2347048311985
+</div>
+</div>
+</div>
+<div class="row">
+
+
+
+</div>
+
+
+<script>
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>
