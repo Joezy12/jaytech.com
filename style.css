@@ -770,6 +770,10 @@ section .main_btn:hover i{
     display: none;
 }
 
+html {
+    overflow-x : hidden;  
+    
+}
 .menu .menu_box {
     display: flex;
     flex-direction: column;
@@ -786,6 +790,10 @@ section .main_btn:hover i{
     height: 480px;
     padding-top: 10px;
     margin-bottom: 20px;
+}
+
+.menu h1{
+    margin-top: 0px;
 }
 
 }   
