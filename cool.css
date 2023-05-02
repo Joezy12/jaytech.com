@@ -576,8 +576,22 @@ margin-left: 70px;
         .ad-cover {
             paddng-left: 2px;
             text-align: center;
+            width: 100%;
+            
         }
 
+        body {
+            width: 100%;
+            
+        }
+        
+        html {
+            overflow-x: hidden;
+            
+        }
+        .top-nav {
+            width: 100%;
+        }
         .body-ad {
             padding-left:20px;
             padding-right: 15px;
