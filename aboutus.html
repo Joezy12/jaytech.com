@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="cool.css">
+<link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: poppins;
+            }
+            #about-section {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                
+                padding: 80px 7%;
+            }
+
+            .bold {
+                color: black;
+                font-weight: 600;
+            }
+            .about-left {
+                width: 530px;
+                height: 65vh;
+               border-radius: 5px;
+                margin-right: 40px;
+                background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) ,url(aboutpic.jpg);
+                background-size: cover;
+                position: fixed;
+                margin-top: 80px;
+                
+            }
+            .about-right {
+                width: 54%;
+                margin-left: 590px;
+                margin-top: 50px;
+            }
+
+            .about-right ul li {
+                display: flex;
+                align-items: center;
+            }
+
+            .about-right h1 {
+                color: rgba(5,161,80,1);
+                font-size: 37px;
+                margin-bottom: 5px;
+            }
+
+            .about-right p {
+                color: #444;
+                line-height: 26px;
+                font-size: 15px;
+            }
+
+            .about-right .address {
+                margin: 25px 0;
+            }
+
+            .about-right .address ul li {
+                margin-bottom: 5px;
+            }
+
+            .address .address-logo {
+                margin-right: 15px;
+                color: rgba(255,0,0,1);
+            }
+
+            .address .saprater {
+                margin: 0 35px;
+            }
+
+            .about-right .expertise ul {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .expertise h3 {
+                margin-bottom: 10px;
+            }
+
+            .expertise .expertise-logo {
+                font-size: 19px;
+                margin-right: 10px;
+                color: #e74d06;
+            }
+
+            .nav-bar {
+                position: fixed;
+                width: 100%;
+                background: white;
+                margin-bottom: 70px;
+                margin-top:30px;
+            }
+
+            .head-info {
+                position: fixed;
+                width: 100%;
+                background: white;
+            }
+
+
+
+            /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: none;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #about-section {
+                
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-bar {
+                display: none;
+            }
+
+            .head-info {
+                display: none;
+            }
+
+            .about-left {
+               border-radius: 5px;
+                margin-right: 0px;
+                position: initial;
+                margin-top: 0px;
+                width: 100%;
+                height: 25vh;
+            }
+
+            .about-right {
+                width:100%;
+                margin-left: 2px;
+                margin-top: 2px;
+            }
+
+            .topnav {
+            display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+           
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <section class="head-info">
+            <div class="head-left">
+            <a href="#">
+            <div class="address">
+            Road 208, “C” Close, House 9, Festac Town, Lagos.
+            </div>
+            </a>
+            <a href="#">
+            <div class="phone-number">
+            +234-8033 150 399
+            </div>
+            </a>
+            
+            
+            </div>
+            
+            <div class="head-right">
+            <a href="#">
+            <div class="email">
+            seapslimited@gmail.com
+            </div>
+            </a>
+            <div class="icons">
+            <ul>
+            <a href="#"><li><i class="bi-facebook"></i></li></a>
+            <a href="#"><li><i class="bi-instagram"></i></li></a>
+            <a href="#"><li><i class="bi-whatsapp"></i></li></a>
+            </ul>
+            </div>
+            
+            </div>
+            </section>
+            
+            
+            <div class="container-fluid nav-bar">
+            <div class="row">
+            
+            
+            <div class="col-sm-3 logo">
+            
+            </div>
+            
+            
+            <a href="solarenergywebsiteproject.html"><div class="col-sm-1 home ">
+            Home &nbsp;
+            </div>
+            </a>
+            
+            <a href="#">
+            <div class="col-sm-1 home">
+            Product &nbsp;
+            </div>
+            </a>
+            
+            <div class="col-sm-1 home">
+            Services &nbsp;
+            </div>
+            
+            <div class="col-sm-1 home">
+            Contact &nbsp;
+            </div>
+            
+            <div class="col-sm-1 home">
+            Sponsors &nbsp;
+            </div>
+            
+            <div class="col-sm-1 home active">
+            About Us 
+            </div>
+            
+            <div class="col-sm-3 right-nav">
+            <div class="customer-care">
+            <i class="bi-headset"></i> &nbsp;help
+            </div>
+            <div class="open-nav">
+            <i class="bi-list"></i>
+            </div>
+            </div>
+            
+            
+            
+            </div>
+            </div>
+            
+        <section id="about-section">
+            <!-- about left  -->
+            <div class="about-left">
+                
+            </div>
+
+            <!-- about right  -->
+            <div class="about-right">
+                
+                <h1>About Us</h1>
+                <p>SOLAR ENERGY 
+                    And Power Transformers Nig. Ltd -SEAPS is totally committed to providing technological advancement and environment sensitive power back-up solutions to the dynamic needs of people, all over the nation and internationally.<br><br>
+                    SEAPS uses the Photovoltaic Technology, as a step to conversion of solar light into electricity, and over the years it has proved to be one of the most powerful instruments in bringing electricity to even the most remote regions of the world.<br><br>
+                    SEAPS is registered under the Federal Republic of Nigeria, Companies and Allied Matters, Decree 1990, and the objectives for which the company is established are: to carry on the business of renewable energy systems and components, solar modules (panels) manufacture, kits, controllers, inverters, general D.C. and A.C. supply, seminars, installation, exhibitions, importers, exporters, manufacturer’s representative, general merchants, solar electricity in all its ramifications.<br><br>
+                    <span class="bold">TO DESIGN:</span> supply and install Solar Powered Systems, industrial merchandising and marketing of Power Protection Equipments. <br><br>
+                    <span class="bold">TO CARRY:</span> on the business of solar arrays, solar power wind energy, research facilities, energy storage and photovoltaic, solar batteries, tabular plates, single cell, vented lead-acid batteries, modular systems.<br><br>
+                    <span class="bold">TO CARRY:</span> on the business of solar powered systems, inverters back-up systems, charge controllers, satellite telecommunication, radio, telephone, fax, computer, printers, telecommunications systems network for unmanned station and maintenance.<br><br>
+                    <span class="bold">TO CARRY:</span> on in Nigeria or elsewhere in the world, business as the designers of, distributors of, repairs of, buyers, sellers, distributors of suppliers of the dealer (whether as wholesalers of retailers) in all kind of electrical, electronic, mechanical, equipment’s, instruments, components, spares, accessories, appliances or other materials which are related directly or indirectly and to carry out all such operations and transactions as are incidental ditto.<br><br>
+                    <span class="bold">TO ALMAGAMATE:</span> with any other company whose objectives are or include objective similar to those of this company, whether by sale or purchase (for fully or partly paid-up share or otherwise) of the undertaken, subject to the liability of this or any such other company as aforesaid, with or without winding up or sale purchase (for fully or partly paid up shares or otherwise) of all, or a controlling interest in, the shares or stock of this any other company as aforesaid, or by, partnership, or in any other manner.<br><br>
+                    <h1>Mission Statement</h1>
+                    <p>Solar Energy And Power Transformers Nig. Ltd in partnership with our Foreign Expatriates, resolve to maintain THE TRUST of our customers by providing them RELIABLE PRODUCT to the ultimate level of FIT & FORGET manner through consistently incorporating innovative improvement and also ensuring that all our Associates do FULL worth of their investments. </p> <br><br>
+                    <h1>Vision</h1>
+                    <p>The vision of Solar Energy And Power Transformers Nigeria Limited is to be the best of the best. We are customer driven with quality services and products that conform to mutually agreed-upon requirements. Our goal is to perform our function right the first time. We will strive to become the role models in the solar and alternative energy industry. To do so, we have adopted the following mission:<br><br>
+                    <p class="bold"><i>For Our Customers :</i></p>
+                <ul>
+                    <li>•	To be the best service company in the industry relative to overall performance and attention to customer needs.</li>
+                    <li>•	To provide a wide array of quality products that maximizes utility to our customers.</li>
+                    <li>•	To provide a wide array of quality products that maximizes utility to our customers.</li>
+                </ul>
+                </p>
+                </p>
+                <div class="address">
+                    <ul>
+                        <li>
+                            <span class="address-logo">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                            <p>Address</p>
+                            <span class="saprater">:</span>
+                            <p>Road 208, “C” Close, House 9, Festac Town, Amu-Odofin, Lagos Nigeria.</p>
+                        </li>
+                        <li>
+                            <span class="address-logo">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+                            <p>Phone No</p>
+                            <span class="saprater">:</span>
+                            <p>+234-8033 150 399</p>
+                        </li>
+                        <li>
+                            <span class="address-logo">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                            <p>Email ID</p>
+                            <span class="saprater">:</span>
+                            <p>seapslimited@gmail.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+        </script>
+    </body>
+
+</html>
