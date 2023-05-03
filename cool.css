@@ -287,7 +287,20 @@ animation: appear 1.5s linear;
     background-size: cover;
     padding-left: 120px;
     padding-right: 90px;
+    animation: zoomout 15s linear  infinite;
 }
+
+@-webkit-keyframes zoomout {
+  0% {background-size: cover;}
+  50% {background-size: 5000px;}
+  100% {background-size: cover;}
+}
+@keyframes zoomout {
+    0% {background-size: 1500px;}
+  50% {background-size: 1700px;}
+  100% {background-size: 1500px;}
+}/*End of Zoom out Keyframes */
+
 
 .hot-product {
     padding-top: 40px;
