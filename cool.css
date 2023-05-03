@@ -66,6 +66,8 @@ border-bottom: 1px solid rgba(0,0,0,0.1);
 .phone {
   background: #eee;
   padding: 45px 10px 30px 7px;
+  display: none;
+  
 }
 
 .head-left {
@@ -549,6 +551,7 @@ margin-left: 70px;
     background-color: #333;
     overflow: hidden;
     display: none;
+    z-index: 5;
   }
   
   /* Style the links inside the navigation bar */
@@ -577,6 +580,22 @@ margin-left: 70px;
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
+  }
+
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
   }
   
   
@@ -718,6 +737,19 @@ margin-left: 70px;
 
 .contain {
   display: flex;
+}
+
+.phone {
+  display: block;
+}
+
+.ologo {
+width: 100%;
+background: url(logo.jpeg);
+background-size: 130px;
+height: 60px;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .round-cover {
