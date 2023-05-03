@@ -774,6 +774,12 @@ html {
     overflow-x : hidden;  
     
 }
+
+
+body {
+    overflow-x : hidden;  
+    
+}
 .menu .menu_box {
     display: flex;
     flex-direction: column;
