@@ -3,15 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden; 
 }
 
 section{
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 section nav{
@@ -769,6 +776,12 @@ section .main_btn:hover i{
 .nothing {
     display: none;
 }
+
+.menu h1{
+    font-size: 28px;
+}
+
+
 
 html {
     overflow-x : hidden;  
