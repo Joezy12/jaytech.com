@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 <link rel="stylesheet" href="mycss/style.css">
 <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 .image1 {
@@ -66,6 +67,26 @@ background: url(pictures/shake.jpg);
 background-size: cover;
 background-position: center;
 }
+
+
+.do-pic {
+height: 680px;
+background: url(pictures/loan1.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.news-letter {
+background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(pictures/flexi.avif);
+background-attachment: fixed;
+text-align: center;
+align-items: center;
+justify-content: center;
+height: 45vh;
+padding-top: 100px;
+}
+
 </style>
 </head>
 
@@ -151,15 +172,15 @@ Language:
 <div class="slider">
     <div class="slide">
       <div class="image1"></div>   <div class="slide-content">
-  <p class="top-text">Welcome To Hart County Trust Bank</p>      <p class="head-text">YOUR <span>NUMBER ONE</span> BANKING OPTION</p>
-        <p class="top-text">Finally, A bank that gives you more. Rewards Checking from Hart County Trust Bank offers the flexibility and convenience you desire </p>
+  <p class="top-text" id="first">Welcome To Hart County Trust Bank</p>      <p class="head-text" id="second">YOUR <span>NUMBER ONE</span> BANKING OPTION</p>
+        <p class="top-text" id="third">Finally, A bank that gives you more. Rewards Checking from Hart County Trust Bank offers the flexibility and convenience you desire </p>
    <a href="#"><button class="login-btn">Login</button></a>   </div>
     </div>
     <div class="slide">
      <div class="image2"></div>
       <div class="slide-content">
-  <p class="top-text">Welcome To Hart County Trust Bank</p>      <p class="head-text">MOBILE <span>BANKING HAS</span> NEVER BEEN THIS EASY.</p>
-        <p>Slide 2 description.</p>
+  <p class="top-text" id="first">Welcome To Hart County Trust Bank</p>      <p class="head-text" id="second">MOBILE <span>BANKING HAS</span> NEVER BEEN THIS EASY.</p>
+        <p id="third">Slide 2 description.</p>
       <a href="#"><button class="login-btn">Login</button></a></div>
     </div>
     <!-- Add more slides as needed -->
@@ -201,6 +222,234 @@ Continous Client Support
 </div>
 
 </section>
+
+<section class="container-fluid what-we-do">
+<div class="row">
+
+<div class="col-sm-6 do-pic">
+
+</div>
+
+<div class="col-sm-6 do-write-up">
+
+<h1> <span>W</span>hat We Do </h1>
+<p>At Hart County Trust Bank, we cater for the day-to-day banking requirements of consumers. Checking products are easy to operate and come with a host of added benefits like free internet banking, Loans, ATM/debit card facilities, online bill payment, monthly statement with image, low opening deposits, and many more. Generally, the services we offer involve preparing a financial plan or rendering a financial consultation for clients based on the client’s financial goals and objectives.</p>
+
+<div class="percent">
+
+<div>
+<div class="pc-1">
+98%
+<div id="clean1"></div>
+</div>
+<div class="pc-write">
+Communication
+</div>
+</div>
+
+<div>
+<div class="pc-1">
+100%
+<div id="clean2"></div>
+</div>
+<div class="pc-write">
+Integrity
+</div>
+</div>
+
+<div>
+<div class="pc-1">
+80%
+<div id="clean3"></div>
+</div>
+<div class="pc-write">
+Resource
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</section>
+
+<section class="container values">
+
+<p class="value-pa"> CHECK <span>OU</span>T OUR</p>
+
+<h2>Core Values </h2>
+
+<div class="row value-cover">
+<div class="col-sm-4 value-column" id="first">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-people-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Teamwork</h3>
+<p>A commitment to common goals<br> based on open and honest <br>communication.</p>
+</div>
+</div>
+
+<div class="col-sm-4 value-column" id="second">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-trophy-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Integrity</h3>
+<p>We are globally recognized for Our expertise and integrity, and thats what keeps Us running. </p>
+</div>
+</div>
+
+<div class="col-sm-4 value-column" id="third">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="fa fa-handshake-o"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Communication</h3>
+<p>Effective banking communication strengthens the relationship between We and You. </p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="container values services">
+
+<p class="value-pa"> TAKE <span>A LO</span>OK AT </p>
+
+<h2>What We Offer </h2>
+
+<div class="row value-cover">
+<div class="col-sm-4 value-column" id="first">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-people-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Off-shore Accounts</h3>
+<p>We Offer Offshore Account <br>for easy and reliable <br>International Transactions</p>
+</div>
+</div>
+
+<div class="col-sm-4 value-column" id="second">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-house-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Mortages</h3>
+<p>Mortgages
+Whether you’re purchasing your first home, buying a vacation property, or refinancing an existing mortgage, Hypex Financial Trust Bank Residential Loan Consultants can help you navigate the rewarding path to homeownership</p>
+</div>
+</div>
+
+<div class="col-sm-4 value-column" id="third">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-credit-card"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Credit Cards</h3>
+<p>We are dedicated to providing you with more flexible and useful credit tools – and our selection of Hypex Financial Trust Bank Visa® Credit Cards delivers on this commitment.Used for everyday expenses.</p>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="row value-cover service-cover">
+<div class="col-sm-4 value-column" id="first">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-people-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>consultancy</h3>
+<p>A commitment to common goals<br> based on open and honest <br>communication.</p>
+</div>
+</div>
+
+<div class="col-sm-4 value-column" id="second">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-trophy-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Bonds and Guarantee</h3>
+<p>We provide services that support your business by demonstrating your creditworthiness and ability to meet contractual obligations.</p>
+</div>
+</div>
+
+<div class="col-sm-4 value-column" id="third">
+<div class="value-icon-cover">
+<div class="value-icon">
+<i class="bi-people-fill"></i>
+</div>
+</div>
+<div class="value-write">
+<h3>Cash Management</h3>
+<p>Our Cash management platform is an electronic collections platform which provides online real-time updates for monitoring and tracking transactions.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="container-fluid news-letter">
+
+<p> Subscribe to our newsletter </p>
+<input type="text" placeholder="enter your email" /><button type="submit">subscribe</button>
+<p class="smaller">We can't wait to hear from you</p>
+</section>
+
+<div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Installation</a></li>
+                                <li><a href="#">Distribution</a></li>
+                                <li><a href="#">Servicing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Hart County Trust Bank</h3>
+                            <p>This website is a copywrite of SEAPS Limited subjected to @webikingz<br>
+                            All data are encrypted and stored as cookies for tracking purpose</p>
+                        </div>
+                        
+                    </div>
+                    <p class="copyright">Hart County Trust Bank© 2023</p>
+                </div>
+            </footer>
+        </div>
+
 <script>
 window.onscroll = function() {myFunction()};
 
