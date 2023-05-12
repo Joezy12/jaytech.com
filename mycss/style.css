@@ -133,6 +133,7 @@ scroll-behaviour: smooth;
 
 * {
 scroll-behaviour: smooth;
+
 }
 
 .image {
@@ -489,6 +490,9 @@ font-size: 25px;
 text-align: center;
 }
 
+.value-write {
+width: 80%;
+}
 
 .value-write h3{
 font-weight: 800;
@@ -598,3 +602,212 @@ background: grey;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+* {
+scroll-behaviour: smooth;
+overflow-x: hidden;
+}
+
+.phone-nav {
+display: block;
+}
+
+.desktop-nav {
+display: none;
+}
+
+nav {
+width: 100%;
+padding: 3px 20px;
+}
+
+.logo {
+width: 200px;
+}
+
+.selected-lang span img{
+width: 100px;
+margin: 6px 0px 0px -10px;
+}
+
+.stack {
+margin-top: 80px;
+}
+
+.the-text {
+font-size: 30px;
+}
+
+.do-write-up p{
+font-size: 22px;
+line-height: 35px;
+}
+
+.do-write-up{
+overflow-y: hidden;
+height: 800px;
+}
+
+.values {
+padding: 5px 50px;
+margin-top: 60px;
+}
+
+.values br{
+display: none;
+}
+
+.value-icon-cover {
+}
+
+.news-letter {
+margin-top: 150px;
+}
+
+.write-up {
+text-align: center;
+padding: 2px 90px;
+}
+
+.loan-write {
+font-size: 21px;
+}
+
+.value-write p{
+font-size: 20px;
+line-height: 28px;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 810px) {
+
+* {
+scroll-behaviour: smooth;
+overflow-x: hidden;
+}
+
+.phone-nav {
+display: block;
+}
+
+.desktop-nav {
+display: none;
+}
+
+nav {
+width: 100%;
+padding: 3px 20px;
+}
+
+.logo {
+width: 200px;
+}
+
+.selected-lang span img{
+width: 100px;
+margin: 6px 0px 0px -10px;
+}
+
+.stack {
+margin-top: 80px;
+padding: 2px 40px;
+}
+
+.the-text {
+font-size: 30px;
+}
+
+.do-write-up p{
+font-size: 22px;
+line-height: 35px;
+}
+
+.do-write-up{
+overflow-y: hidden;
+height: 800px;
+}
+
+.values {
+padding: 5px 50px;
+margin-top: 60px;
+}
+
+.values br{
+display: none;
+}
+
+.value-icon-cover {
+width: 15%;
+}
+
+.news-letter {
+margin-top: 150px;;
+}
+
+.write-up {
+text-align: center;
+padding: 2px 55px;
+}
+
+.loan-write {
+font-size: 23px;
+overflow-y: hidden;
+}
+
+.value-write p{
+font-size: 20px;
+line-height: 28px;
+overflow-y: hidden;
+}
+
+.value-write h3{
+font-size: 27px;
+overflow-y: hidden;
+}
+
+
+.loan-top-text {
+font-size: 17px;
+}
+
+.loan-head {
+font-size: 39px;
+}
+
+.slide-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  width: 80%;    transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+
+
+
+
+}
