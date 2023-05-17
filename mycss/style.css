@@ -702,7 +702,7 @@ line-height: 28px;
 
 
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 825px) {
 
 * {
 scroll-behaviour: smooth;
@@ -751,7 +751,7 @@ height: 800px;
 }
 
 .values {
-padding: 5px 50px;
+padding: 5px 80px;
 margin-top: 60px;
 }
 
@@ -784,7 +784,7 @@ overflow-y: hidden;
 }
 
 .value-write h3{
-font-size: 27px;
+font-size: 22px;
 overflow-y: hidden;
 }
 
@@ -808,6 +808,56 @@ font-size: 39px;
 
 
 
+.news-letter input {
+width: 300px;
+}
 
 
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.head-text {
+font-size: 25px;
+}
+
+.loan-head {
+font-size: 15px;
+}
+
+.loan {
+text-align: left;
+}
+
+.write-up {
+padding: 0px 10px;
+}
+
+.loan-top-text {
+font-size: 14px;
+}
+
+.loan-head {
+font-size: 24px;
+}
+
+.loan-write {
+font-size: 16px;
+}
+
+.loan-btn {
+padding: 15px 56px;
+}
+
+.stack {
+padding: 3px 10px;
 }
