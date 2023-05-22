@@ -127,7 +127,7 @@ nav {
 }
 
 html {
-scroll-behaviour: smooth;
+scroll-behaviour: smooth ;
 }
 
 
@@ -824,7 +824,7 @@ width: 300px;
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
 
 .head-text {
 font-size: 25px;
@@ -860,4 +860,75 @@ padding: 15px 56px;
 
 .stack {
 padding: 3px 10px;
+}
+
+.the-text {
+font-size: 23px;
+}
+
+.do-write-up {
+padding-left: 30px;
+padding-right: 30px;
+}
+
+}
+
+
+@media screen and (max-width: 610px) {
+
+.head-text {
+font-size: 25px;
+}
+
+.loan-head {
+font-size: 15px;
+}
+
+.loan {
+text-align: left;
+}
+
+.write-up {
+padding: 0px 10px;
+}
+
+.loan-top-text {
+font-size: 14px;
+}
+
+.loan-head {
+font-size: 24px;
+}
+
+.loan-write {
+font-size: 16px;
+}
+
+.loan-btn {
+padding: 15px 56px;
+}
+
+.stack {
+padding: 3px 10px;
+}
+
+.the-text {
+font-size: 20px;
+}
+
+.do-write-up {
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.do-write-up h1 {
+font-size: 30px;
+}
+
+.do-write-up p {
+font-size: 17px;
+}
+
+
+
 }
