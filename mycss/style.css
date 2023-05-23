@@ -130,6 +130,9 @@ html {
 scroll-behaviour: smooth ;
 }
 
+body {
+background: #eef;
+}
 
 * {
 scroll-behaviour: smooth;
@@ -182,11 +185,11 @@ padding: 30px 19px;
 }
 
 #navbar a:hover {
-  color: red;
+  color: yellow;
 }
 
 #navbar a.active {
-  color: red;
+  color: yellow;
  margin-left:70px;
  
 }
@@ -216,6 +219,7 @@ font-size: 22px;
 font-weight: bold;
 font-family: 'Open Sans', sans-serif;
 align-items: center;
+
 }
 
 .right-nav i {
@@ -601,6 +605,9 @@ color: white;
 background: grey;
 }
 
+.logo img {
+width: 170px;
+}
 
 
 
@@ -826,6 +833,19 @@ width: 300px;
 
 @media screen and (max-width: 550px) {
 
+.value-column {
+display: flex;
+gap: 2.6rem;
+}
+
+.values {
+padding: 8px 20px;
+}
+
+.value-icon-cover {
+width: 65px;
+}
+
 .head-text {
 font-size: 25px;
 }
@@ -928,6 +948,144 @@ font-size: 30px;
 .do-write-up p {
 font-size: 17px;
 }
+
+.logo img {
+width: 150px;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 490px) {
+
+
+
+.values {
+padding: 8px 20px;
+}
+
+.lang-label {
+display: none;
+}
+
+.logo img {
+width: 140px;
+}
+
+}
+
+
+@media screen and (max-width: 440px) {
+
+
+.pc-1 {
+width: 70px;
+height: 70px;
+border: 3px solid black;
+text-align: center;
+justify-contents: center;
+padding: 20px 0px 0px 0px;
+border-radius: 50%;
+font-size: 14px;
+font-weight: bold;
+box-shadow: 0px 0px 14px rgba(0,0,0,0.4);
+}
+
+.pc-write {
+font-size: 12px;
+}
+
+.percent {
+gap: 1.6rem;
+justify-content: center;
+}
+
+.do-write-up {
+height: 850px;
+}
+
+
+.do-write-up p{
+font-size: 16px;
+}
+
+
+.value-column {
+display: flex;
+gap: 2.6rem;
+}
+
+.values {
+padding: 8px 20px;
+}
+
+.value-icon-cover {
+width: 65px;
+}
+
+.news-letter p{
+font-size: 19px;
+}
+
+.news-letter input{
+height: 35px;
+width: 190px;
+}
+
+.news-letter button{
+height: 35px;
+width: 75px;
+font-size: 10px;
+padding: 0;
+}
+
+
+.logo img {
+width: 130px;
+}
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+
+
+.logo img {
+width: 110px;
+}
+
+.selected-lang {
+width: 70px;
+height: 25px;
+font-size: 12px;
+}
+
+.top-text {
+font-size: 14px;
+}
+
+.head-text2 {
+font-size: 2px;
+}
+
+.login-btn {
+font-size: 13px;
+padding: 12px 32px;
+}
+
+.slide-content {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
 
 
 
