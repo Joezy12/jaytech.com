@@ -79,3 +79,9 @@ textarea:focus, input:focus {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 }
+
+@media screen and (max-width: 825px) {
+.login-pic {
+    display: none;
+}
+}
