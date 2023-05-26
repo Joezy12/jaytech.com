@@ -14,10 +14,9 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="mycss/contactstyle.css">
-    <link rel="stylesheet" href="mycss/loanstyle.css">
-    <link rel="stylesheet" href="mycss/aboutstyle.css">
     <link rel="stylesheet" href="mycss/style.css">
+    <link rel="stylesheet" href="mycss/contactstyle.css">
+    
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -297,6 +296,9 @@
           padding: 2px 25px;
 
         }
+      }
+
+ s
     </style>
   </head>
 
@@ -308,7 +310,7 @@
 
         <div class="logo">
 
-          <a href="#"><img class="image" src="pictures/logo.png" alt="" style="width: 170px;"></a>
+          <a href="#"><img class="image" src="pictures/logo.png" alt="" style="width: 170px;" ></a>
 
         </div>
 
@@ -373,7 +375,7 @@
           <a class="desktop-nav" href="aboutus.html">About Us</a>
           <a class=" desktop-nav" href="services.html">Services</a>
         </div>
-        <div class="phone-nav"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
+        <div class="phone-nav" onclick="openNav()"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
       </div>
       <div class="right-nav">
         <p><i class="bi-mouse-fill"></i> Virtual Banking</p>
@@ -574,6 +576,15 @@
       </footer>
     </div>
 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="loan.html">Loan</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="services.html">Services</a>
+    </div>
+
 
 
 
@@ -649,8 +660,20 @@
       });
     </script>
 
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
 
 
   </body>
+
   </html>
-  </DOCTYPE>
+</DOCTYPE>

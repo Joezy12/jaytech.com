@@ -200,16 +200,16 @@
 
 
         @keyframes zoom-out {
-        0% {
-          background-size: 1100px;
-          background-position: -400px 0px;
-        }
+          0% {
+            background-size: 1100px;
+            background-position: -400px 0px;
+          }
 
-        100% {
-          background-size: 900px;
-          background-position: -400px 0px;
+          100% {
+            background-size: 900px;
+            background-position: -400px 0px;
+          }
         }
-      }
 
 
         .values {
@@ -241,7 +241,7 @@
 
         <div class="logo">
 
-          <a href="#"><img class="image" src="pictures/logo.png" alt="" ></a>
+          <a href="#"><img class="image" src="pictures/logo.png" alt=""></a>
 
         </div>
 
@@ -306,7 +306,7 @@
           <a class="desktop-nav" href="aboutus.html">About Us</a>
           <a class="desktop-nav" href="services.html">Services</a>
         </div>
-        <div class="phone-nav"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
+        <div class="phone-nav " onclick="openNav()"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
       </div>
       <div class="right-nav">
         <p><i class="bi-mouse-fill"></i> Virtual Banking</p>
@@ -346,7 +346,7 @@
           <p class="loan-head"> Loan Offers </h2>
           <p class="loan-write"> At Hart County Trust Bank, our Personal Lines & Loans are designed to give our clients
             maximum flexibility and funding option</p>
-          <button class="loan-btn">APPLY</button>
+            <a href="loan.html"><button class="loan-btn">APPLY</button></a>
         </div>
 
         <div class="col-md-3 stack">
@@ -613,6 +613,21 @@
       </footer>
     </div>
 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="loan.html">Loan</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="services.html">Services</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+
     <script>
       window.onscroll = function () { myFunction() };
 
@@ -683,6 +698,18 @@
           } // End if
         });
       });
+    </script>
+
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
     </script>
 
   </body>

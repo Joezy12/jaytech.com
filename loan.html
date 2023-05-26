@@ -373,7 +373,7 @@
           <a class="desktop-nav" href="aboutus.html">About Us</a>
           <a class=" desktop-nav" href="services.html">Services</a>
         </div>
-        <div class="phone-nav"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
+        <div class="phone-nav" onclick="openNav()"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
       </div>
       <div class="right-nav">
         <p><i class="bi-mouse-fill"></i> Virtual Banking</p>
@@ -398,8 +398,8 @@
           <p>From time to time in life and business, we find ourselves needing a little or a lot more money than we have
             to meet certain pressing financial goals. At Hart County Trust Bank our loan offerings provide a fall-back
             position to secure the funds you need.</p>
-          <button class="loan-btn" style="padding: 12px 35px; border-radius: 0; background: red; color: white;
-font-size: 13px; font-family: Montserrat;">APPLY NOW </button>
+          <a href="loan.html"><button class="loan-btn" style="padding: 12px 35px; border-radius: 0; background: red; color: white;
+font-size: 13px; font-family: Montserrat;">APPLY NOW </button></a>
         </div>
         <div class="col-md-6 the-loan-pic">
           <div class="loan-img">
@@ -527,6 +527,15 @@ font-size: 13px; font-family: Montserrat;">APPLY NOW </button>
       </footer>
     </div>
 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="loan.html">Loan</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="services.html">Services</a>
+    </div>
+
 
 
 
@@ -602,9 +611,22 @@ font-size: 13px; font-family: Montserrat;">APPLY NOW </button>
       });
     </script>
 
+    <script>
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+
 
 
   </body>
 
   </html>
-  </DOCTYPE>
+</DOCTYPE>
