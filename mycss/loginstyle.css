@@ -85,3 +85,51 @@ textarea:focus, input:focus {
     display: none;
 }
 }
+
+@media screen and (max-width: 450px) {
+   body {
+    padding: 0px 20px;
+   }
+
+   .login-side input[type=email] {
+    border-radius: 6px 0px 0px 6px;
+    height: 40px;
+    width: 240px;
+    border: none;
+    background: #eef;
+}
+
+.login-side input[type=text] {
+    border-radius: 6px 0px 0px 6px;
+    height: 40px;
+    width: 240px;
+    border: none;
+    background: #eef;
+}
+    }
+
+    @media screen and (max-width: 320px) {
+        body {
+         padding: 0px 25px;
+        }
+     
+        .login-side input[type=email] {
+         border-radius: 6px 0px 0px 6px;
+         height: 40px;
+         width: 200px;
+         border: none;
+         background: #eef;
+     }
+     
+     .login-side input[type=text] {
+         border-radius: 6px 0px 0px 6px;
+         height: 40px;
+         width: 200px;
+         border: none;
+         background: #eef;
+     }
+
+     .contents h1 {
+        font-size: 25px;
+     }
+         }

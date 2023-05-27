@@ -98,7 +98,7 @@ margin-bottom: 30px;
 width: 100px;
 height: 100px;
 text-align: center;
-justify-contents: center;
+justify-content: center;
 padding: 30px 0px 0px 0px;
 font-size: 60px;
 font-weight: bold;
@@ -143,3 +143,12 @@ color: rgba(0,0,0,0.5);
 font-weight: 700;
 font-family: "Montserrat", sans-serif;
 }    
+
+
+
+@media screen and (max-width: 825px) {
+  .the-staff {
+    display: flex;
+    flex-direction: column;
+  }
+}

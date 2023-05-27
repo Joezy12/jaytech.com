@@ -825,6 +825,11 @@ button {
     overflow-x: hidden;
   }
 
+  .value-pa {
+    color: orange;
+   }
+  
+
   .phone-nav {
     display: block;
   }
@@ -1006,6 +1011,10 @@ button {
 
 
 @media screen and (max-width: 610px) {
+  .logo img{
+        
+    width: 140px;
+}
 
   .head-text {
     font-size: 25px;
@@ -1064,6 +1073,10 @@ button {
     width: 150px;
   }
 
+  .value-write p {
+    font-size: 16px;
+  }
+
 
 }
 
@@ -1091,6 +1104,9 @@ button {
 
 @media screen and (max-width: 440px) {
 
+  .logo img {
+    width: 100px;
+}
 
   .pc-1 {
     width: 70px;
@@ -1181,8 +1197,13 @@ button {
 
 
 @media screen and (max-width: 400px) {
+ .values h2 {
+  font-size: 26px;
+ }
 
-
+ .value-pa {
+  color: orange;
+ }
 
   .logo img {
     width: 110px;
