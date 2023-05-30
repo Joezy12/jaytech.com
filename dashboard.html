@@ -84,8 +84,19 @@
 
         .card1 {
           width: 100%;
-          height: 130px;
-          background: url(pictures/bankcard2.png);
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(pictures/bankcard.png);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 14px;
+        }
+
+        .card2 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url(pictures/bankcard3.jpg);
           background-size: cover;
           border-radius: 6px;
         }
@@ -132,15 +143,6 @@
               <a href="#"
                 ><div class="home">
                   <i class="bi-box-arrow-in-left"></i> Log out
-                </div></a
-              >
-              <a href="#"
-                ><div class="home-cover">
-                  <div class="profile-image"></div>
-                  <div class="home">
-                    John Matthew <br />
-                    <span>johnmatthew@gmail.com</span>
-                  </div>
                 </div></a
               >
             </div>
@@ -235,10 +237,39 @@
                   <h3 id="h2">My Cards</h3>
                   <div class="card-cover">
                     <div class="card1">
-                      <div class="card-status">Active</div>
+                      <div class="card-status">SUSPENDED</div>
+                      <div class="card-logo">Hart<span>County</span></div>
+                      <div class="card-number">
+                        1742 5489 9923 7472 <br /><span>CARD NUMBER</span>
+                      </div>
+                      <div class="bottom-card">
+                        <div class="card-holder">
+                          CARD HOLDER <br />
+                          <span>JOHN MATTHEW</span>
+                        </div>
+                        <div class="card-holder">
+                          VALID TILL <br />
+                          <span>02 / 25</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card1"></div>
-                    <div class="card1"></div>
+                    <div class="card1 card2">
+                      <div class="card-status">ACTIVE</div>
+                      <div class="card-logo">Hart<span>County</span></div>
+                      <div class="card-number">
+                        2465 8990 4523 8901 <br /><span>CARD NUMBER</span>
+                      </div>
+                      <div class="bottom-card">
+                        <div class="card-holder">
+                          CARD HOLDER <br />
+                          <span>JOHN MATTHEW</span>
+                        </div>
+                        <div class="card-holder">
+                          VALID TILL <br />
+                          <span>02 / 25</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

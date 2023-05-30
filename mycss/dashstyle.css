@@ -214,8 +214,63 @@
     display: flex;
     align-items: center;
    justify-content: space-between;
-   gap: 1rem;
+   gap: 4rem;
+   color: white;
    }
+
+   .card-status {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 800;
+   }
+
+   .card-logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+   }
+
+   .card-logo span{
+    color: red;
+   }
+
+   .card-number {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.9;
+    margin-top: 14px;
+   }
+
+   
+   .card-number span{
+    font-family: inherit;
+    font-weight: initial;
+    font-size: 11px;
+    text-align: center;
+   }
+
+   .card-holder {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 16px;
+   }
+
+   .card-holder span{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+   }
+
+   .bottom-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+
+
 
    
 
