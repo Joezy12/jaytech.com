@@ -151,4 +151,14 @@ font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
   }
+
+  .divide {
+    padding: 0px 8px;
+    }
+
+    .left-content .big {
+      font-size: 22px;
+    }
+
+    
 }

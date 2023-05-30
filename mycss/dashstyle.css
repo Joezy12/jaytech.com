@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700");
+
+
+.dashboard {
+   color: white;
+}
+
+.dash-navbar {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+    padding: 28px 20px;
+    height: 100vh;
+  }
+
+  .logo {
+    width: 150px;
+    height: 50px;
+    background: url(pictures/logo.png);
+    background-size: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  .home {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .home i {
+   margin-right: 10px;
+   font-family: 'Montserrat', Sans-serif;
+  }
+
+  .home span{
+    color: rgb(104, 100, 100);
+    font-size: 12px;
+    
+  }
+
+  .home-cover {
+    display: flex;
+    gap: 1rem;
+    
+  }
+
+  .dash-content {
+    color: initial;
+  }
+
+  .card-user {
+    width: 70%;
+    padding: 20px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0px 0px 13px rgba(104, 100, 100,0.3);
+    transform: translate(50px, 0px);
+    z-index: 3;
+  }
+
+  label {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #h2 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+  }
+
+  #account-name {
+    font-size: 21px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+ 
+  #off {
+    font-weight: 1000;
+    font-size: 13px;
+    color: gold;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .account-bal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 140px;
+    background: rgb(234,243,252);
+    border-radius: 12px;
+    padding: 5px 13px;
+    margin-top: -65px;
+    z-index: 2;
+  }
+
+  .account-bal-info {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  .account-bal-info p{
+   font-size: 14px;
+   font-weight: 600;
+   
+  }
+
+  .account-bal-info p span{
+    font-size: 19px;
+    font-weight: 800;
+    
+   }
+
+   #send-icon i {
+    font-size: 19px;
+   }
+
+   .tran-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+   }
+
+   .tran-head p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+   }
+
+   .trans1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+   .lef {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+   }
+
+   .lef-write {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+   }
+ 
+   .lef-write span {
+    font-size: 13px;
+    font-family: Helvetica;
+    font-weight: 600;
+   }
+
+   .rit {
+    font-size: 14px;
+    font-weight: 600;
+   }
+
+   .tran-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 20px;
+   }
+
+   #credit {
+    color: rgb(24, 228, 24);
+   }
+
+   #debit {
+    color: rgb(253, 20, 20);
+   }
+
+   .welcome-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+ 
+   .right-con {
+    padding: 20px 20px;
+    padding-left: 58px;
+   }
+
+   .welcome-panel h1{
+      font-weight: 800;
+      font-family: 'Montserrat';
+   }
+
+   #started {
+    padding: 0;
+    font-size: 10px;
+    border-radius: 1px;
+    padding: 5px 10px;
+    background: rgb(48, 21, 145);
+    color: white;
+   }
+
+   

@@ -1085,7 +1085,9 @@ button {
 
 @media screen and (max-width: 490px) {
 
-
+.do-write-up{
+  height: 1000px;
+}
 
   .values {
     padding: 8px 20px;
@@ -1131,7 +1133,7 @@ button {
   }
 
   .do-write-up {
-    height: 850px;
+    height: 1040px;
   }
 
 
