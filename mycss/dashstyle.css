@@ -65,6 +65,11 @@
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
   }
+  label span{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
 
   #h2 {
     font-size: 18px;
@@ -204,5 +209,14 @@
     background: rgb(48, 21, 145);
     color: white;
    }
+
+   .card-cover {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   }
+
+   
 
    
