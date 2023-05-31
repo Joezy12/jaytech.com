@@ -86,7 +86,7 @@
           width: 100%;
           height: 190px;
           background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(pictures/bankcard.png);
+            url(pictures/bankcard3.jpg);
           background-size: cover;
           border-radius: 6px;
           padding: 10px 14px;
@@ -99,6 +99,11 @@
             url(pictures/bankcard3.jpg);
           background-size: cover;
           border-radius: 6px;
+          padding: 10px 0px;
+        }
+
+        a {
+          text-decoration: none;
         }
       </style>
     </head>
@@ -238,7 +243,7 @@
                   <div class="card-cover">
                     <div class="card1">
                       <div class="card-status">SUSPENDED</div>
-                      <div class="card-logo">Hart<span>County</span></div>
+                      <div class="card-logo">VIRTUAL <span>CARD</span></div>
                       <div class="card-number">
                         1742 5489 9923 7472 <br /><span>CARD NUMBER</span>
                       </div>
@@ -254,20 +259,13 @@
                       </div>
                     </div>
                     <div class="card1 card2">
-                      <div class="card-status">ACTIVE</div>
-                      <div class="card-logo">Hart<span>County</span></div>
-                      <div class="card-number">
-                        2465 8990 4523 8901 <br /><span>CARD NUMBER</span>
+                      <div class="card-line"></div>
+                      <div class="card-cvv">
+                        <div class="left-cvv"></div>
+                        <div class="cvv">CVV <br /><span>477</span></div>
                       </div>
-                      <div class="bottom-card">
-                        <div class="card-holder">
-                          CARD HOLDER <br />
-                          <span>JOHN MATTHEW</span>
-                        </div>
-                        <div class="card-holder">
-                          VALID TILL <br />
-                          <span>02 / 25</span>
-                        </div>
+                      <div class="card-logo" id="card-logo2">
+                        Hart<span>County</span>
                       </div>
                     </div>
                   </div>
@@ -277,6 +275,7 @@
           </div>
         </div>
       </section>
+
       <script>
         window.onscroll = function () {
           myFunction();
