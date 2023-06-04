@@ -1,0 +1,19 @@
+.form {
+    width: 600px;
+    padding: 50px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3)
+}
+
+.dash-content {
+    display: flex;
+    justify-content: center;
+}
+
+#submit2 {
+    background: rgb(17,65,131);
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}

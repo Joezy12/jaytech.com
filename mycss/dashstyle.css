@@ -50,7 +50,13 @@
 
   .dash-content {
     color: initial;
+    padding: 30px 40px;
   }
+
+  #active {
+    color: red;
+  }
+  
 
   .card-user {
     width: 70%;
@@ -312,6 +318,7 @@
     text-align: center;
     font-weight: 500;
     padding-top: 7px;
+    filter: blur(2.5px);
    }
 
    #card-logo2 {
