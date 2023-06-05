@@ -24,9 +24,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
       />
-      <link rel="stylesheet" href="mycss/formstyle.css" />
-      <link rel="stylesheet" href="mycss/loanstyle.css" />
-      <link rel="stylesheet" href="mycss/loandashstyle.css" />
+      <link rel="stylesheet" href="mycss/profilepagestyle.css" />
       <link rel="stylesheet" href="mycss/dashstyle.css" />
       <link rel="stylesheet" href="mycss/style.css" />
       <link rel="stylesheet" href="mycss/contactstyle.css" />
@@ -58,7 +56,7 @@
         }
 
         body {
-          background: #eef;
+          background: white;
         }
 
         .welcome-panel {
@@ -76,13 +74,13 @@
         .profile-pic {
           width: 170px;
           height: 170px;
-          box-shadow: 0px 0px 13px rgba(104, 100, 100, 0.3);
-          background: url(pictures/potrait1.jpg);
-          background-size: cover;
+
+          background: url(pictures/profilepic.png);
+          background-size: 150px;
           background-position: center;
           border-radius: 50%;
+          background-repeat: no-repeat;
           z-index: 6;
-          transform: translate(150px, 30px);
         }
 
         .card1 {
@@ -109,31 +107,11 @@
           text-decoration: none;
         }
 
-        .loan-score {
-          width: 160px;
-          height: 200px;
-          background: url(pictures/loandash.png);
-          border-radius: 10px;
-          color: white;
-          padding: 15px 15px;
+        #recent {
+          width: 250px;
+          background: url(pictures/driverslicense.jfif);
           background-size: cover;
-          box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.3);
-        }
-
-        #score2 {
-          width: 170px;
-          height: 230px;
-          background: url(pictures/loandash2.png);
-          background-size: cover;
-          box-shadow: none;
-        }
-
-        #score3 {
-          width: 170px;
-          height: 230px;
-          background: url(pictures/loandash3.png);
-          background-size: cover;
-          box-shadow: none;
+          height: 160px;
         }
       </style>
     </head>
@@ -144,12 +122,12 @@
             <div class="top-content">
               <div class="logo"></div>
               <a href="dashboard.html"
-                ><div class="home"><i class="bi-house"></i> Dashboard</div></a
+                ><div class="home" id="active">
+                  <i class="bi-house"></i> Dashboard
+                </div></a
               >
               <a href="loandashboard.html"
-                ><div class="home" id="active">
-                  <i class="bi-cash-coin"></i> Loans
-                </div></a
+                ><div class="home"><i class="bi-cash-coin"></i> Loans</div></a
               >
               <a href="transferfunds.html"
                 ><div class="home">
@@ -157,11 +135,11 @@
                 </div></a
               >
 
-              <a href="#"
+              <a href="security.html"
                 ><div class="home"><i class="bi-lock"></i>Security</div></a
               >
               <div class="profile">
-                <a href="#"
+                <a href="profilepage.html"
                   ><div class="home"><i class="bi-person"></i>Profile</div></a
                 >
                 <a href="#"
@@ -180,67 +158,46 @@
             </div>
           </div>
           <div class="col-md-10 dash-content">
-            <div class="form">
-              <form action="/action_page.php">
-                <div class="row row1">
-                  <div class="col-md-6 row1-left">
-                    <label for="fname">First name:</label><br />
-                    <input type="text" id="fname" name="fname" value="" /><br />
+            <div class="row profile-cover">
+              <div class="col-md-4 profile-left">
+                <div class="profile-pic"></div>
+                <div class="name">John Smith</div>
+                <div class="your-details">Your Details</div>
+                <div class="row control">
+                  <div class="col-md-6 left-write">
+                    <p>Email</p>
+                    <p>Phone Number</p>
+                    <p>Date Of Birth</p>
+                    <p>Home Address</p>
+                    <p class="top">Insurance</p>
                   </div>
-                  <div class="col-md-6 row1-right">
-                    <label for="lname">Last name:</label><br />
-                    <input type="text" id="lname" name="lname" value="" /><br />
-                  </div>
-                </div>
-                <div class="row1 row2">
-                  <label for="email">Email:</label><br />
-                  <input type="email" id="email" name="email" value="" /><br />
-                </div>
-                <div class="row1 row3">
-                  <label for="pnumber">Phone Number:</label><br />
-                  <input
-                    type="text"
-                    id="pnumber"
-                    name="pnumber"
-                    value=""
-                  /><br />
-                </div>
-                <div class="row1 row4">
-                  <label for="country">Country:</label><br />
-                  <input
-                    type="text"
-                    id="country"
-                    name="country"
-                    value=""
-                  /><br />
-                </div>
-                <div class="row row1 row5">
-                  <div class="col-md-3 row1-left">
-                    <label for="currency">Currency:</label><br />
-                    <input
-                      type="text"
-                      id="currency"
-                      name="currency"
-                      value=""
-                    /><br />
-                  </div>
-                  <div class="col-md-9 row1-right">
-                    <label for="amount">Requested Amount:</label><br />
-                    <input
-                      type="text"
-                      id="amount"
-                      name="amount"
-                      value=""
-                    /><br />
+                  <div class="col-md-6 right-write">
+                    <p><span>jackiemanie@gmail.com</span></p>
+                    <p><span>+1 244-4598-785</span></p>
+                    <p>03/09/1988</p>
+                    <p>3, Herbet Maculay Way</p>
+                    <p>Yes</p>
                   </div>
                 </div>
-
-                <a
-                  href="formsubmit.html
-                "
-                  ><input type="button" value="START APPLICATION" id="submit2"
-                /></a>
-              </form>
+              </div>
+              <div class="col-md-8 profile-right">
+                <h3>Add Document</h3>
+                <div class="add-document">
+                  <div class="document">
+                    <div class="add-sign"><i class="bi-plus"></i></div>
+                  </div>
+                  <div class="document">
+                    <div class="add-sign"><i class="bi-plus"></i></div>
+                  </div>
+                  <div class="document">
+                    <div class="add-sign"><i class="bi-plus"></i></div>
+                  </div>
+                </div>
+                <div class="added-document">
+                  <h3>Recently Added</h3>
+                  <div class="document" id="recent"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
