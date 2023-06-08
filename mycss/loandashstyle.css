@@ -215,4 +215,6 @@ font-weight: 600;
           overflow-x: hidden;
         }
 
-        
+        #red {
+          color: red;
+        }

@@ -105,9 +105,40 @@
         a {
           text-decoration: none;
         }
+
+        @media screen and (max-width: 600px) {
+          .profile-pic {
+            width: 70px;
+            height: 70px;
+            box-shadow: 0px 0px 13px rgba(104, 100, 100, 0.3);
+            background: url(pictures/potrait1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            z-index: 6;
+            transform: translate(0px, 0px);
+            display: none;
+          }
+
+          .welcome-panel {
+            margin: 0;
+            margin-top: 40px;
+          }
+
+          .welcome-panel h1 {
+            font-size: 24px;
+          }
+        }
       </style>
     </head>
     <body>
+      <div class="phone-navbar">
+        <div
+          class="logo-image"
+          style="background-image: url(pictures/logo.png)"
+        ></div>
+        <div class="side-navbar"><i class="fa fa-bars"></i></div>
+      </div>
       <section class="container-fluid dashboard">
         <div class="row dash-cover">
           <div class="col-md-2 dash-navbar">
@@ -134,7 +165,7 @@
                 <a href="profilepage.html"
                   ><div class="home"><i class="bi-person"></i>Profile</div></a
                 >
-                <a href="#"
+                <a href="transactionlog.html"
                   ><div class="home">
                     <i class="bi-list-task"></i>Transaction Log
                   </div></a

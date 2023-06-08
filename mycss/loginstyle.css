@@ -96,7 +96,7 @@ input:focus {
     background: #eef;
   }
 
-  .login-side input[type="text"] {
+  .login-side input[type="password"] {
     border-radius: 6px 0px 0px 6px;
     height: 40px;
     width: 240px;
@@ -118,7 +118,7 @@ input:focus {
     background: #eef;
   }
 
-  .login-side input[type="text"] {
+  .login-side input[type="password"] {
     border-radius: 6px 0px 0px 6px;
     height: 40px;
     width: 200px;

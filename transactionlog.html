@@ -24,8 +24,6 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
       />
-      <link rel="stylesheet" href="mycss/transfer.css" />
-      <link rel="stylesheet" href="mycss/loanstyle.css" />
       <link rel="stylesheet" href="mycss/loandashstyle.css" />
       <link rel="stylesheet" href="mycss/dashstyle.css" />
       <link rel="stylesheet" href="mycss/style.css" />
@@ -140,7 +138,7 @@
     <body>
       <section class="container-fluid dashboard">
         <div class="row dash-cover">
-          <div class="col-md-2 dash-navbar" style="z-index: 10">
+          <div class="col-md-2 dash-navbar">
             <div class="top-content">
               <div class="logo"></div>
               <a href="dashboard.html"
@@ -150,7 +148,7 @@
                 ><div class="home"><i class="bi-cash-coin"></i> Loans</div></a
               >
               <a href="transferfunds.html"
-                ><div class="home" id="active">
+                ><div class="home">
                   <i class="bi-reply-fill"></i> Transfer Funds
                 </div></a
               >
@@ -163,7 +161,7 @@
                   ><div class="home"><i class="bi-person"></i>Profile</div></a
                 >
                 <a href="transactionlog.html"
-                  ><div class="home">
+                  ><div class="home" id="active">
                     <i class="bi-list-task"></i>Transaction Log
                   </div></a
                 >
@@ -177,87 +175,65 @@
               >
             </div>
           </div>
-          <div
-            class="col-md-10 dash-content"
-            style="padding: 0; margin-left: 190px"
-          >
-            <div class="transfer-dashboard">
-              <h2>Hi, John</h2>
-              <p>Your Accounts</p>
-              <div class="your-accounts">
-                <div class="account1">
-                  <p>Savings <br /><span>active</span></p>
-                  <p>
-                    $ 170,000 <br /><span
-                      ><a href="#"><button id="fund">fund</button></a></span
-                    >
-                  </p>
+          <div class="col-md-10 dash-content">
+            <div class="loan-history">
+              <h5>TRANSACTION HISTORY</h5>
+              <div class="loans-items" id="loan-history-items">
+                <div class="loan-item1">
+                  <p id="out-head">DATE</p>
+                  <p id="out-head">NAME</p>
+                  <p id="out-head">AMOUNT</p>
+                  <p id="out-head">TRANSACTION TYPE</p>
+                  <p id="out-head">ACCOUNT NUMBER</p>
                 </div>
-              </div>
-            </div>
-
-            <div class="row transfer-cover">
-              <div class="col-md-7 transfer-left">
-                <h4>Transfer To Bank</h4>
-                <div class="transfer-bank-form">
-                  <div class="form-cover">
-                    <div class="form1">
-                      <form name="bank-transfer-form">
-                        <label for="bank-name">Bank Name</label>
-                        <input type="text" id="input-bottom" />
-                        <label for="account-number">Account Number</label>
-                        <input type="number" id="input-bottom" />
-                        <label for="swift-code">Swift / Sort Code</label>
-                        <input type="number" id="input-bottom" />
-                        <label for="bank-address">Bank Address</label>
-                        <input type="text" id="input-bottom" />
-                      </form>
-                    </div>
-                    <div class="form1">
-                      <form name="bank-transfer-form" action="form.php">
-                        <label for="account-name">Account Name</label>
-                        <input type="text" id="input-bottom" />
-                        <label for="rout">IBAN / Routing Number</label>
-                        <input type="number" id="input-bottom" />
-                        <label for="amount">Amount</label>
-                        <input type="number" id="input-bottom" />
-                        <label for="country">Country of Bank</label>
-                        <input type="text" id="input-bottom" />
-                      </form>
-                    </div>
-                  </div>
+                <div class="loan-item1">
+                  <p>3/12/2022</p>
+                  <p>babara Lucas</p>
+                  <p id="red">-$500</p>
+                  <p>Debit</p>
+                  <p>#53BV899GFT</p>
                 </div>
-              </div>
-              <div class="col-md-5 transfer-right">
-                <div class="transfer-bank-form transfer-bank-form2">
-                  <div class="form-cover">
-                    <div class="form1">
-                      <form name="bank-transfer-form">
-                        <div class="pin-cover">
-                          <div class="pin-left">
-                            <label for="Transaction-method"
-                              >Transaction Method</label
-                            ><br />
-                            <input type="text" id="input-bottom" />
-                          </div>
-                          <div class="pin-right">
-                            <label for="pin">PIN</label><br />
-                            <input type="password" id="pin" />
-                          </div>
-                        </div>
-                        <label for="purpose-of-transfer"
-                          >Purpose of Transfer</label
-                        >
-                        <input type="text" id="purpose" /><br />
-                        <input type="checkbox" />&nbsp;Agree To Terms and
-                        Condition
-                        <br />
-                      </form>
-                      <a href="transferdetails.html"
-                        ><button id="blue">Transfer</button></a
-                      >
-                    </div>
-                  </div>
+                <div class="loan-item1">
+                  <p>7/2/2023</p>
+                  <p>Jenifer Lopez</p>
+                  <p id="out-green">+$ 1,500</p>
+                  <p>Credit</p>
+                  <p>#53BV899GFT</p>
+                </div>
+                <div class="loan-item1">
+                  <p>7/2/2023</p>
+                  <p>Hillary Clinton</p>
+                  <p id="out-green">+$ 1,500</p>
+                  <p>credit</p>
+                  <p>#53BV899GFT</p>
+                </div>
+                <div class="loan-item1">
+                  <p>7/2/2023</p>
+                  <p>Chris Evans</p>
+                  <p id="red">-$ 650</p>
+                  <p>Debit</p>
+                  <p>#53BV899GFT</p>
+                </div>
+                <div class="loan-item1">
+                  <p>7/2/2023</p>
+                  <p>Lilly June</p>
+                  <p id="out-green">+$ 900</p>
+                  <p>Bank Transfer</p>
+                  <p>#53BV899GFT</p>
+                </div>
+                <div class="loan-item1">
+                  <p>7/2/2023</p>
+                  <p>Amanda jacob</p>
+                  <p id="red">-$ 900</p>
+                  <p>Debit</p>
+                  <p>#53BV899GFT</p>
+                </div>
+                <div class="loan-item1">
+                  <p>7/2/2023</p>
+                  <p>Hillary Lucas</p>
+                  <p id="red">-$ 450</p>
+                  <p>Debit</p>
+                  <p>#53BV899GFT</p>
                 </div>
               </div>
             </div>
