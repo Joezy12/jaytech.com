@@ -24,10 +24,11 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
       />
-      <link rel="stylesheet" href="mycss/loandashstyle.css" />
+
       <link rel="stylesheet" href="mycss/dashstyle.css" />
       <link rel="stylesheet" href="mycss/style.css" />
       <link rel="stylesheet" href="mycss/contactstyle.css" />
+      <link rel="stylesheet" href="mycss/loandashstyle.css" />
 
       <link
         href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
@@ -118,7 +119,7 @@
           box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.3);
         }
 
-        #score2 {
+        .score2 {
           width: 170px;
           height: 230px;
           background: url(pictures/loandash2.png);
@@ -126,22 +127,43 @@
           box-shadow: none;
         }
 
-        #score3 {
+        .score3 {
           width: 170px;
           height: 230px;
           background: url(pictures/loandash3.png);
           background-size: cover;
           box-shadow: none;
         }
+
+        @media screen and (max-width: 600px) {
+          .loan-score {
+            width: 100%;
+            overflow-y: hidden;
+          }
+        }
       </style>
     </head>
     <body>
       <div class="phone-navbar">
-        <div
-          class="logo-image"
-          style="background-image: url(pictures/logo.png)"
-        ></div>
-        <div class="side-navbar"><i class="fa fa-bars"></i></div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="dashboard.html">Dashboard</a>
+          <a href="loandashboard.html">Loans</a>
+          <a href="transferfunds.html">Transfer Funds</a>
+          <a href="security.html">security</a>
+          <a href="profilepage.html">Profile</a>
+          <a href="transactionlog.html">Transaction Log</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span class="side-nav-opener" onclick="openNav()"
+          ><i class="fa fa-bars"></i>
+        </span>
+        <div class="logo-write">Hart County</div>
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       </div>
       <section class="container-fluid dashboard">
         <div class="row dash-cover">
@@ -152,7 +174,7 @@
                 ><div class="home"><i class="bi-house"></i> Dashboard</div></a
               >
               <a href="loandashboard.html"
-                ><div class="home" id="active">
+                ><div class="home active">
                   <i class="bi-cash-coin"></i> Loans
                 </div></a
               >
@@ -205,7 +227,7 @@
               <h5>AVAILABLE LOAN PRODUCTS</h5>
               <div class="total-cover">
                 <div class="loan-product-cover">
-                  <div class="loan-score" id="score2">
+                  <div class="loan-score score2">
                     <p>INSTANT LOAN</p>
                     <h2>Mortage <br />Loan</h2>
                     <div class="refresh" id="refresh">
@@ -215,7 +237,7 @@
                       ></a>
                     </div>
                   </div>
-                  <div class="loan-score" id="score3">
+                  <div class="loan-score score3">
                     <p>INSTANT LOAN</p>
                     <h2>Vehicle <br />Finance</h2>
                     <div class="refresh" id="refresh">
