@@ -180,15 +180,15 @@ h5 {
   width: 30%;
 }
 
-#out-head {
+.out-head {
   color: rgb(17, 65, 131);
 }
 
-#out-green {
+.out-green {
   color: rgb(53, 174, 47);
 }
 
-#loan-history-items {
+.loan-history-items {
   width: 100%;
   padding-right: 0px;
 }
@@ -216,7 +216,29 @@ html {
 @media screen and (max-width: 890px) {
   .dash-content {
     margin: 0;
-    padding: 20px 25px;
+    padding: 20px 12px;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  .loans-items {
+    padding-left: 10px;
+    margin: 0;
+    width: 100%;
+    padding-right: 10px;
+  }
+
+  .loan-item1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 17px 0px;
+  }
+
+  .loan-item1 p {
+    font-weight: 600;
+    width: 100%;
   }
 }
 
@@ -270,13 +292,5 @@ html {
   .total-cover {
     display: flex;
     flex-direction: column;
-  }
-
-  .loans-items {
-    overflow-x: auto;
-  }
-
-  .loan-item1 {
-    overflow-x: auto;
   }
 }
