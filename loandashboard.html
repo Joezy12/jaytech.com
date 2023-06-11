@@ -136,6 +136,13 @@
       </style>
     </head>
     <body>
+      <div class="phone-navbar">
+        <div
+          class="logo-image"
+          style="background-image: url(pictures/logo.png)"
+        ></div>
+        <div class="side-navbar"><i class="fa fa-bars"></i></div>
+      </div>
       <section class="container-fluid dashboard">
         <div class="row dash-cover">
           <div class="col-md-2 dash-navbar">
@@ -275,50 +282,6 @@
           </div>
         </div>
       </section>
-
-      <script>
-        window.onscroll = function () {
-          myFunction();
-        };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-      </script>
-      <script>
-        var slideIndex = 0;
-        var slides = document.getElementsByClassName("slide");
-
-        function showSlide(index) {
-          for (var i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[index].style.display = "block";
-        }
-
-        function navigateSlide(n) {
-          slideIndex += n;
-          if (slideIndex >= slides.length) {
-            slideIndex = 0;
-          } else if (slideIndex < 0) {
-            slideIndex = slides.length - 1;
-          }
-          showSlide(slideIndex);
-        }
-
-        showSlide(slideIndex);
-
-        setInterval(function () {
-          navigateSlide(1);
-        }, 5000);
-      </script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>

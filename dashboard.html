@@ -24,9 +24,10 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
       />
-      <link rel="stylesheet" href="mycss/dashstyle.css" />
+
       <link rel="stylesheet" href="mycss/style.css" />
       <link rel="stylesheet" href="mycss/contactstyle.css" />
+      <link rel="stylesheet" href="mycss/dashstyle.css" />
 
       <link
         href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
@@ -133,11 +134,23 @@
     </head>
     <body>
       <div class="phone-navbar">
-        <div
-          class="logo-image"
-          style="background-image: url(pictures/logo.png)"
-        ></div>
-        <div class="side-navbar"><i class="fa fa-bars"></i></div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span class="side-nav-opener" onclick="openNav()"
+          ><i class="fa fa-bars"></i>
+        </span>
+        <div class="logo-write">Hart County</div>
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
       </div>
       <section class="container-fluid dashboard">
         <div class="row dash-cover">
@@ -184,10 +197,10 @@
             <div class="row right-content-cover">
               <div class="col-md-4 left-con">
                 <div class="account">
-                  <h2 id="h2">Account</h2>
+                  <h2 class="h2">Account</h2>
                   <div class="card-user">
-                    <p id="account-name">John Matthew</p>
-                    <p id="off">GOLD OFF-SHORE ACCOUNT</p>
+                    <p class="account-name">John Matthew</p>
+                    <p class="off">GOLD OFF-SHORE ACCOUNT</p>
                     <label>Account No: &nbsp; <span>133452186</span></label>
                   </div>
                   <div class="account-bal">
@@ -197,7 +210,7 @@
                         Total Balance <br />
                         <span>$450,000.00</span>
                       </p>
-                      <p id="send-icon"><i class="bi-send"></i></p>
+                      <p class="send-icon"><i class="bi-send"></i></p>
                     </div>
                   </div>
                 </div>
@@ -216,7 +229,7 @@
                           Chris Evans<br /><span>Debit</span>
                         </div>
                       </div>
-                      <div class="rit" id="debit">- $100.00</div>
+                      <div class="rit debit">- $100.00</div>
                     </div>
 
                     <div class="trans1">
@@ -226,7 +239,7 @@
                           Ella Handerson<br /><span>credit</span>
                         </div>
                       </div>
-                      <div class="rit" id="credit">+ $450.00</div>
+                      <div class="rit credit">+ $450.00</div>
                     </div>
 
                     <div class="trans1">
@@ -238,7 +251,7 @@
                           John Smith<br /><span>Debit</span>
                         </div>
                       </div>
-                      <div class="rit" id="debit">- $450.00</div>
+                      <div class="rit debit">- $450.00</div>
                     </div>
 
                     <div class="trans1">
@@ -248,7 +261,7 @@
                           Hannah Luke<br /><span>Credit</span>
                         </div>
                       </div>
-                      <div class="rit" id="credit">+ $50.00</div>
+                      <div class="rit credit">+ $50.00</div>
                     </div>
                   </div>
                 </div>
@@ -262,12 +275,12 @@
                       our user experience have been update for<br />
                       maximum user experience
                     </p>
-                    <button id="started">GET STARTED</button>
+                    <button class="started">GET STARTED</button>
                   </div>
                 </div>
 
                 <div class="cards">
-                  <h3 id="h2">My Cards</h3>
+                  <h3 class="h2">My Cards</h3>
                   <div class="card-cover">
                     <div class="card1">
                       <div class="card-status">ACTIVE</div>
@@ -292,7 +305,7 @@
                         <div class="left-cvv"></div>
                         <div class="cvv">CVV <br /><span>477</span></div>
                       </div>
-                      <div class="card-logo" id="card-logo2">
+                      <div class="card-logo card-logo2">
                         Hart<span>County</span>
                       </div>
                     </div>
@@ -303,50 +316,6 @@
           </div>
         </div>
       </section>
-
-      <script>
-        window.onscroll = function () {
-          myFunction();
-        };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-      </script>
-      <script>
-        var slideIndex = 0;
-        var slides = document.getElementsByClassName("slide");
-
-        function showSlide(index) {
-          for (var i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[index].style.display = "block";
-        }
-
-        function navigateSlide(n) {
-          slideIndex += n;
-          if (slideIndex >= slides.length) {
-            slideIndex = 0;
-          } else if (slideIndex < 0) {
-            slideIndex = slides.length - 1;
-          }
-          showSlide(slideIndex);
-        }
-
-        showSlide(slideIndex);
-
-        setInterval(function () {
-          navigateSlide(1);
-        }, 5000);
-      </script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
